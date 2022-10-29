@@ -1,0 +1,115 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+.HeaderBox{width: 100%;display: flex;align-items: center;justify-content: center; position: absolute; background-color: aliceblue; position: fixed; z-index: 2; border: 1px black solid;}
+.HeaderGran{width: 1108px; height: 47px; position: relative; left: -3px; position: relative; top: -47.2%; left: -1px; }
+
+.VKe{width: 178px; height: 47px;}
+
+.Box{width: 100%;display: flex;align-items: center;justify-content: center; position: relative; top: 65px; left: -0px; z-index: 1;}
+.Gran{width: 1075px; height: 100%;position: relative; left: -3px;}
+.Levo{width: 192px; position: absolute; left: -25px; top: -2px;}
+.Menu{width: 164px; height: 600px;}
+.MiniFooter{width: 164px; height: 67px;}
+.Osnova{width: 914px; height: 100%; position:absolute; left: 168px;}
+.Head{width: 911px; height: 401px; border-radius: 10px; margin: 0 0 16px 0;}
+.Perehrestya{width: 914px;}
+.You{width: 552px; height: 1200px; position: absolute; left: -1px;}
+.Pravo{width: 355px; height: 1200px; position: absolute; right: -7px;}
+.Pr{width: 355px;  position:sticky; top:65px;}
+
+.VK16I{width: 345px; height: 59px; border: 1px black solid; margin: 0 0 17px 0; border-radius: 10px;}
+.FrendI{width: 345px; height: 252px; border: 1px black solid;margin: 0 0 17px 0;border-radius: 10px;}
+.FrName{width: 345px; height: 50px; font-size: 16px; padding: 18px 0 0 15px;}
+.IdFr{width: 345px; height: 202px;display: flex;align-items: center;justify-content: center;}
+.IDid1{width: 65px; height: 82px; position: absolute; margin: 10px 18px;border: 1px #000 solid;}
+.Ver{top: 120px;}
+.Nu{top: 216px;}
+
+.PodName{width: 345px; height: 50px; font-size: 16px; padding: 18px 0 0 15px; }
+.PidName{width: 345px; height: 50px; font-size: 16px; padding: 18px 0 0 15px;}
+.IdPod{width: 345px; height: 118px;display: flex;align-items: center;justify-content: center;}
+.IdPid{width: 345px; height: 70px;display: flex;align-items: center;justify-content: center;}
+
+.IDG1{width: 345px; height: 101px; }
+.IDG2{width: 345px; height: 101px; position: relative; top: -10px;}
+
+.IDid1{width: 65px; height: 82px; position: absolute; margin: 10px 18px;border: 1px #000 solid;}
+.IDid2{width: 98px; height: 93px; position: absolute;border: 1px #000 solid; border-radius: 15px;}
+.IDid3{width: 310px; height: 49px; border: 1px #000 solid; position: relative; top: -8px; }
+
+.ms11{left: 0px;}
+.ms21{left: 80px;}
+.ms31{left: 160px;}
+.ms41{left: 240px;}
+
+.ms12{left: 19px;}
+.ms22{left: 123px;}
+.ms32{left: 227px;}
+
+.Text{ height: 100%; width: 100px;;font-size: 15px; padding: 5px 0; margin:0 0 0 30px; position: relative; top: -50%;}
+
+.Podarynoc{width: 345px; height: 168px; border: 1px black solid;margin: 0 0 17px 0;border-radius: 10px;}
+.Pidpusca{width: 345px; height: 120px; border: 1px black solid;margin: 0 0 17px 0;border-radius: 10px;}
+
+.Fon{ position: absolute; top: 0; left: 0; width: 909px; height: 305px; border-radius: 10px; background-image: url(../IMG/Fon.jpg); background-size: cover}
+.Zmin{width: 184px; height: 33px; position: absolute; top: 20px; right: 20px; background-color: rgba(0, 0, 0, 0.514);}
+
+.Avatar{width: 158px; height: 160px; position: absolute; left: 15px; top: 199px; border-radius: 50%; background-color: aliceblue;}
+.aVA{width: 150px; height: 150px; background-image: url(../IMG/aVA.jpg); background-size: cover; border-radius: 50%; margin: 4px; position: relative; z-index: 2;}
+.BC{width: 20px; height: 20px; position: absolute; left: 118px; top: 118px; border-radius: 50%; background-color: aliceblue;display: flex;align-items: center;justify-content: center;}
+.ZC{width: 13px; height: 13px; position: relative; top: -1%; left: -1%; border-radius: 50%; background-color: rgb(0, 168, 22);}
+
+.Name{font-size: 22px; padding:22px 0 0 64px;}
+.Statys{font-size: 14px; padding:10px 0 0 64px;}
+.PInf{width: 350px; height: 26px; position: relative; left: 65px; top: 8px; border: 1px black solid;}
+
+.Face{width: 911px; height: 123px; position: relative; top: 277px; left: -1px;}
+.LeCub{width: 185px; height: 123px; position: absolute; left: 0; top: 0; border-radius:7% 0 0 5%;background-color: rgb(255, 255, 255); border-left: 1px black solid; border-bottom: 1px black solid;}
+.MinInf{width:670px; height: 123px; position: relative; right: -123px; background-color: rgb(255, 255, 255); border-bottom: 1px black solid;}
+.PrCub{width: 183px; height: 123px; position: absolute; right: 0; top: 0; border-radius:0 7% 5% 0;background-color: rgb(255, 255, 255);border-right: 1px black solid; border-bottom: 1px black solid;}
+.M{width:160px; height: 30px; margin: 0 0 0 21px; }
+.Prodel{width:118px; height: 2px; border: 1px black solid; margin: 9px; position: relative; left: 49px;}
+
+.FKMS{width: 552px; height: 291px; border: 1px black solid; border-radius: 10px;margin: 0 0 17px 0;}
+.Nows{width: 552px; height: 52px; border: 1px black solid; border-radius: 10px;margin: 0 0 13px 0;}
+.NowsV{width: 552px; height: 47px; border: 1px black solid; border-radius: 10px 10px 0 0;}
+.NowsS{width: 552px; height: 833px; border-bottom: 1px black solid;border-right: 1px black solid;border-left: 1px black solid;}
+
+.MIMessage{position: fixed; bottom: 0; right: 25px; width: 52px; height: 38px; border: 1px black solid; }
+.TDVL{}
+.MINIMessage{}
