@@ -1,0 +1,160 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+.header{display: flex;align-items: center;justify-content: center;position: fixed;z-index: 4;}
+
+.KoloHeader{width: 1000px; height: 900px; position: fixed; top: -66%;background-color: rgba(255, 255, 255, 0.33); border: 3px rgba(0, 0, 0, 0.123) solid; border-radius: 50%;transition: all 1s ease 0s;}
+.KoloHeader.Act{background-color: rgba(255, 255, 255, 0.0); border: 3px rgba(0, 0, 0, 0.0) solid;}
+
+.overF{width: 100%;display: flex;align-items: center;justify-content: center;position: fixed; top: 0; overflow: hidden; z-index:3;}
+.Background{width: 100%; height: 100%; position: fixed; top: 0; z-index: 1; background-color: rgba(0, 0, 0, 0.25);}
+.Inform{margin: 0 15%; width: 70%;height:101%;position: relative; z-index: 2;overflow: hidden;}
+.Inform.ActXr{overflow:visible}
+.Inform.Act1,.Inform.Act2{z-index: 1;}
+
+.InformBox{width: 100%; height: 2500px;background-color: rgba(255, 255, 255, 0.33); border-radius: 650px 650px 0 0; margin: 300px 0 0 0;}
+
+.IBoxTypeCurrently{ margin: 0 15%; width: 70%; height: 450px; background-color: rgba(255, 255, 255, 0.33); border-radius: 300px 300px 200px 200px ;border: 3px rgba(0, 0, 0, 0.333) double; position: relative; top: 150px; display: flex; align-items: center; flex-direction: column;}
+.IBoxTypeCurrentlyH1{text-align: center; font-size: 33px; margin: 50px 0 0 0;}
+.IBoxTypeCurrentlyInfo{text-align: center; font-size: 25px; margin: 25px 0 0 0;}
+.IBoxTypeCurrentlyFotoBox{width: 66%; height: 250px;border: 3px rgba(0, 0, 0, 0.333) dotted;margin: 30px 0 0 0; display: flex; align-items: center; justify-content: center;}
+
+.IBoxTypeCurrentlyFotoBoxDop{width: 160px; height: 80px; background-color: rgba(255, 255, 255, 0.33);border: 3px rgba(0, 0, 0, 0.333) double; position: absolute; bottom: -80px; border-radius: 0 0 60px 60px;display: flex; align-items: center;justify-content: center; z-index: 12;transition: all .25s ease 0s;}
+
+.IBoxTypeCurrentlyFotoBoxDopStrelka1{width: 80px; display: flex; align-items: center; position: absolute; top: 45px;transition: all .25s ease 0s;}.IBoxTypeCurrentlyFotoBoxDopStrelka2{width: 60px; display: flex; align-items: center; position: absolute; top: 35px;transition: all .25s ease 0s;}.IBoxTypeCurrentlyFotoBoxDopStrelka3{width: 40px; display: flex; align-items: center; position: absolute; top: 25px;transition: all .25s ease 0s;}
+.IBoxTypeCurrentlyFotoBoxDopStrelka1.Act{top: 220px;}.IBoxTypeCurrentlyFotoBoxDopStrelka2.Act{top: 210px;}.IBoxTypeCurrentlyFotoBoxDopStrelka3.Act{top: 200px;}
+.IBoxTypeCurrentlyFotoBoxDopStrelkaLiniya1{width: 100%; height: 3px; border-radius: 1px; background-color: rgb(100, 100, 100); transform: rotate(40deg); position: relative; left: 7.5%; transition: all .1s ease 0s;}
+.IBoxTypeCurrentlyFotoBoxDopStrelkaLiniya2{width: 100%; height: 3px; border-radius: 1px; background-color: rgb(100, 100, 100); transform: rotate(-40deg);position: relative; right: 7.5%; transition: all .1s ease 0s;}
+.IBoxTypeCurrentlyFotoBoxDopStrelkaLiniya1.Act{background-color: rgb(66, 66, 66);}
+.IBoxTypeCurrentlyFotoBoxDopStrelkaLiniya2.Act{background-color: rgb(66, 66, 66);}
+.IBoxTypeCurrentlyFoto1{ height: 90%; background-color: black; position: relative;z-index: 15;}
+.TypeFoto{transition: all 1s ease 0s;}
+.TypeFoto.Act{ height: 333%; background-color: black;}
+
+.IBoxTypeCurrentlyFotoBoxDop.Act{width: 620px; height: 250px; position: absolute; bottom: -250px; border-radius: 0 0 100px 100px;}
+
+.PL{width: 100%;height: 100%;display: flex;align-items: center;justify-content: center;position: fixed; top: 0; z-index: 0;}.PL.Act1{z-index: 5;}.PL.Act2{z-index: 6;}
+.Levo{width: 50%;	height: 100%; opacity:calc(0); position: relative; left: -50%; transition: all 1s ease 0s;}		.Levo.Act1{opacity:calc(1); left:0;}
+.Pravo{width: 50%;height: 100%; opacity:calc(0); position: relative; right: -50%; transition: all 1s ease 0s;}		.Pravo.Act2{opacity:calc(1); right: 0;}
+
+.LeC{width: 100%;	height: 100%;}
+.PrC{width: 100%;	height: 100%;}
+
+.Cont{width: 42%; height: 30%; margin: 14% 0 5% 4.5%; position: relative; top: -95%;border: 3PX black solid; border-radius: 8%;}
+.Soc{width:370px; height: 350px; margin: -3% 0 15% 6%; position: relative; top: -88%; right: -24%; border: 3PX black solid; border-radius: 8%;}
+
+.nomer{width: 90%; height: 34%; margin: 5% 5% 8% 5%}
+.Pocta{width: 90%; height: 34%; margin: 8% 5% 5% 5%;}
+
+.scop{width: 40px; height: 40px; margin: 1% 45% ;border: 3px rgb(100, 100, 100) dashed;}
+.Skop{font-size: 16px; margin: 9px 0px; transform: rotate(25deg);}
+
+.SNomer{width: 80%; height: 50%; margin: 1% 10% ;border: 3px #000 solid;}
+.SPocta{width: 100%; height: 50%;border: 3px #000 solid;}
+
+.SpanDiv{font-size: 23px; margin: 8px 50px; }
+.PoctaDiv{font-size: 20px; margin: 8px 22px;}
+
+.inN{width: 33px; height: 33px;border: 3px #000 solid; border-radius: 50%; position:absolute; top: 5px; left:5px;}
+.inS{width: 33px; height: 33px;border: 3px #000 solid; border-radius: 50%; position:relative; top: 5px; right: -5px;}
+
+.Set{width: 100%; height: 50%;}
+.set2{width: 100px; height: 100px; margin: 10px; position:absolute; border: 3px #000 solid;display: flex;align-items: center;justify-content: center; border-radius: 25%; transition: all 1s ease 0s;}
+.Sk{width: 90px;}
+
+.ms1{left: 10px;}
+.ms2{left: 125px;}
+.ms3{left: 240px;}
+
+.LustBox{width: 250px; height: 250px; position: fixed; bottom: -75px; left: -75px;background-color: rgba(240, 248, 255, 0.66);border: 3px rgba(0, 0, 0, 0.33) solid; border-radius: 0 50% 0 0; z-index: 7;transition: all 1s ease 0s;}
+.LustBox.Act1{width: 220px; height: 150px; position: fixed; bottom: 500px; left: 525px;border-radius: 40%;transition: all 1s ease 0s;border: 2px black solid;}
+.SestBox{width: 250px; height: 250px;position: fixed;  bottom: -75px; right: -75px;background-color: rgba(240, 248, 255, 0.66);border: 3px rgba(0, 0, 0, 0.33)  solid; border-radius: 50% 0 0 0;z-index: 7;transition: all 1s ease 0s;}
+.SestBox.Act2{width: 220px; height: 150px; position: fixed; bottom: 500px; right: 525px;border-radius: 40%;transition: all 1s ease 0s;border: 2px black solid;}
+
+.Lust{margin: 0 5% 0 0; width: 130px;transition: all 1s ease 0s;position: absolute; right: 25px; top: 30px;}		
+.Lust.Act1{margin: 0 15%;width: 150px;transition: all 1s ease 0s;position: absolute; right: 0px; top: 0px;}
+.Sest{margin: 0 5% 0 0; width: 125px;transition: all 1s ease 0s; position: absolute; left: 35px; top: 30px;}		
+.Sest.Act2{margin: 0 5%;width: 150px;transition: all 1s ease 0s;position: absolute; right: 20px; top: 0px;}
+
+.zi1{z-index: 1;}
+.zi2{z-index: 2;}
+
+.r2{width: 550px;height: 550px;display: flex;align-items: center;justify-content: center;z-index: 2;border-radius: 0 0 50% 50%;}
+
+.r31{width: 1050px;display: flex;align-items: center;justify-content: center;z-index: 1;border-radius: 0 0 50% 50%;position: absolute;}
+.r32{width: 1050px;display: flex;align-items: center;justify-content: center;z-index: 1;border-radius: 0 0 50% 50%;position: absolute;}
+.r33{width: 1050px;display: flex;align-items: center;justify-content: center;z-index: 1;border-radius: 0 0 50% 50%;position: absolute;}
+.r34{width: 1050px;display: flex;align-items: center;justify-content: center;z-index: 1;border-radius: 0 0 50% 50%;position: absolute;}
+.r35{width: 1050px;display: flex;align-items: center;justify-content: center;z-index: 1;border-radius: 0 0 50% 50%;position: absolute;}
+
+
+.r154{width: 445px;height: 445px;display: flex;align-items: center;justify-content: center;z-index: 3;border-radius: 0 0 50% 50%;position: absolute;transform: rotate(180deg);transition: all 1.8s ease 1s;}
+.r154p{transform: rotate(360deg);}
+.r154.ActM{transition: all 1.0s ease 0s;width: 335px;height: 335px;}
+
+.r1{width: 300px;height: 300px;display: flex;align-items: center;justify-content: center;z-index: 4;border-radius: 0 0 50% 50%;}
+
+.boxI{width: 100%;height: 107%;display: flex;align-items: center;justify-content: center;position: fixed;top: -50px;background-color: rgba(0, 0, 0, 0.904);z-index: 10;transition: all 1.0s ease 0s;}
+.inf{width: 1100px;height: 700px;z-index: 10;position: relative;transition: all 1.0s ease 0s;}
+.Fon1{width: 1100px;height: 700px;}
+
+.Xr{width: 66px;height: 66px;position:absolute;right: 66px;top: 32px;}
+.boxI.ActXr{background-color: rgba(0, 0, 0, 0);z-index: 1}
+.inf.ActXr{top: -1500px;}
+
+
+.C21{transition: all 2.4s ease 0s;}.C21.Act2K21{transform: rotate(291.5deg);}.C21.Act2K22{transform: rotate(325.5deg);}.C21.Act2K23{transform: rotate(360deg);}.C21.Act2K24{transform: rotate(213.5deg);}.C21.Act2K25{transform: rotate(248.5deg);}
+.C22{transition: all 2.45s ease 0s;}.C22.Act2K21{transform: rotate(291.5deg);}.C22.Act2K22{transform: rotate(325.5deg);}.C22.Act2K23{transform: rotate(360deg);}.C22.Act2K24{transform: rotate(33.5deg);}.C22.Act2K25{transform: rotate(248.5deg);}
+.C23{transition: all 2.5s ease 0s;}.C23.Act2K21{transform: rotate(291.5deg);}.C23.Act2K22{transform: rotate(325.5deg);}.C23.Act2K23{transform: rotate(360deg);}.C23.Act2K24{transform: rotate(33.5deg);}.C23.Act2K25{transform: rotate(68.5deg);}
+.C24{transition: all 2.45s ease 0s;}.C24.Act2K21{transform: rotate(112.5deg);}.C24.Act2K22{transform: rotate(325.5deg);}.C24.Act2K23{transform: rotate(360deg);}.C24.Act2K24{transform: rotate(33.5deg);}.C24.Act2K25{transform: rotate(68.5deg);}
+.C25{transition: all 2.4s ease 0s;}.C25.Act2K21{transform: rotate(112.2deg);}.C25.Act2K22{transform: rotate(146deg);}.C25.Act2K23{transform: rotate(360deg);}.C25.Act2K24{transform: rotate(33.5deg);}.C25.Act2K25{transform: rotate(68.5deg);}
+
+.R3whP{width: 800px; height: 165px;	z-index: 1; transition: all 1.33s ease 0s;}
+.R3wh{width: 810px;	height: 810px;	z-index: 1; transition: all 1.5s ease 0s;}
+.R2wh{width: 560px;	height: 560px;	z-index: 2;	transition: all 1.5s ease 0s;}
+.R1wh{width: 330px;	height: 330px;	z-index: 4;	transition: all 1.33s ease 0s;}
+
+
+
+.r1pk{width: 250px;height: 250px;}
+.r2pk{width: 335px;height: 335px;}
+.r3pk{width: 600px;height: 600px;}
+
+.r1Block{width: 300px;height: 300px; position: absolute;}
+
+.absolute{position: absolute;}
+
