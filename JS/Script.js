@@ -21,7 +21,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 	$('.M').click(function(event) {
-		$('.r154,.C310,.C320').toggleClass('ActM');
+		$('.r154,.C310,.C320,.KoloHeader').toggleClass('ActM');
 	});
 });
 $(document).ready(function() {
@@ -178,16 +178,75 @@ $(document).ready(function() {
 $(document).ready(function() {
 	$('.IBoxTypeCurrentlyFotoBoxDop').click(function(event) {
 		$('.IBoxTypeCurrentlyFotoBoxDop,.IBoxTypeCurrentlyFotoBoxDopStrelka1,.IBoxTypeCurrentlyFotoBoxDopStrelka2,.IBoxTypeCurrentlyFotoBoxDopStrelka3').toggleClass('Act');
+		$('.IBoxType1Prob').toggleClass('ActProb');
 	});
 });
 
 $(document).ready(function() {
-	$('.TypeFoto').click(function(event) {
+	$('.TypeFoto').hover(function(event) {
 		$('.TypeFoto,.KoloHeader').toggleClass('Act');
+		$('.r154,.C310,.C320,.KoloHeader').toggleClass('ActM');
+		$('.R1wh,.r1,.M').toggleClass('r1pk');
+		$('.R2wh').toggleClass('r2pk');
+		$('.r34').toggleClass('r34A');
+		$('.K21,.K22,.K23,.K24,.K25').toggleClass('K0');
 	});
 });
 
 
 
+
+
+$(document).ready(function() {
+	$('.ActType1').click(function(event) {
+		$('.r154,.C310,.C320,.KoloHeader').addClass('ActM');
+		$('.R1wh,.r1,.M').addClass('r1pk');
+		$('.R2wh').addClass('r2pk');
+		$('.r34').addClass('r34A');
+		$('.K21,.K22,.K23,.K24,.K25').addClass('K0');
+		$('.Type1Foto2,.KoloHeader').addClass('Act');
+		$('.IBoxType1BoxInformBoxID2,.IBoxTypeH2ID2').addClass('ActInfo');
+		$('.Type1Foto2ID1,.Type1Foto2ID3').removeClass('DisNone');
+	});
+});
+
+$(document).ready(function() {
+	$('.InformDopSlou').click(function(event) {
+		$('.Type1Foto2,.KoloHeader').removeClass('Act');
+		$('.IBoxType1BoxInformBoxID2,.IBoxTypeH2ID2').removeClass('ActInfo');
+		$('.Type1Foto2ID1,.Type1Foto2ID3').addClass('DisNone');
+		$('.r154,.C310,.C320,.KoloHeader').removeClass('ActM');
+		$('.R1wh,.r1,.M').removeClass('r1pk');
+		$('.R2wh').removeClass('r2pk');
+		$('.r34').removeClass('r34A');
+		$('.K21,.K22,.K23,.K24,.K25').removeClass('K0');
+		$('.Type1Foto2ID1,.Type1Foto2ID2,.Type1Foto2ID3').removeClass('Left');
+		$('.Type1Foto2ID1,.Type1Foto2ID2,.Type1Foto2ID3').removeClass('Right');
+	});
+});
+
+
+$(document).ready(function() {
+	$('.Type1Foto2ID1').click(function(event) {
+		$('.Type1Foto2ID1,.Type1Foto2ID2,.Type1Foto2ID3').addClass('Right');
+		$('.Type1Foto2ID1').addClass('Right');
+	});
+});
+$(document).ready(function() {
+	$('.Type1Foto2ID2').click(function(event) {
+		$('.Type1Foto2ID1,.Type1Foto2ID2,.Type1Foto2ID3').removeClass('Right');
+	});
+});
+
+$(document).ready(function() {
+	$('.Type1Foto2ID3').click(function(event) {
+		$('.Type1Foto2ID1,.Type1Foto2ID2,.Type1Foto2ID3').addClass('Left');
+	});
+});
+$(document).ready(function() {
+	$('.Type1Foto2ID2').click(function(event) {
+		$('.Type1Foto2ID1,.Type1Foto2ID2,.Type1Foto2ID3').removeClass('Left');
+	});
+});
 
 

@@ -39,6 +39,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 .KoloHeader{width: 1000px; height: 900px; position: fixed; top: -66%;background-color: rgba(255, 255, 255, 0.33); border: 3px rgba(0, 0, 0, 0.123) solid; border-radius: 50%;transition: all 1s ease 0s;}
 .KoloHeader.Act{background-color: rgba(255, 255, 255, 0.0); border: 3px rgba(0, 0, 0, 0.0) solid;}
+.KoloHeader.ActM{background-color: rgba(255, 255, 255, 0.0); border: 3px rgba(0, 0, 0, 0.0) solid;}
 
 .overF{width: 100%;display: flex;align-items: center;justify-content: center;position: fixed; top: 0; overflow: hidden; z-index:3;}
 .Background{width: 100%; height: 100%; position: fixed; top: 0; z-index: 1; background-color: rgba(0, 0, 0, 0.25);}
@@ -49,10 +50,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .InformBox{width: 100%; height: 2500px;background-color: rgba(255, 255, 255, 0.33); border-radius: 650px 650px 0 0; margin: 300px 0 0 0;}
 
 .IBoxTypeCurrently{ margin: 0 15%; width: 70%; height: 450px; background-color: rgba(255, 255, 255, 0.33); border-radius: 300px 300px 200px 200px ;border: 3px rgba(0, 0, 0, 0.333) double; position: relative; top: 150px; display: flex; align-items: center; flex-direction: column;}
-.IBoxTypeCurrentlyH1{text-align: center; font-size: 33px; margin: 50px 0 0 0;}
+.IBoxTypeH1{text-align: center; font-size: 33px; margin: 50px 0 0 0;}
 .IBoxTypeCurrentlyInfo{text-align: center; font-size: 25px; margin: 25px 0 0 0;}
 .IBoxTypeCurrentlyFotoBox{width: 66%; height: 250px;border: 3px rgba(0, 0, 0, 0.333) dotted;margin: 30px 0 0 0; display: flex; align-items: center; justify-content: center;}
-
 .IBoxTypeCurrentlyFotoBoxDop{width: 160px; height: 80px; background-color: rgba(255, 255, 255, 0.33);border: 3px rgba(0, 0, 0, 0.333) double; position: absolute; bottom: -80px; border-radius: 0 0 60px 60px;display: flex; align-items: center;justify-content: center; z-index: 12;transition: all .25s ease 0s;}
 
 .IBoxTypeCurrentlyFotoBoxDopStrelka1{width: 80px; display: flex; align-items: center; position: absolute; top: 45px;transition: all .25s ease 0s;}.IBoxTypeCurrentlyFotoBoxDopStrelka2{width: 60px; display: flex; align-items: center; position: absolute; top: 35px;transition: all .25s ease 0s;}.IBoxTypeCurrentlyFotoBoxDopStrelka3{width: 40px; display: flex; align-items: center; position: absolute; top: 25px;transition: all .25s ease 0s;}
@@ -61,11 +61,37 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .IBoxTypeCurrentlyFotoBoxDopStrelkaLiniya2{width: 100%; height: 3px; border-radius: 1px; background-color: rgb(100, 100, 100); transform: rotate(-40deg);position: relative; right: 7.5%; transition: all .1s ease 0s;}
 .IBoxTypeCurrentlyFotoBoxDopStrelkaLiniya1.Act{background-color: rgb(66, 66, 66);}
 .IBoxTypeCurrentlyFotoBoxDopStrelkaLiniya2.Act{background-color: rgb(66, 66, 66);}
-.IBoxTypeCurrentlyFoto1{ height: 90%; background-color: black; position: relative;z-index: 15;}
+.IBoxTypeCurrentlyFoto1{ height: 200px; background-color: black; position: relative;z-index: 15;}
 .TypeFoto{transition: all 1s ease 0s;}
-.TypeFoto.Act{ height: 333%; background-color: black;}
+.TypeFoto.Act{ height: 800px; background-color: black;}
+
+.IBoxType1{margin: 150px 5%; width: 90%; height: 420px; background-color: rgba(255, 255, 255, 0.33); border-radius: 150px 150px 50px 50px ;border: 3px rgba(0, 0, 0, 0.333) double; position: relative; top: 150px; display: flex; align-items: center; flex-direction: column;}
+
+.IBoxType1Prob{transition: all .1s ease 0s;}
+.ActProb{margin: 280px 5%;}
 
 .IBoxTypeCurrentlyFotoBoxDop.Act{width: 620px; height: 250px; position: absolute; bottom: -250px; border-radius: 0 0 100px 100px;}
+.IBoxTypeH1{text-align: center; font-size: 33px; margin: 50px 0 0 0;}
+.IBoxTypeH2{transition: all 1s ease 0s;width: 90%; height: 15%;border: 2px rgba(0, 0, 0, 0.33) double; background-color: aliceblue; text-align: center; font-size: 25px; margin: 5px 0 0 0; border-radius: 15px 15px 5px 5px;padding: 10px;}
+
+.IBoxType1BoxInfo{text-align: center; margin: 30px 0 0 0;display: flex; align-items: center;}
+.IBoxType1Info{margin: 0 15px; width: 350px; height: 350px; border: 1px black solid;background-color: rgba(255, 255, 255);border-radius:50px ; display: flex; align-items: center; justify-content: center; flex-direction: column;}
+.IBoxType1BoxInfoBoxFoto{width: 90%; margin: 5px 5%; display: flex; align-items: center; justify-content: center; }
+.IBoxType1BoxInfoFoto{width: 100%;border-radius: 25px;border: 2px rgba(0, 0, 0, 0.33) double;margin: 0 100px;position: relative;}
+.IBoxType1BoxInformBox{transition: all 1s ease 0.1s;width: 90%; height: 25%; margin: 0 5%; border: 2px rgba(0, 0, 0, 0.33) double; background-color: aliceblue;border-radius: 5px 5px 15px 15px;}
+.IBoxType1BoxInform{text-align: center; font-size: 20px; margin: 5px 0 0 0; padding: 10px;}
+
+.Type1Foto2{transition: all 1s ease 0s; z-index: 1; }
+.Type1Foto2.Act{ width: 360%; background-color: black;}
+
+.DisNone{visibility: hidden;opacity: 0;}
+
+.Type1Foto2.Right{left: 424.5%;}
+.Type1Foto2.Left{right: 424.5%;}
+
+.ActInfo{ width: 180%;}
+
+.InformDopSlou{width: 100%; height: 100%; position: fixed; left: 0;}
 
 .PL{width: 100%;height: 100%;display: flex;align-items: center;justify-content: center;position: fixed; top: 0; z-index: 0;}.PL.Act1{z-index: 5;}.PL.Act2{z-index: 6;}
 .Levo{width: 50%;	height: 100%; opacity:calc(0); position: relative; left: -50%; transition: all 1s ease 0s;}		.Levo.Act1{opacity:calc(1); left:0;}
@@ -157,4 +183,3 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .r1Block{width: 300px;height: 300px; position: absolute;}
 
 .absolute{position: absolute;}
-
