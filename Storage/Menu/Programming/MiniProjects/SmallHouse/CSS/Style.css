@@ -35,11 +35,15 @@ img{vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
+.Leave{width: 100%; height: 100%; position: absolute;}
+
 body{display: flex; align-items: center; justify-content: center;}
 
 .Background{width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.95); position: fixed;}
 
-.House{ width: 555px; height: 666px; position: relative; border: 8px rgba(17, 0, 255, 0.3) double; box-shadow: inset 0 0 100px rgb(0, 0, 0); border-radius: 35%;z-index: 1; overflow: hidden; background-color: rgba(240, 248, 255, 0.9);}
+.House{ width: 555px; height: 666px; position: relative; border: 6px rgba(0, 0, 0, 0.548) double; box-shadow: inset 0 0 150px rgb(0, 0, 0),0 0 5px rgb(101, 205, 212); border-radius: 35%;z-index: 1; overflow: hidden; background-color: rgba(240, 248, 255, 0.9);}
+.House.Act{box-shadow: inset 0 0 150px rgb(0, 0, 0),0 0 15px rgb(255, 255, 255);}
+
 .House_IMG{position: absolute; left: 16px; bottom: 146px;}
 
 .SkladLiniu{width: 100%; height: 100%;position: absolute; top: -3%; left: 3%;}

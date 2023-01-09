@@ -34,3 +34,176 @@ ul li{list-style: none;}
 img{vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+.Color18{animation-play-state: paused ;}
+.Color18P{animation-play-state: paused ;}
+.Color18.Act{animation-play-state: running ;}
+.Color18P.Act{animation-play-state: paused ;}
+.Color3{animation-play-state: paused ;}
+.Color3.Act{animation-play-state: running ;}
+.Liniya{animation-play-state: paused ;}
+.Liniya.Act{animation-play-state: running ;}
+
+
+
+@keyframes M1{
+	0%{width: 30px; height: 7px;left: 401px; top: 143px;}
+	100%{width: 40px; height: 16px;left: 396px; top: 126px;}
+}
+@keyframes M2{
+	0%{width: 40px; height: 16px;left: 396px; top: 126px;}
+	100%{width: 30px; height: 11px;left: 401px; top: 113px;}
+}
+@keyframes M3{
+	0%{width: 30px; height: 11px;left: 401px; top: 113px;}
+	100%{width: 36px; height: 18px;left: 395px; top: 93px;}
+}
+@keyframes M4{
+	0%{width: 36px; height: 18px;left: 395px; top: 93px;}
+	100%{width: 56px; height: 28px;left: 388px; top: 63px;}
+}
+@keyframes M5{
+	0%{width: 56px; height: 28px;left: 388px; top: 63px;}
+	100%{width: 27px; height: 15px;left: 444px; top: 65px;}
+}
+@keyframes M6{
+	0%{width: 27px; height: 15px;left: 444px; top: 65px;}
+	100%{width: 27px; height: 21px;left: 472px; top: 56px;}
+}
+@keyframes M7{
+	0%{width: 27px; height: 21px;left: 472px; top: 56px;}
+	100%{width: 27px; height: 21px;left: 492px; top: 46px;}
+}
+@keyframes M5_2{
+	0%{width: 56px; height: 28px;left: 388px; top: 63px;}
+	100%{width: 51px; height: 15px;left: 420px; top: 48px;}
+}
+@keyframes M8{
+	0%{width: 9px; height: 9px;left: 364px; top: 125px;}
+	100%{width: 16px; height: 21px;left: 366px; top: 105px;}
+}
+@keyframes M9{
+	0%{width: 13px; height: 21px;left: 352px; top: 126px;}
+	100%{width: 9px; height: 9px;left: 364px; top: 125px;}
+}
+@keyframes M10{
+	0%{width: 16px; height: 21px;left: 366px; top: 105px;}
+	100%{width: 12px; height: 21px;left: 369px; top: 83px;}
+}
+@keyframes M11{
+	0%{width: 12px; height: 21px;left: 369px; top: 83px;}
+	100%{width: 27px; height: 21px;left: 362px; top: 61px;}
+}
+@keyframes M12{
+	0%{width: 27px; height: 21px;left: 362px; top: 61px;}
+	100%{width: 34px; height: 16px;left: 354px; top: 36px;}
+}
+@keyframes M13{
+	0%{width: 27px; height: 21px;left: 362px; top: 61px;}
+	100%{width: 11px; height: 11px;left: 350px; top: 48px;}
+}
+@keyframes M14{
+	0%{width: 34px; height: 16px;left: 354px; top: 36px;}
+	100%{width: 32px; height: 24px;left: 353px; top: 12px;}
+}
+@keyframes M15{
+	0%{width: 11px; height: 11px;left: 350px; top: 48px;}
+	100%{width: 26px; height: 34px;left: 328px; top: 22px;}
+}
+@keyframes M16{
+	0%{width: 39px; height: 9px;left: 314px; top: 13px;}
+	100%{width: 31px; height: 9px;left: 322px; top: 3px;}
+}
+@keyframes M17{
+	0%{width: 26px; height: 34px;left: 328px; top: 22px;}
+	100%{width: 39px; height: 9px;left: 314px; top: 13px;}
+}
+@keyframes M18{
+	0%{width: 31px; height: 9px;left: 322px; top: 3px;}
+	100%{width: 31px; height: 9px;left: 322px; top: -7px;}
+}
+@keyframes M19{
+	0%{width: 32px; height: 24px;left: 353px; top: 12px;}
+	100%{width: 51px; height: 15px;left: 380px; top: 1px;}
+}
+@keyframes M20{
+	0%{width: 51px; height: 15px;left: 380px; top: 1px;}
+	100%{width: 51px; height: 15px;left: 400px; top: -19px;}
+}
+@keyframes M01{
+	0%{width: 3px; height: 3px;left: 367px; top: 145px;}
+	100%{width: 13px; height: 21px;left: 352px; top: 126px;}
+}
+@keyframes M02{
+	0%{width: 10px; height: 3px;left: 401px; top: 153px;}
+	100%{width: 30px; height: 7px;left: 401px; top: 143px;}
+}
+
+
+@keyframes KL1{
+	0%{width: 4px; top: 412px; left: 506px; transform: rotate(60deg);}
+	50%{width: 4px; top: 412px; left: 504px; transform: rotate(70deg);}
+	100%{width: 4px; top: 412px; left: 503px; transform: rotate(90deg);}
+}
+@keyframes KL2{
+	0%{width: 8px; top: 401px; left: 500px; transform: rotate(80deg);}
+	50%{width: 8px; top: 401px; left: 500px; transform: rotate(95deg);}
+	100%{width: 8px; top: 401px; left: 502px; transform: rotate(110deg);}
+}
+@keyframes KL3{
+	0%{width: 7px; top: 388px; left: 500px; transform: rotate(100deg);}
+	50%{width: 7px; top: 388px; left: 501px; transform: rotate(90deg);}
+	100%{width: 7px; top: 388px; left: 503px; transform: rotate(80deg);}
+}
+@keyframes KL4{
+	0%{width: 7px; top: 375px; left: 499px; transform: rotate(-100deg);}
+	50%{width: 9px; top: 375px; left: 500px; transform: rotate(-95deg);}
+	100%{width: 9px; top: 375px; left: 499px; transform: rotate(-105deg);}
+}
+@keyframes KL5{
+	0%{width: 22px; top: 360px; left: 475px; transform: rotate(34deg);}
+	50%{width: 21px; top: 360px; left: 479px; transform: rotate(24deg);}
+	100%{width: 19px; top: 361px; left: 479px; transform: rotate(24deg);}
+}
+@keyframes KL6{
+	0%{width: 12px; top: 355px; left: 461px; transform: rotate(-21deg);}
+	50%{width: 11px; top: 355px; left: 462px; transform: rotate(-15deg);}
+	100%{width: 10px; top: 356px; left: 462px; transform: rotate(-10deg);}
+}
+@keyframes KL7{
+	0%{width: 14px; top: 357px; left: 440px; transform: rotate(11deg);}
+	50%{width: 14px; top: 357px; left: 440px; transform: rotate(3deg);}
+	100%{width: 14px; top: 356px; left: 440px; transform: rotate(9deg);}
+}
+@keyframes KK1{
+	0%{width: 46px; height: 61px;left: 469px; top: 336px;}
+	100%{width: 38px; height: 55px;left: 475px; top: 339px;}
+}
+@keyframes KK2{
+	0%{width: 14px; height: 44px;left: 455px; top: 343px;}
+	100%{width: 20px; height: 44px;left: 454px; top: 343px;}
+}
+@keyframes KK3{
+	0%{width: 14px; height: 11px;left: 441px; top: 352px;}
+	100%{width: 10px; height: 11px;left: 443px; top: 352px;}
+}
+@keyframes KK4{
+	0%{width: 12px; height: 12px;left: 444px; top: 378px;}
+	100%{width: 12px; height: 8px;left: 444px; top: 380px;}
+}
+@keyframes KK5{
+	0%{width: 8px; height: 10px;left: 465px; top: 382px;}
+	100%{width: 13px; height: 10px;left: 468px; top: 382px;}
+}
+@keyframes KK6{
+	0%{width: 8px; height: 8px;left: 465px; top: 341px;}
+	100%{width: 6px; height: 11px;left: 471px; top: 341px;}
+}
+@keyframes KK7{
+	0%{width: 12px; height: 12px;left: 509px; top: 383px;}
+	100%{width: 10px; height: 22px;left: 510px; top: 378px;}
+}
+@keyframes KK8{
+	0%{width: 7px; height: 7px;left: 453px; top: 339px;}
+	100%{width:8px; height: 6px;left: 453px; top: 338px;}
+}

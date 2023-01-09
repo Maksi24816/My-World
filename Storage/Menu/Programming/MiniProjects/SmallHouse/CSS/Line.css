@@ -1,17 +1,17 @@
 .Liniya{position: absolute; height: 1px; background-color: black; z-index: 2; border-radius: 2px; opacity: .5;}
-.Colo{position: absolute; z-index: 1; border-radius:50%; border: 1px rgba(0, 0, 0, .5) solid;background-color: rgba(240, 248, 255, 0.85);}
+.Colo{position: absolute; z-index: 1; border-radius:50%; border: 1px rgba(0, 0, 0, .5) solid;background-color: rgba(153, 101, 24, 0.75);}
 
-.Liniya.Act{opacity: 1;}
+.Liniya.Act{opacity: .8;}
 
 
-.ColoElem1{width: 46px; height: 14px;border-radius:25px;border: 1px rgba(0, 0, 0) solid;position: absolute;top: 273px; left: 216px;}
-.ColoElem2{width: 42px; height: 10px;border-radius:25px; border: 1px rgba(0, 0, 0, .5) solid;position: absolute;top: 275px; left: 218px;}
-
+.ColoElem1{width: 46px; height: 14px;border-radius:25px;border: 1px rgba(0, 0, 0) solid;position: absolute;top: 273px; left: 216px;background-color: rgba(153, 101, 24, 0.55);}
+.ColoElem2{background-color: rgba(27, 19, 4, 0.1);width: 42px; height: 10px;border-radius:25px; border: 1px rgba(0, 0, 0, .5) solid;position: absolute;top: 275px; left: 218px;}
+.ColoElem2.Act{background-color: rgba(211, 185, 69, 0.4);}
 
 
 .ID1{width: 25px; height: 25px; top: 268px; left: 227px;}
-.ID2{width: 19px; height: 19px; top: 271px; left: 230px;}
-
+.ID2{width: 19px; height: 19px; top: 271px; left: 230px;background-color: rgba(0, 0, 0, 0.6);}
+.ID2.Act{background-color: rgba(241, 213, 86, 0.8);}
 
 
 .Id1{width: 79px; top: 287px; left: 92px; transform: rotate(-47deg);}
@@ -395,13 +395,13 @@
 
 .Id341{width: 9px; top: 498px; left: 417px; transform: rotate(-17deg);}
 .Id342{width: 7px; top: 498px; left: 417px; transform: rotate(30deg);}
-.Id343{width: 9px; top: 412px; left: 503px; transform: rotate(60deg);}
-.Id344{width: 14px; top: 401px; left: 497px; transform: rotate(80deg);}
-.Id345{width: 13px; top: 388px; left: 497px; transform: rotate(100deg);}
-.Id346{width: 13px; top: 375px; left: 496px; transform: rotate(-100deg);}
-.Id347{width: 32px; top: 360px; left: 473px; transform: rotate(34deg);}
-.Id348{width: 20px; top: 355px; left: 457px; transform: rotate(-21deg);}
-.Id349{width: 22px; top: 357px; left: 436px; transform: rotate(11deg);}
+.Id343{animation: KL1 6s linear infinite alternate;}
+.Id344{animation: KL2 6s linear infinite alternate;}
+.Id345{animation: KL3 6s linear infinite alternate;}
+.Id346{animation: KL4 6s linear infinite alternate;}
+.Id347{animation: KL5 6s linear infinite alternate;}
+.Id348{animation: KL6 6s linear infinite alternate;}
+.Id349{animation: KL7 6s linear infinite alternate;}
 .Id350{width: 33px; top: 411px; left: 436px; transform: rotate(6deg);}
 
 .Id351{width: 9px; top: 429px; left: 436px; transform: rotate(1deg);}
