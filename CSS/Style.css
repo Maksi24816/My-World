@@ -1,0 +1,107 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+body{overflow: hidden;}
+body.Act{overflow: auto;}
+
+.Info_Box{width: 100%; height: 100%; position: fixed; top: 0; background-color: rgba(0, 0, 0, 0.333);display: flex; align-items: center; justify-content: center; z-index: 10;}
+.Info_Box.Act{display: none;}
+
+.Black{background-color: rgba(0, 0, 0);}
+
+.Info{width: 1200px; height: 750px; background-color: rgb(255, 255, 255); border: 5px black double; border-radius: 30px;position: relative; display: flex; align-items: center; justify-content: center; flex-direction: column;}
+.Info_Xrest{background-image: url(../IMG/DopElement/Xr.png); background-size: 66px 66px; width: 66px; height: 66px; position: absolute; top: 35px; right: 35px; cursor: pointer;}
+
+.Info h1{text-align: center; font-size: 36px; margin: 10px 0 15px 0;}
+.Info h2{text-align: center; font-size: 30px; margin: 25px 0 ;}
+.Info p{text-align: center; font-size: 24px;margin: 15px 0 ;}
+
+.Time_Block{width: 210px; height: 140px; position: relative; top: 25px; margin: 0 auto;}
+.Time_Block-Color1{width: 100%; height: 50%; background-color: blue;}
+.Time_Block-Color2{width: 100%; height: 50%; background-color: yellow;}
+
+
+.Background_Body{width: 100%; height: 100%; background-color: rgb(0, 0, 0, .5); position: fixed; z-index: 1;}
+
+.Body{position: absolute; top: 0; width: 100%; display: flex; justify-content: center; z-index: 3;}
+.Body_Info{position: absolute; margin: 750px auto; width: 1200px; height: 650px; background-color: rgba(255, 255, 255); border: 2px black solid; border-bottom: none; border-radius: 400px 400px 0px 0px; overflow: hidden;}
+
+.Body_Type1{margin: 210px auto; width: 725px; height: 560px; background-color: aliceblue; border: 2px black solid; border-radius: 20% 20% 60px 60px; display: none;}
+.Body_Type1_Name{font-size: 36px; text-align: center; margin: 25px 0 ; }
+.Body_Type1_FotoBox{width: 140%; height: 300px; background-color: aliceblue; border: 2px black solid;position: relative; right: 20%; border-radius: 90px; overflow: hidden;}
+.Body_Type1_Foto{width: 28%; margin: 0 1.6%;}
+.Body_Type1_TextBoxBox{width:100%; height: 150px; margin: 0px auto; border-radius: 0 0 80px 80px;}
+.Body_Type1_TextBox{width: 90%; height: 75px; margin: 30px auto; overflow: hidden;}
+.Body_Type1_Text{font-size: 26px; text-align: center;}
+
+.Body_Type2{margin: 125px auto; width: 550px; height: 323px; background-color: aliceblue; border: 2px black solid; border-radius:100px 100px 10px 10px;position: relative;}
+.Body_Type2_NameBox{width: 400px; height: 10px;position: absolute; top: 0%;}
+.Body_Type2_Name{font-size: 32px; text-align: center; margin: 18px 0 ; }
+.Body_Type2_MenuBox{width: 800px; height: 62px; background-color: aliceblue;position: absolute; top: 65px; border-radius: 30px;}
+.Body_Type2_Menu{width: 800px; height:100%; display: flex; z-index: 2;}
+.Body_Type2_Menu_Pynkt{font-size: 26px; text-align: center; padding: 17px; width: 33.3%; height: 100%; border: 2px black double; border-radius: 30px; background-color: aliceblue;border-bottom:none; cursor:pointer;user-select:none}
+.Body_Type2_Menu_Pynkt:hover{background-color: rgba(0, 0, 0, 0.33);}
+.Body_Type2_Menu_Pynkt:active{background-color: rgba(0, 0, 0, 0.5);}
+.Body_Type2_BlockC{width: 1100px; height: 195px; background-color: rgb(240, 248, 255); border: 2px black solid;border-radius: 50px 50px 10px 10px;position: absolute; top: 126px; z-index: 1;}
+.Body_Type2_ElementC{width: 16%; height: 230px; background-color: aliceblue; border: 1px black solid; margin:60px 2% 0 2%; border-radius: 30px;}
+.Body_Type2_NameC{font-size: 20px;text-align: center; margin: 8px 0;}
+.Body_Type2_BoxFotoC{width: 120%; height: 120px; background-color: aliceblue; border: 1px black solid; border-radius: 10px; position: relative; right: 10%;}
+.Body_Type2_TextCBox{width: 90%; height: 45px; background-color: aliceblue; border: 1px black solid; margin: 10px auto; overflow: hidden;}
+.Body_Type2_TextC{font-size: 21px; text-align: center;}
+.Body_Type2_DopC{width: 56px; height: 36px; background-color: aliceblue; border: 1px black solid; border-radius: 0 0 20px 20px; position: absolute;margin: 1px 0 0 50px;}
+
+.Body_Type2_BlockB1,.Body_Type2_BlockB2{width: 1000px; height: 215px; background-color: rgb(240, 248, 255); border: 2px black solid; position: absolute; top: 126px;border-radius: 50px 50px 10px 10px; z-index: 2;}
+.Body_Type2_ElementB{width: 27%; height: 300px; background-color: aliceblue; border: 1px black solid; margin:125px 3% 0 3%; border-radius: 30px;}
+.Body_Type2_NameB{font-size: 20px;text-align: center; margin: 8px 0;}
+.Body_Type2_BoxFotoB{width: 120%; height: 165px; background-color: aliceblue; border: 1px black solid; border-radius: 10px; position: relative; right: 10%;}
+.Body_Type2_TextBBox{width: 90%; height: 65px; background-color: aliceblue; border: 1px black solid; margin: 10px auto; overflow: hidden;}
+.Body_Type2_TextB{font-size: 21px; text-align: center; margin: 10px;}
+.Body_Type2_DopB{width: 56px; height: 36px; background-color: aliceblue; border: 1px black solid; border-radius: 0 0 20px 20px; position: absolute;margin: 22px 0 0 90px;}
+
+.Body_Type2_BlockB1_Left{left: -1800px; transition: all .8s ease 0s;}
+.Body_Type2_BlockB1_Center{transition: all .8s ease 0s;}
+.Body_Type2_BlockB1_Right{right: -1800px; transition: all .8s ease 0s;}
+
+.Body_Type2_BlockB1_Left.Act{left: -227px;}
+.Body_Type2_BlockB1_Center.Act{top: 500px; opacity: 0;visibility: hidden;}
+.Body_Type2_BlockB1_Right.Act{right: -227px;}
+
+
+
+
+
+
