@@ -1,0 +1,76 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+.JS{position: absolute;}
+
+body{display: flex; align-items: center; justify-content: space-between; flex-direction: column; height: 125%;}
+
+header{width: 80%; height: 78px;}
+ul{height: 100%; width: 100%; display: flex;justify-content: space-evenly;}
+li{width: 280px; height: 100%; border: 1px black solid; border-radius: 15px;font-size: 24px; text-align: center; font-family:'Times New Roman', Times, serif; padding-top: 25px; box-shadow: inset 0 0 12px black; transition: all 0.1s ease 0s;overflow: hidden; user-select: none;}
+li:hover{box-shadow: inset 0 0 24px black;}
+li:active{box-shadow: inset 0 0 36px black;}
+
+#P1,#P5{flex: 0 3 auto; min-width: 80px;}
+#P2,#P4{flex: 0 2 auto; min-width: 140px;}
+#P3{flex: 0 1 auto; min-width: 200px;}
+
+.Body{width: 80%;text-align: center; flex: 1 0 auto; display: flex; align-items: center; justify-content: center; flex-direction: column; padding: 25px;}
+.Body_Info{height: 260px; overflow: auto;}
+h1{font-size: 36px; line-height:1.4}
+h2{font-size:28px; line-height:2}
+p{font-size:22px; line-height:1.5; max-width: 1200px; margin: 0 auto;}
+.Body_Elements-Box{display: flex; align-items: center; justify-content: center; flex-wrap: wrap; max-width: 1400px; margin: 0 auto; max-height: 600px; overflow: auto;}
+.Body_Element{min-width: 240px; min-height: 175px; border: 1px black solid; border-radius: 15px; margin: 12px; box-shadow: inset 0 0 15px black;transition: all 0.1s ease 0s;}
+.Body_Element:hover{box-shadow: inset 0 0 30px black;}
+.Body_Element:active{box-shadow: inset 0 0 45px black;}
+
+footer{width: 100%; height: 20%; background-color: rgba(0, 0, 0, 0.33);}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
