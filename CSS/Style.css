@@ -38,6 +38,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 body{overflow: hidden;}
 body.Act{overflow: auto;}
 
+body::-webkit-scrollbar {
+	width: 0;
+  }
+
 .Info_Box{width: 100%; height: 100%; position: fixed; top: 0; background-color: rgba(0, 0, 0, 0.333);display: flex; align-items: center; justify-content: center; z-index: 10;}
 .Info_Box.Act{display: none;}
 
@@ -54,11 +58,8 @@ body.Act{overflow: auto;}
 .Time_Block-Color1{width: 100%; height: 50%; background-color: blue;}
 .Time_Block-Color2{width: 100%; height: 50%; background-color: yellow;}
 
-
-.Background_Body{width: 100%; height: 100%; background-color: rgb(0, 0, 0, .5); position: fixed; z-index: 1;}
-
 .Body{position: absolute; top: 0; width: 100%; display: flex; justify-content: center; z-index: 3;}
-.Body_Info{position: absolute; margin: 750px auto; width: 1200px; height: 650px; background-color: rgba(255, 255, 255); border: 2px black solid; border-bottom: none; border-radius: 400px 400px 0px 0px; overflow: hidden;}
+.Body_Info{position: absolute; margin: 750px auto; width: 1200px; height: 1100px; background-color: rgba(255, 255, 255); border: 2px black solid; border-bottom: none; border-radius: 400px 400px 0px 0px; overflow: hidden;}
 
 .Body_Type1{margin: 210px auto; width: 725px; height: 560px; background-color: aliceblue; border: 2px black solid; border-radius: 20% 20% 60px 60px; display: none;}
 .Body_Type1_Name{font-size: 36px; text-align: center; margin: 25px 0 ; }
@@ -68,29 +69,39 @@ body.Act{overflow: auto;}
 .Body_Type1_TextBox{width: 90%; height: 75px; margin: 30px auto; overflow: hidden;}
 .Body_Type1_Text{font-size: 26px; text-align: center;}
 
-.Body_Type2{margin: 125px auto; width: 550px; height: 323px; background-color: aliceblue; border: 2px black solid; border-radius:100px 100px 10px 10px;position: relative;}
+.Body_Type2{margin: 125px auto; width: 550px; height: 323px; background-color: aliceblue; border: 2px black solid; border-radius:100px 100px 10px 10px;position: relative; user-select:none;box-shadow: 0 0 15px black;}
 .Body_Type2_NameBox{width: 400px; height: 10px;position: absolute; top: 0%;}
-.Body_Type2_Name{font-size: 32px; text-align: center; margin: 18px 0 ; }
+.Body_Type2_Name{font-size: 32px; text-align: center; margin: 18px 0 ;}
 .Body_Type2_MenuBox{width: 800px; height: 62px; background-color: aliceblue;position: absolute; top: 65px; border-radius: 30px;}
 .Body_Type2_Menu{width: 800px; height:100%; display: flex; z-index: 2;}
-.Body_Type2_Menu_Pynkt{font-size: 26px; text-align: center; padding: 17px; width: 33.3%; height: 100%; border: 2px black double; border-radius: 30px; background-color: aliceblue;border-bottom:none; cursor:pointer;user-select:none}
-.Body_Type2_Menu_Pynkt:hover{background-color: rgba(0, 0, 0, 0.33);}
-.Body_Type2_Menu_Pynkt:active{background-color: rgba(0, 0, 0, 0.5);}
-.Body_Type2_BlockC{width: 1100px; height: 195px; background-color: rgb(240, 248, 255); border: 2px black solid;border-radius: 50px 50px 10px 10px;position: absolute; top: 126px; z-index: 1;}
-.Body_Type2_ElementC{width: 16%; height: 230px; background-color: aliceblue; border: 1px black solid; margin:60px 2% 0 2%; border-radius: 30px;}
+.Body_Type2_Menu_Pynkt{font-size: 26px; text-align: center; padding: 17px; width: 33.3%; height: 100%; border: 2px black double; border-radius: 30px; background-color: aliceblue;border-bottom:none; cursor:pointer;user-select:none; box-shadow:inset 0 0 10px black;transition: all .1s ease 0s;}
+.Body_Type2_Menu_Pynkt:hover{box-shadow:inset 0 0 30px black;}
+.Body_Type2_Menu_Pynkt:active{box-shadow:inset 0 0 60px black; color: white;}
+.Body_Type2_BlockC{width: 1100px; height: 195px; background-color: rgb(240, 248, 255); border: 2px black solid;border-radius: 50px 50px 10px 10px;position: absolute; top: 126px; z-index: 1;box-shadow: 0 0 15px black,inset 0 0 5px black;}
+.Body_Type2_ElementC{width: 16%; height: 230px; background-color: aliceblue; border: 1px black solid; margin:60px 2% 0 2%; border-radius: 30px;box-shadow: 0 0 10px black;}
 .Body_Type2_NameC{font-size: 20px;text-align: center; margin: 8px 0;}
-.Body_Type2_BoxFotoC{width: 120%; height: 120px; background-color: aliceblue; border: 1px black solid; border-radius: 10px; position: relative; right: 10%;}
-.Body_Type2_TextCBox{width: 90%; height: 45px; background-color: aliceblue; border: 1px black solid; margin: 10px auto; overflow: hidden;}
-.Body_Type2_TextC{font-size: 21px; text-align: center;}
-.Body_Type2_DopC{width: 56px; height: 36px; background-color: aliceblue; border: 1px black solid; border-radius: 0 0 20px 20px; position: absolute;margin: 1px 0 0 50px;}
+.Body_Type2_BoxFotoC{width: 120%; height: 120px; background-color: aliceblue; border: 1px black solid; border-radius: 10px; position: relative; right: 10%;box-shadow: 0 0 10px black, inset 0 0 10px black; transition: all .1s ease 0s;}
+.Body_Type2_BoxFotoC:hover{box-shadow: 0 0 10px black, inset 0 0 25px black;}
+.Body_Type2_BoxFotoC:active{box-shadow: 0 0 10px black, inset 0 0 45px black;}
+.Body_Type2_TextCBox{width: 90%; height: 45px; background-color: aliceblue; border: 1px black solid; margin: 10px auto;position: relative;}
+.Body_Type2_TextC{font-size: 21px; text-align: center; overflow: hidden;}
+.Body_Type2_DopC{width: 56px; height: 36px; background-color: aliceblue; border: 1px black solid; border-radius: 0 0 20px 20px; position: absolute;bottom: -36px; left: 50px;box-shadow:inset  0 0 5px black;}
 
-.Body_Type2_BlockB1,.Body_Type2_BlockB2{width: 1000px; height: 215px; background-color: rgb(240, 248, 255); border: 2px black solid; position: absolute; top: 126px;border-radius: 50px 50px 10px 10px; z-index: 2;}
-.Body_Type2_ElementB{width: 27%; height: 300px; background-color: aliceblue; border: 1px black solid; margin:125px 3% 0 3%; border-radius: 30px;}
+.Body_Type2_BlockB1,.Body_Type2_BlockB2{width: 1000px; height: 215px; background-color: rgb(240, 248, 255); border: 2px black solid; position: absolute; top: 126px;border-radius: 50px 50px 10px 10px; z-index: 2;box-shadow: 0 0 15px black,inset 0 0 5px black;}
+.Body_Type2_ElementB{width: 27%; height: 300px; background-color: aliceblue; border: 1px black solid; margin:125px 3% 0 3%; border-radius: 30px;box-shadow: 0 0 10px black;}
 .Body_Type2_NameB{font-size: 20px;text-align: center; margin: 8px 0;}
-.Body_Type2_BoxFotoB{width: 120%; height: 165px; background-color: aliceblue; border: 1px black solid; border-radius: 10px; position: relative; right: 10%;}
-.Body_Type2_TextBBox{width: 90%; height: 65px; background-color: aliceblue; border: 1px black solid; margin: 10px auto; overflow: hidden;}
-.Body_Type2_TextB{font-size: 21px; text-align: center; margin: 10px;}
-.Body_Type2_DopB{width: 56px; height: 36px; background-color: aliceblue; border: 1px black solid; border-radius: 0 0 20px 20px; position: absolute;margin: 22px 0 0 90px;}
+.Body_Type2_BoxFotoB{width: 120%; height: 165px; background-color: aliceblue; border: 1px black solid; border-radius: 10px; position: relative; right: 10%;background-size: 85%; background-position: center; background-repeat: no-repeat;box-shadow: 0 0 10px black; box-shadow: 0 0 10px black, inset 0 0 15px black; transition: all .1s ease 0s;}
+.Body_Type2_BoxFotoB:hover{box-shadow: 0 0 10px black, inset 0 0 35px black;}
+.Body_Type2_BoxFotoB:active{box-shadow: 0 0 10px black, inset 0 0 60px black;}
+.Body_Type2_BoxFotoB.Act{width: 240%;height: 330px;z-index: 2;right: 50%;top: -80px;}
+
+.Body_Type2_BoxFotoB-Mini_ID1{background-image: url(../IMG/Foto\ Work/1.jpg);}
+
+.Body_Type2_BoxFotoB-ID1{background-image: url(../IMG/Foto\ Work/2.jpg);}
+
+.Body_Type2_TextBBox{width: 90%; height: 65px; background-color: aliceblue; border: 1px black solid; margin: 10px auto; position: relative;}
+.Body_Type2_TextB{font-size: 21px; text-align: center; margin: 10px;overflow: hidden;}
+.Body_Type2_DopB{width: 56px; height: 36px; background-color: aliceblue; border: 1px black solid; border-radius: 0 0 20px 20px; position: absolute;bottom: -36px;left: 92px;box-shadow:inset  0 0 5px black;}
 
 .Body_Type2_BlockB1_Left{left: -1800px; transition: all .8s ease 0s;}
 .Body_Type2_BlockB1_Center{transition: all .8s ease 0s;}
@@ -100,8 +111,38 @@ body.Act{overflow: auto;}
 .Body_Type2_BlockB1_Center.Act{top: 500px; opacity: 0;visibility: hidden;}
 .Body_Type2_BlockB1_Right.Act{right: -227px;}
 
-
-
-
-
-
+.Body_Type3{margin: 125px auto; width: 1000px; height: 415px; background-color: aliceblue; border: 2px black solid; border-radius:100px 100px 10px 10px;position: relative;box-shadow: 0 0 15px black; user-select:none}
+.Type3_Title{width: 250px; height: 60px; border: 1px black solid; border-radius: 10px;margin: 23px auto 13px auto;box-shadow: 0 0 15px black,inset 0 0 10px black;}
+.Type3_Title p{font-size: 36px; text-align: center; margin-top: 10px;}
+.Type3_Knipka{width: 210px; height: 55px; border: 1px black solid; border-radius: 10px;box-shadow: inset 0 0 15px black; transition: all 0.1s ease 0s;}
+.Type3_Knipka:hover{box-shadow: inset 0 0 30px black;}
+.Type3_Knipka:active{box-shadow: inset 0 0 50px black; color: aliceblue;}
+.Type3_Knipka-Left{cursor:pointer; position: absolute; top: 25px; left: 125px; font-size: 26px; text-align: center; padding: 13px;}
+.Type3_Knipka-Right{cursor:pointer; position: absolute; top: 25px; right: 125px; font-size: 26px; text-align: center; padding: 13px;}
+.Type3_Body{width: 100%; position: absolute; bottom:0px; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; position: relative; z-index: 2;}
+.Type3_Element-Body{ width: 175px; height: 130px; border: 1px black solid; border-radius: 10px; margin: 12px 8px; box-shadow: inset 0 0 20px black; position: relative;transition: all 0.1s ease 0s;}
+.Type3_Element-Body:hover{box-shadow: inset 0 0 30px black;}
+.Type3_Element-Body:active{box-shadow: inset 0 0 40px black;}
+.Type3_Element-Backgraunt{width: 100%; height: 100%; position: absolute;cursor: grab;}
+.Type3_Element_Info{width: 100%; height: 100%;display: flex; align-items: center; justify-content: center;}
+.Type3_Element_Info p{font-size: 30px; text-shadow: 0 0 2px rgba(0, 0, 0, 0.75);color: #000;}
+.Type3_Element_Knopka{cursor:pointer; width: 85%; height: 40px;border: 1px black solid; border-radius: 10px; position: absolute; left: 12px; bottom: -20px; background-color: aliceblue; box-shadow: 0 0 15px black,inset 0 0 10px black;transition: all 0.1s ease 0s;color: #000;}
+.Type3_Element_Knopka:hover{box-shadow: 0 0 15px black,inset 0 0 20px black;transition: all 0.1s ease 0s;}
+.Type3_Element_Knopka:active{box-shadow: 0 0 15px black,inset 0 0 30px black;}
+.Type3_Element_Knopka p{font-size: 18px; text-align: center; text-shadow: 0 0 1px rgba(0, 0, 0, 0.75); line-height: 36px;transition: all 0.1s ease 0s;}
+.Type3_Element_Knopka p:active{color: aliceblue; text-shadow: 0 0 3px white;}
+.Type3_Knipku{position: absolute; bottom: -0px; width: 100%;}
+.Type3_Knipku-Left{cursor:pointer; position: absolute; left: 150px; height: 80px; width: 100px; border: 2px black solid; border-radius: 0 0 15px 30px; background-color: aliceblue;box-shadow: 0 4px 12px black,inset 0 0 11px black;transition: all 0.1s ease 0s;}
+.Type3_Knipku-Left:hover{box-shadow: 0 4px 12px black,inset 0 0 22px black;}
+.Type3_Knipku-Left:active{box-shadow: 0 4px 12px black,inset 0 0 33px black;}
+.Type3_Knipku-Right{cursor:pointer; position: absolute; right: 150px; height: 80px; width: 100px; border: 2px black solid; border-radius: 0 0 30px 15px; background-color: aliceblue;box-shadow: 0 4px 12px black,inset 0 0 16px black;transition: all 0.1s ease 0s;}
+.Type3_Knipku-Right:hover{box-shadow: 0 4px 12px black,inset 0 0 22px black;}
+.Type3_Knipku-Right:active{box-shadow: 0 4px 12px black,inset 0 0 33px black;}
+.Type3_Knipku_Sklad-Liniu{display: flex; align-items: center; justify-content: center;}
+.Type3_Knipku_Sklad-Liniu-Coup{transform: rotate(180deg); position: relative; top: 73px;}
+.Liniya-1{width: 3px; height: 33px; background-color: black; border-radius: 1px; transform: rotate(35deg); position: absolute; top: 7px; left: 36px;}
+.Liniya-2{width: 3px; height: 33px; background-color: black; border-radius: 1px; transform: rotate(-35deg); position: absolute; top: 32px; left: 36px;}
+.Liniya-3{width: 3px; height: 27px; background-color: black; border-radius: 1px; transform: rotate(35deg); position: absolute; top: 12px; left: 46px;}
+.Liniya-4{width: 3px; height: 27px; background-color: black; border-radius: 1px; transform: rotate(-35deg); position: absolute; top: 33px; left: 46px;}
+.Liniya-5{width: 3px; height: 19px; background-color: black; border-radius: 1px; transform: rotate(35deg); position: absolute; top: 19px; left: 56px;}
+.Liniya-6{width: 3px; height: 19px; background-color: black; border-radius: 1px; transform: rotate(-35deg); position: absolute; top: 33px; left: 56px;}

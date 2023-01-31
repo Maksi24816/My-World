@@ -36,8 +36,7 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 
-.Menu_LVL2{position: absolute; width: 570px; height: 570px;z-index: 2; border-radius: 50%;transition: all .9s ease 0s;}
-.Menu_LVL2.Act{width: 320px; height: 320px;}
+.Menu_LVL2{position: absolute; width: 60.5%; height: 60.5%;z-index: 2; border-radius: 50%;transition: all .9s ease 0s;}
 
 .Menu_LVL2_Baza{position: absolute; width: 100%; height: 100%;z-index: 2; border-radius: 50%;transition: all .9s ease 0s;}
 
@@ -62,9 +61,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 .KnopkaLVL2_0{width: 0; height: 0;}
 
-.Menu_LVL15{position: absolute; width: 450px; height: 450px;z-index: 3; border-radius: 50%; transition: all 1.2s ease 0s;}
-.Menu_LVL15.Act{width: 0px; height: 0px;}
-
+.Menu_LVL15{position: absolute; width: 89.2%; height: 89.2%;z-index: 3; border-radius: 50%; transition: all 1.2s ease 0s;}
 .Menu_LVL15_1{background: url('../IMG/ElementsMenu/LVL15/Kr1.png');background-size: 100% 100%;transform: rotate(180deg);}
 .Menu_LVL15_2{background: url('../IMG/ElementsMenu/LVL15/Kr2.png');background-size: 100% 100%;transform: rotate(180deg);}
 .Menu_LVL15_3{background: url('../IMG/ElementsMenu/LVL15/Kr3.png');background-size: 100% 100%;transform: rotate(180deg);}
@@ -81,21 +78,22 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .Menu_Knopka{position: absolute; width: 550px; height: 550px; top: -275px; z-index: 5;}
 .Menu_Knopka.Act{height: 480px;}
 
+
 .Menu_Background{background-color: rgb(255, 255, 255); border-radius: 50%;border: 3px black double; width: 1300px; height: 1000px; position: absolute; top: 0px;transition: all .9s ease 0s;}
-.Menu_Background.Act{width: 450px; height: 460px;background-color: rgb(255, 255, 255, 0.33);}
+.Menu_Background.Act{width: 1200px; height: 365px;background-color: rgb(255, 255, 255, 0.33);}
+.Menu_Background.Act.ActPlus{width: 1025px; height: 410px;}
 
 .Menu_LVL0{position: absolute; width: 1100px; height: 1100px; top: -550px;z-index: 1; border-radius: 50%;transition: all .9s ease 0s;}
 .Menu_LVL0.Act{width: 480px; height: 480px;top: -240px;}
 
-.Menu_LVL0_1{ background: url('../IMG/ElementsMenu/LVL3/Dop/С3\ 1.png');background-size: 600px 600px; top: 0px;transition: all .9s ease 0s; background-position: left; background-repeat: no-repeat; top: -5px; left: -25px;}
-.Menu_LVL0_2{ background: url('../IMG/ElementsMenu/LVL3/Dop/С3\ 7.png');background-size: 600px 600px; top: 0px;transition: all .9s ease 0s; background-position: right; background-repeat: no-repeat; top: -5px; right: -35px;}
-.Menu_LVL0_1.Act{top: -60px; left: -290px;}
-.Menu_LVL0_2.Act{top: -60px; right: -300px;}
+.Menu_LVL0_1{ background: url('../IMG/ElementsMenu/LVL3/Dop/С3\ 1.png');background-size: 600px 600px; top: 0px;transition: all .9s ease 0s; background-position: left; background-repeat: no-repeat; top: -5px; left: -15px;}
+.Menu_LVL0_2{ background: url('../IMG/ElementsMenu/LVL3/Dop/С3\ 7.png');background-size: 600px 600px; top: 0px;transition: all .9s ease 0s; background-position: right; background-repeat: no-repeat; top: -5px; right: -25px;}
+.Menu_LVL0_1.Act{top: -68px; left: -230px;}
+.Menu_LVL0_2.Act{top: -68px; right: -245px;}
 
 
 
-.Menu_LVL3{position: absolute; width: 820px; height: 820px;transition: all .9s ease 0s;}
-.Menu_LVL3.Act{width: 390px; height: 390px;}
+.Menu_LVL3{position: absolute; width: 85%; height: 85%; transition: all 1.5s ease 0s;}
 
 .Menu_LVL3_Baza{position: absolute; width: 100%; height: 100%;z-index: 1; border-radius: 50%;transition: all 1.5s ease 0s;}
 
@@ -137,16 +135,13 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 .Menu_LVL3_Act{top: 0px;left: 0px;}
 
-.Menu_LVL1{background: url('../IMG/ElementsMenu/LVL1/С1.png'); background-size: 100% 100%; width: 330px; height: 330px; position: absolute;z-index: 4; border-radius: 50%; transition: all .9s ease 0s;}
-.Menu_LVL1.Act{width: 250px; height: 250px;}
-
-
+.Menu_LVL1{background: url('../IMG/ElementsMenu/LVL1/С1.png'); background-size: 100% 100%; width: 66%; min-width: 194px; height: 66%; min-height: 194px; position: absolute;z-index: 4; border-radius: 50%; transition: all .9s ease 0s;}
 
 .MenuDop{width: 100%; height: 100%; position: fixed; z-index: 2;}
 .MenuDop_Box{ background-color: aliceblue;border-radius:50%;border: 2px black solid;}
 
 .MenuDop_BL{width: 250px;height: 250px;position:absolute;bottom:-100px;left:-100px;}
-.MenuDop_BL_Element0{width: 300px;height: 300px;position:absolute; z-index: 2; top: -25px; left: -25px; cursor: pointer;}
+.MenuDop_BL_Element0{width: 300px;height: 300px;position:absolute; z-index: 2; top: -25px; left: -25px; cursor: pointer; background-color: white; transition: all .25s ease 0s;}
 .MenuDop_BL_Element1{width: 350px;height: 125px;position:absolute; left: 100px; top: 100px;transition: all 1s ease 0s;}
 .MenuDop_BL_Element1.Act{left: -100px;}
 .MenuDop_BL_Element2{width: 125px;height: 350px;position:absolute; left: 30px; top: -210px;transition: all 1s ease 0s;}
@@ -163,30 +158,34 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .MenuDop_IMG_Seting{background: url(../IMG/DopElement/Sest.png); background-size: 135px 135px; background-position: 25% 25%; background-repeat: no-repeat;}
 
 .MenuDop_Bodys{width: 100%; height: 100%;}
-.MenuDop_SMS_Body{width: 50%; height: 100%; background-color: aliceblue; border: 3px black solid; border-radius: 0 50px 50px 0; position: fixed; left: -50%; top: 0; z-index: 5; transition: all 1.2s ease 0s;}
+.MenuDop_SMS_Body{width: 50%; height: 100%; background-color: rgba(200, 200, 200, 0.92); border: 3px black solid; border-radius: 50px 150px 150px 50px; position: fixed; left: -50%; top: 0; z-index: 5; transition: all 1.2s ease 0s;}
 .MenuDop_SMS_Body.Act{left: 0;}
-.MenuDop_Seting_Body{width: 50%; height: 100%; background-color: aliceblue; border: 3px black solid; border-radius: 50px 0 0 50px; position: fixed; right: -50%; top: 0; z-index: 5; transition: all 1.2s ease 0s;}
+.MenuDop_Seting_Body{width: 50%; height: 100%; background-color: rgba(200, 200, 200, 0.92); border: 3px black solid; border-radius: 150px 50px 50px 150px; position: fixed; right: -50%; top: 0; z-index: 5; transition: all 1.2s ease 0s;}
 .MenuDop_Seting_Body.Act{right: 0;}
 
 .MenuDop-Flex-Plus{display: flex; flex-direction: column; align-items: center; justify-content: center;overflow: hidden;}
+.MenuDop-Flex{display: flex; align-items: center; justify-content: center;overflow: hidden;}
 
-.MenuDop_Leave{position: absolute;width: 300px; height: 300px; background-color: aliceblue; border: 2px black solid; border-radius: 50%;cursor: pointer;}
-.MenuDop_Leave:hover{background-color: rgba(0, 0, 0, 0.33);}
+.MenuDop_Leave{position: absolute;width: 300px; height: 300px; background-color: rgb(255, 255, 255); border: 2px black solid; border-radius: 50%;cursor: pointer;transition: all .25s ease 0s;}
+.MenuDop_Leave:hover{background-color: rgba(0, 0, 0, 0.66);}
+.MenuDop_Leave:active{background-color: rgba(0, 0, 0, 0.8);}
 
 .MenuDop_Leave-Right{left: -150px;}
 .MenuDop_Leave-Left{right: -150px;}
 
-.MenuDop_Block{width: 580px; background-color: aliceblue; border: 2px black solid; border-radius: 15px; margin: 35px 75px 35px 0px;}
-.MenuDop_Kontakt{width: 100%; margin: 25px 0;}
-.MenuDop_Copy{width: 100px; height: 35px;background-color: aliceblue; border: 2px black solid; border-radius: 5px; margin: 15px;text-align: center; font-size: 16px; cursor: pointer;}
-.MenuDop_Copy:hover{background-color:rgba(0, 0, 0, 0.33);}
-.MenuDop_Copy:active{background-color:rgba(0, 0, 0, 0.5);}
+.MenuDop_Block{ background-color: rgba(240, 248, 255, 0.8); border: 2px black solid; border-radius: 15px; margin: 20px 30px 20px 0; position: relative;}
+.MenuDop_Kontakt{ margin: 15px 8px;}
+.MenuDop_Copy{width: 100px; height: 35px;background-color: aliceblue; border: 2px black solid; border-radius: 5px; margin-bottom: 10px;text-align: center; font-size: 16px; cursor: pointer;transition: all .25s ease 0s;}
+.MenuDop_Copy:hover{background-color:rgba(0, 0, 0, 0.5);box-shadow: 2px 2px 8px black;}
+.MenuDop_Copy:active{background-color:rgba(0, 0, 0, 0.75); color: aliceblue;}
 
 .MenuDop_Copy p{margin: 7px 0;user-select:none}
-.MenuDop_Info{width: 380px; height: 42px;background-color: aliceblue; border: 2px black solid; border-radius: 5px; text-align: center; font-size: 19px;}
+.MenuDop_Info{width: 370px; height: 42px;background-color: aliceblue; border: 2px black solid; border-radius: 5px; text-align: center; font-size: 19px;}
 .MenuDop_Info p{margin: 8px;}
-.MenuDop_Box_SocSet{width: 100%; height: 130px; flex-direction: unset;margin: 25px 0;}
-.MenuDop_SocSet{width: 120px; height: 120px;border: 2px rgba(0, 0, 0, 0.75) solid;border-radius: 5px;margin: 0 25px; cursor: pointer;}
+.MenuDop_Box_SocSet{width: 100%; flex-direction: unset;margin: 10px 0;}
+.MenuDop_SocSet{width: 80px; height: 80px; border-radius: 5px;margin: 0 8px; cursor: pointer;transition: all .25s ease 0s;}
+.MenuDop_SocSet:hover{box-shadow: 0 0 10px black;}
+
 
 .MenuDop_SocSet-1{background-image: url(../IMG/SocSet/Fes.png); background-size: 90%; background-position: center; background-repeat: no-repeat;}
 .MenuDop_SocSet-2{background-image: url(../IMG/SocSet/Va.png); background-size: 90%; background-position: center; background-repeat: no-repeat;}
@@ -195,9 +194,25 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .MenuDop_SocSet-5{background-image: url(../IMG/SocSet/Tele.png); background-size: 90%; background-position: center; background-repeat: no-repeat;}
 .MenuDop_SocSet-6{background-image: url(../IMG/SocSet/Tvit.png); background-size: 90%; background-position: center; background-repeat: no-repeat;}
 
+.MenuDop_Text-Box{padding: 35px;}
 
+.MenuDop_Text{width: 540px; border-bottom: 1px black solid; position: relative;padding: 14px 0 0 0;}
+.MenuDop_Text_Left{max-width: 190px; font-size: 18px; position: absolute; left: 0; bottom: 2px;}
+.MenuDop_Text_Right{width: 60%;font-size: 21px;position: relative; left: 225px;}
 
+.MenuDop_Text-LVL2{margin: 10px 0 0 15px;}
+.MenuDop_Text-LVL3{margin: 10px 0 0 15px;}
 
+.MenuDop_Knopka{border-radius: 15px; border: 2px black solid; position: absolute; background-color: aliceblue; transition: all .25s ease 0s;}
 
+.MenuDop_Knopka-Top{left: 45px; top: 268px; width: 65px; height: 200px;}
+.MenuDop_Knopka-Center{left: 45px; top: 532px; width: 65px; height: 150px;}
+.MenuDop_Knopka-Bottom{left: 35px; top: 733px; width: 120px; height: 120px;}
 
+.Knopka-Text{text-align: center; font-size: 24px; user-select: none;}
+.MenuDop_Knopka-Top_Text{ transform: rotate(-90deg);white-space:nowrap;}
+.MenuDop_Knopka-Center_Text{ transform: rotate(-90deg);white-space:nowrap;}
+.MenuDop_Knopka-Bottom_Text{transform: rotate(0deg);}
 
+.MenuDop_Knopka:hover{ background-color: rgba(0, 0, 0, 0.5);box-shadow: 3px 3px 15px black;}
+.MenuDop_Knopka:active{background-color: rgba(0, 0, 0, 0.8); color: aliceblue; border: 2px rgb(255, 255, 255) solid;}

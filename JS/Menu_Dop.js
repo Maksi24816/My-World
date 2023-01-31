@@ -1,27 +1,51 @@
 
-$(document).ready(function() {
-	$('.MenuDop_BL_Element0').click(function(event) {
-		$('.MenuDop_SMS_Body,.MenuDop_BL_Element1,.MenuDop_BL_Element2').addClass('Act');
-	});
-});
+const Bl = document.querySelector('.MenuDop_BL_Element0');
+const Br = document.querySelector('.MenuDop_BR_Element0');
 
-$(document).ready(function() {
-	$('.MenuDop_BR_Element0').click(function(event) {
-		$('.MenuDop_Seting_Body,.MenuDop_BR_Element1,.MenuDop_BR_Element2').addClass('Act');
-	});
-});
+Bl.onclick = function () {
+	const SMSBody = document.querySelector('.MenuDop_SMS_Body')
+	const BLElement1 = document.querySelector('.MenuDop_BL_Element1')
+	const BLElement2 = document.querySelector('.MenuDop_BL_Element2')
 
-$(document).ready(function() {
-	$('.MenuDop_Leave-Left').click(function(event) {
-		$('.MenuDop_SMS_Body,.MenuDop_BL_Element1,.MenuDop_BL_Element2').removeClass('Act');
-	});
-});
+	SMSBody.classList.add('Act');
+	BLElement1.classList.add('Act');
+	BLElement2.classList.add('Act');
+};
 
-$(document).ready(function() {
-	$('.MenuDop_Leave-Right').click(function(event) {
-		$('.MenuDop_Seting_Body,.MenuDop_BR_Element1,.MenuDop_BR_Element2').removeClass('Act');
-	});
-});
+Br.onclick = function () {
+	const SetingBody = document.querySelector('.MenuDop_Seting_Body')
+	const BrElement1 = document.querySelector('.MenuDop_BR_Element1')
+	const BrElement2 = document.querySelector('.MenuDop_BR_Element2')
+
+	SetingBody.classList.add('Act');
+	BrElement1.classList.add('Act');
+	BrElement2.classList.add('Act');
+};
+
+const BlOFF = document.querySelector('.MenuDop_Leave-Left');
+const BrOFF = document.querySelector('.MenuDop_Leave-Right');
+
+BlOFF.onclick = function () {
+	const SMSBody = document.querySelector('.MenuDop_SMS_Body')
+	const BLElement1 = document.querySelector('.MenuDop_BL_Element1')
+	const BLElement2 = document.querySelector('.MenuDop_BL_Element2')
+
+	SMSBody.classList.remove('Act');
+	BLElement1.classList.remove('Act');
+	BLElement2.classList.remove('Act');
+};
+
+BrOFF.onclick = function () {
+	const SetingBody = document.querySelector('.MenuDop_Seting_Body')
+	const BrElement1 = document.querySelector('.MenuDop_BR_Element1')
+	const BrElement2 = document.querySelector('.MenuDop_BR_Element2')
+
+	SetingBody.classList.remove('Act');
+	BrElement1.classList.remove('Act');
+	BrElement2.classList.remove('Act');
+};
+
+////////////////////////////////////////////////////////////////////////////////
 
 const Telefon = document.querySelector('.Copy_Telefon');
 
