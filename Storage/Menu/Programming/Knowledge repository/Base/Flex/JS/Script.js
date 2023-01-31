@@ -69,11 +69,11 @@ function DeleteAct1() {
         InfoText3.innerHTML = ".Box_Bonny{<br>   display: flex;<br> align-items: flex-end<br>}";
     }else if (Element4Blox1.classList.contains('Act')){
         Box.style.alignItems = "stretch";
-        InfoText2.innerHTML = "Жадяги !!! <br><br> Займає все що зміг";
+        InfoText2.innerHTML = "Жадюга !!! <br><br> Займає усе що зміг";
         InfoText3.innerHTML = ".Box_Bunny{<br>   display: flex;<br> align-items: stretch;<br>}";
     }else if (Element5Blox1.classList.contains('Act')){
         Box.style.alignItems = "baseline";
-        InfoText2.innerHTML = "Будує елемент по базовій лінії <br><br> В нашому випадку, по лінії нумерування";
+        InfoText2.innerHTML = "Будує елементи по базовій лінії <br><br> В нашому випадку, по лінії нумерування";
         InfoText3.innerHTML = ".Box_Bonny{<br>   display: flex;<br> align-items: baseline;<br>}";
     };
 }
@@ -153,7 +153,7 @@ function DeleteAct2() {
         InfoText3.innerHTML = ".Box_Bonny{<br>   display: flex;<br> justify-content: flex-end;<br>}";
     }else if (Element4Blox2.classList.contains('Act')){
         Box.style.justifyContent = "space-between";
-        InfoText2.innerHTML = "Будує елементи на всю ширину, при цьому розраховує однакову відстань між елементами (не враховуючи країв)";
+        InfoText2.innerHTML = "Будує елементи на всю ширину , при цьому розраховує однакову відстань між елементами (не враховуючи країв)";
         InfoText3.innerHTML = ".Box_Bonny{<br>   display: flex;<br> justify-content: space-between;<br>}";
     }else if (Element5Blox2.classList.contains('Act')){
         Box.style.justifyContent = "space-around";
@@ -161,7 +161,7 @@ function DeleteAct2() {
         InfoText3.innerHTML = ".Box_Bonny{<br>   display: flex;<br> justify-content: space-around;<br>}";
     }else if (Element6Blox2.classList.contains('Act')){
         Box.style.justifyContent = "space-evenly";
-        InfoText2.innerHTML = "Будує елементи на всю ширину, при цьому розраховує однакову відстань між елементами (враховуючи краї)";
+        InfoText2.innerHTML = "Будує елементи на всю ширину , при цьому розраховує однакову відстань між елементами (враховуючи краї)";
         InfoText3.innerHTML = ".Box_Bonny{<br>   display: flex;<br> justify-content: space-evenly;<br>}";
     };
     
@@ -231,12 +231,12 @@ function DeleteAct3() {
     }else if (Element3Blox3.classList.contains('Act')){
         Box.style.flexWrap = "wrap-reverse";
         Size.style.width = '250px';
-        InfoText2.innerHTML = "Тут вже цікавіше !)<br><br> Переносе елементи нагору";
+        InfoText2.innerHTML = "Тут вже цікавіше !)<br><br> Переносить елементи нагору";
         InfoText3.innerHTML = ".Box_Bonny{<br> width:250px;<br>   display: flex;<br> flex-wrap: wrap-reverse;<br>}";
     }else if (Element4Blox3.classList.contains('Act')){
         Box.style.flexWrap = "initial";
         Size.style.width = '100%';
-        InfoText2.innerHTML = "Повернув все як було <br><br> Не вигадую велосипед";
+        InfoText2.innerHTML = "Усе повернув, як було <br><br> Не вигадую велосипед";
         InfoText3.innerHTML = ".Box_Bonny{<br> width:100%;<br>   display: flex;<br> flex-wrap: initial;<br>}";
     }
 }
@@ -318,7 +318,7 @@ function DeleteAct4() {
         InfoText3.innerHTML = ".Bony-3{<br>align-self: flex-end;<br>}<br><br>.Bony-3 - модифікатори для .Bony";
     }else if (Element4Blox4.classList.contains('Act')){
         Bony3.style.alignSelf = "stretch";
-        InfoText2.innerHTML = "Жадяга !!! <br><br> Займає все що зміг";
+        InfoText2.innerHTML = "Жадюга !!! <br><br> Займає усе що зміг";
         InfoText3.innerHTML = ".Bony-3{<br>align-self: stretch;<br>}<br><br>.Bony-3 - модифікатори для .Bony";
     }else if (Element5Blox4.classList.contains('Act')){
         Bony3.style.alignSelf = "baseline";
@@ -326,7 +326,7 @@ function DeleteAct4() {
         InfoText3.innerHTML = ".Bony-3{<br>align-self:baseline;<br>}<br><br>.Bony-3 - модифікатори для .Bony";
     }else if (Element6Blox4.classList.contains('Act')){
         Bony3.style.alignSelf = "auto";
-        InfoText2.innerHTML = "Повертав в стрій";
+        InfoText2.innerHTML = "Повертає в стрій";
         InfoText3.innerHTML = ".Bony-3{<br>align-self: auto;<br>}<br><br>.Bony-3 модифікатори для .Bony";
     };
 }
@@ -387,7 +387,7 @@ function DeleteAct5() {
     {
         if(Element1Blox5.classList.contains('Act')) {
             ChildParents[num].classList.add('Act_Bony')
-            InfoText2.innerHTML = "БУГА-ГА !)";
+            InfoText2.innerHTML = "БУГА-ГА-Га !)";
             InfoText3.innerHTML = ".Bony-1.Act_Bony{order:1;}<br>.Bony-2.Act_Bony{order:4;}<br>.Bony-3.Act_Bony{order:2;}<br>.Bony-4.Act_Bony{order:5;}<br>.Bony-5.Act_Bony{order:3;}<br><br>.Bony-1 - 5 модифікатори для .Bony<br><br>.Act_Bony додатковий клас для модифікатора";
         } else if(Element2Blox5.classList.contains('Act')) {
             ChildParents[num].classList.add('Act_Bony')
