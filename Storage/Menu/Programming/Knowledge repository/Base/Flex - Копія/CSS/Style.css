@@ -1,0 +1,84 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+body{width: 100%; height: 100%;position: fixed; top: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; flex-direction: column;background-color: rgba(0, 0, 0, 0.5);}
+
+.Box{width: 1250px; height: 78%; 
+	margin: 25px;
+	background-color: rgb(228, 228, 228); 
+	border: 3px black solid; border-radius: 150px;
+	box-shadow: 0 0 25px rgb(0, 0, 0);
+	display: flex; align-items: center; justify-content: center;
+}
+
+.Box{}
+
+.Bony{width: 3.3%; background-color: blue; margin: 15px; box-shadow: 0 0 15px rgb(0, 47, 255);}
+.Bony-1{height: 15%;}
+.Bony-2{height: 30%;}
+.Bony-3{height: 20%;}
+.Bony-4{height: 40%;}
+.Bony-5{height: 25%;}
+
+footer{width: 80%; height: 22%; 
+	background-color:rgb(228, 228, 228) ; 
+	border: 3px black solid; border-radius: 150px 150px 0 0; 
+	box-shadow: 0 0 25px rgb(0, 0, 0);
+	display: flex; align-items: center; justify-content: center; flex-wrap: wrap;
+	}
+
+.JS{position: absolute;}
+
+.Party{background-color: rgba(0, 0, 0, 0.1);border: 2px black solid; border-radius: 25px;}
+
+.Party_Name{margin: 10px; border: 1px black solid; border-radius: 10px; text-align: center; background-color: aliceblue;}
+.Party_Opus{font-size: 18px; line-height: 22px; margin: 8px;}
+.Party_Kod{font-size: 16px; line-height: 20px; margin: 8px;}
+.Party_Body{display: flex; align-items: center; justify-content: center; flex-wrap: wrap; max-width: 300px;}
+.Party_Pynkt{font-size: 16px; line-height: 20px; text-align: center;
+	padding: 4px 8px; margin: 0 6px 8px 6px; 
+	border: 1px black solid; border-radius: 5px;
+	background-color: aliceblue;
+	box-shadow: 0 0 5px black;
+	cursor: pointer; user-select:none;
+	display: flex;
+}
+.Party_Pynkt:hover{	box-shadow: 0 0 15px black;}
+.Party_Pynkt:active{background-color: rgba(0, 0, 0, 0.75);
+	color: aliceblue;
+	border: 1px rgb(255, 255, 255) solid;
+}

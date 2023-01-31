@@ -1,0 +1,190 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+.JS{position: absolute;}
+
+body{width: 100%; height: 100%;position: absolute; top: 0; left: -1px; display: flex; align-items: center; justify-content: center; flex-direction: column;background-color: rgba(0, 0, 0, 0.5);}
+.Info_Body{width: 100%; height: 55%;position: fixed; top: 0; display: inherit; }
+
+.Info{position: relative;
+	width: 25%; height: 100%; 
+	background-color: rgb(255, 255, 255); 
+	border: 3px rgb(255, 255, 255) solid;
+	box-shadow: inset 0 0 50px rgb(250, 198, 102);
+	display: inherit; flex-direction: column; align-items: flex-end;
+}
+.Info_Title{position: relative;
+	margin: 15px auto;
+	width: 50%; height: 50px;
+	background-color: aliceblue;
+	border: 3px black solid; border-radius: 10px;
+	box-shadow: 0 0 8px black;
+}
+
+.Info_Title p{font-size: 21px; text-align: center; margin: 10px;user-select:none}
+
+.Info_Block{width: 90%; height: 100%; margin: 15px;
+	background-color: aliceblue; border: 2px black solid; border-radius: 15px;
+	box-shadow: 0 0 12px black;
+	display: flex; justify-content: center; align-items:flex-start;
+	overflow: auto;
+	padding: 40px; padding-bottom: 0px;
+}
+
+.Info_Block-Start{
+	justify-content: start;
+}
+
+.Info_Block p{
+	font-size: 20px; text-align: center; line-height: 25px;
+}
+
+.Info_Block-Start p{
+	text-align: start;
+}
+
+.Info_Block::-webkit-scrollbar {
+	width: 0;
+}
+
+.Box_Box{
+	background-color: rgba(0, 0, 0, 0.5);
+	box-shadow: inset 0 0 50px rgba(0, 0, 0);
+	width: 50%; height: 100%;
+	border: 3px rgb(255, 255, 255) solid; border-left: 0px; border-right: 0px;
+	display: flex; align-items: center; justify-content: center;
+}
+
+.Box{
+	height: 100%; width: 100%;
+	background-color: rgb(255, 255, 255);
+	box-shadow: inset 0 0 50px rgba(0, 0, 0);
+	display: flex; align-items: center; justify-content: center;flex-wrap: initial;
+	overflow: hidden;
+}
+
+.Bony{flex: 0 1 40px; min-width: 20px; background-color: blue; margin: 15px; box-shadow: 0 0 10px rgb(0, 47, 255); border-radius: 10px; }
+.Bony-1{min-height: 100px;}
+.Bony-2{min-height: 210px;}
+.Bony-3{min-height: 140px;}
+.Bony-4{min-height: 240px;}
+.Bony-5{min-height: 190px;}
+
+.Bony-1 p{color: aliceblue; font-size: 21px; text-align: center; margin-top: 10px;}
+.Bony-2 p{color: aliceblue; font-size: 21px; text-align: center; margin-top: 40px;}
+.Bony-3 p{color: aliceblue; font-size: 21px; text-align: center; margin-top: 20px;}
+.Bony-4 p{color: aliceblue; font-size: 21px; text-align: center; margin-top: 50px;}
+.Bony-5 p{color: aliceblue; font-size: 21px; text-align: center; margin-top: 30px;}
+
+.Bony-1.Act_Bony{order:1;}
+.Bony-2.Act_Bony{order:4;}
+.Bony-3.Act_Bony{order:2;}
+.Bony-4.Act_Bony{order:5;}
+.Bony-5.Act_Bony{order:3;}
+
+.Bony_Text{color: aliceblue; font-size: 21px; text-align: center; text-shadow: 0 0 5px white; margin: 10px;}
+
+footer{width: 100%; height: 45%;
+	box-shadow: inset 0 0 10px rgb(0, 0, 0);
+	display: flex; align-items: center; justify-content: center;
+	position: absolute; bottom:0px;
+	overflow: auto;
+}
+
+.Important{width: 30%; height: 100%; 
+	background-color:rgb(255, 255, 255) ; 
+	border: 3px rgb(255, 255, 255) solid; border-top:0;
+	box-shadow: inset 0 0 50px rgb(255, 129, 129);
+	display: inherit; align-items: center; justify-content: center; flex-wrap: wrap;
+	overflow: auto;
+}
+
+.Important::-webkit-scrollbar {
+	width: 0;
+}
+
+.Important_Party{background-color: rgba(0, 0, 0, 0.25);border: 2px black solid; border-radius: 15px; margin: 10px; width: 400px;overflow: hidden;}
+.Important_Name{margin: 10px; border: 2px black solid; border-radius: 10px; text-align: center; background-color: aliceblue;overflow: auto;}
+
+
+.Menu{width: 70%; height: 100%; 
+	background-color:rgb(255, 255, 255) ; 
+	border: 3px rgb(255, 255, 255) solid;  border-top:0; border-left: 0px;
+	box-shadow: inset 0 0 50px rgb(139, 139, 139);
+	display: flex; align-items: center; justify-content: center; flex-wrap: wrap;
+	overflow: auto;
+}
+
+.Menu::-webkit-scrollbar {
+	width: 0;
+}
+
+.Party{background-color: rgba(0, 0, 0, 0.25);border: 2px black solid; border-radius: 15px; margin: 10px; width: 400px; height: 225px;overflow: hidden;}
+.Party_Name{margin: 10px; border: 2px black solid; border-radius: 10px; text-align: center; background-color: aliceblue; height: 100px; overflow: auto;}
+.Party_Name::-webkit-scrollbar {
+	width: 0;
+}
+.Party_Opus{font-size: 18px; line-height: 22px; margin: 8px; font-weight: 600;}
+.Party_Kod{font-size: 16px; line-height: 20px; margin: 8px; font-weight: 600;}
+.Party_Kod-Inportant{font-weight: 600;}
+.Party_Body{display: flex; align-items: center; justify-content: center; flex-wrap: wrap;
+	width: 380px; height: 90px; padding: 10px 0; margin: 10px;;
+	overflow:auto;
+	border: 2px black solid; border-radius: 10px;
+	background-color: aliceblue;
+}
+.Party_Body::-webkit-scrollbar {
+	width: 0;
+}
+.Party_Pynkt{font-size: 16px; line-height: 20px; text-align: center;
+	padding: 4px 8px; margin: 0 6px 8px 6px; 
+	border: 1px black solid; border-radius: 5px;
+	background-color: aliceblue;
+	box-shadow: 0 0 5px black;
+	cursor: pointer; user-select:none;
+	display: flex;
+}
+.Party_Pynkt:hover{	background-color: rgba(0, 0, 0, 0.33);
+	box-shadow: 0 0 15px black;}
+.Party_Pynkt:active{background-color: rgba(0, 0, 0, 0.75);
+	color: aliceblue;
+	border: 1px rgb(255, 255, 255) solid;
+}
+
+.Act{background-color: rgba(0, 0, 0, 0.75);
+	color: aliceblue;
+	border: 1px rgb(255, 255, 255) solid;
+}
