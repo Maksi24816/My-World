@@ -420,7 +420,7 @@ Element1Blox6.addEventListener('click', () => {
 Element2Blox6.addEventListener('click', () => {
     Element2Blox6.classList.toggle('NowAct');
     DeleteAct6();
-    InfoText2.innerHTML = "Щось не те!!!<br><br> flex-shrink - коефіцієнт звуження <br><br> Чим більший коефіцієнт, тим скоріше він буде звужуватися <br><br> Наприклад якщо одному елементу задать коефіцієнт - 1, а другому - 2, то другий в два рази швидше буде звужуватися <br><br> Гарна річ при адаптиві, деякі елементи можна зменшити, чи взагалі прибрати";
+    InfoText2.innerHTML = "Щось не те!!!<br><br>Якби було 1, воно б просто звузилось<br><br> flex-shrink - коефіцієнт звуження <br><br> Чим більший коефіцієнт, тим скоріше він буде звужуватися <br><br> Наприклад якщо одному елементу задать коефіцієнт - 1, а другому - 2, то другий в два рази швидше буде звужуватися <br><br> Гарна річ при адаптиві, деякі елементи можна зменшити, чи взагалі прибрати";
     InfoText3.innerHTML = "Пишу через flex-shrink, тому що варіації flex можуть бути різними <br><br> .Box_Bonny{<br>width: 200px;<br>}<br><br> .Bonny-1 - 5{<br>flex-shrink: 0;<br>}";
 });
 Element3Blox6.addEventListener('click', () => {
