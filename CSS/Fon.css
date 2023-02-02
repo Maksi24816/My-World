@@ -39,7 +39,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 .Element_Strukt-Sklad{position: absolute; bottom: 0; width: 100%; height: 100%;}
 
-.Element_Strukt{background-color: aliceblue; border-top: 1px black solid; border-radius: 50%; position: absolute; ;}
+.Element_Strukt{background-color: aliceblue; border-top: 1px black solid; border-radius: 50%; position: absolute; bottom: 0;}
 .Background_Element_1_Strukt{width: 2400px; height: 800px; left: 350px; bottom: -470px;}
 .Background_Element_2_Strukt{width: 1900px; height: 800px; left: -800px; bottom: -350px;}
 .Background_Element_3_Strukt{width: 1200px; height: 800px; left: 300px; bottom: -400px;z-index: 2}
@@ -103,7 +103,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	}
 }
 
-.Ty_Ty{width: 100px; height: 100px; position: absolute; top: 0px; left: 0px;  z-index: 1; transform: rotate(3deg); animation: Ty-Ty 60s linear infinite;}
+.Ty_Ty{width: 100px; height: 100px; position: absolute; top: 0px; left: 0px;  z-index: 1; transform: rotate(3.2deg); animation: Ty-Ty 60s linear infinite;}
 
 .Element_Ty_Ty{background-color: black; position: relative;}
 .Element_Ty_Ty-1{width: 36px; height: 1px; top: 0; left: 0;}
@@ -225,21 +225,21 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .Koleso-3{ bottom: 12px; left: 30px;}
 .Koleso-4{ bottom: 12px; left: 53px;}
 .Koleso-5{ bottom: 12px; left: 67px;}
-.Koleso-6{ bottom: 30px; left: 83px;}
-.Koleso-7{ bottom: 30px; left: 96px;}
-.Koleso-8{ bottom: 30px; left: 108px;}
-.Koleso-9{ bottom: 30px; left: 122px;}
-.Koleso-10{ bottom: 30px; left: 135px;}
-.Koleso-11{ bottom: 51px; left: 157px;}
-.Koleso-12{ bottom: 51px; left: 170px;}
-.Koleso-13{ bottom: 51px; left: 183px;}
-.Koleso-14{ bottom: 51px; left: 196px;}
-.Koleso-15{ bottom: 51px; left: 209px;}
-.Koleso-16{ bottom: 73px; left: 230px;}
-.Koleso-17{ bottom: 73px; left: 243px;}
-.Koleso-18{ bottom: 73px; left: 256px;}
-.Koleso-19{ bottom: 73px; left: 269px;}
-.Koleso-20{ bottom: 73px; left: 282px;}
+.Koleso-6{ bottom: 31px; left: 83px;}
+.Koleso-7{ bottom: 31px; left: 96px;}
+.Koleso-8{ bottom: 31px; left: 108px;}
+.Koleso-9{ bottom: 31px; left: 122px;}
+.Koleso-10{ bottom: 31px; left: 135px;}
+.Koleso-11{ bottom: 52px; left: 157px;}
+.Koleso-12{ bottom: 52px; left: 170px;}
+.Koleso-13{ bottom: 52px; left: 183px;}
+.Koleso-14{ bottom: 52px; left: 196px;}
+.Koleso-15{ bottom: 52px; left: 209px;}
+.Koleso-16{ bottom: 74px; left: 230px;}
+.Koleso-17{ bottom: 74px; left: 243px;}
+.Koleso-18{ bottom: 74px; left: 256px;}
+.Koleso-19{ bottom: 74px; left: 269px;}
+.Koleso-20{ bottom: 74px; left: 282px;}
 
 .Koleso_Kolo-1{position: absolute; top: 0px; width: 10px; height: 10px; border: 1px black solid; border-radius: 50%;}
 .Koleso_Kolo-2{position: relative; top: 2px; left: 2px; width: 6px; height: 6px; border: 1px black solid; border-radius: 50%; background-color: grey; z-index: 2;}
@@ -351,7 +351,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 .ZD{position: absolute; top: 0; z-index: 4;width: 100%; height: 100%;}
 
-.ZD-1{width: 700px; height: 2px; background-color: black; transform: rotate(3.5deg); position: relative;left: 1366px; top: 707px;}
+.ZD-1{width: 700px; height: 2px; background-color: black; transform: rotate(3.5deg); position: absolute;left: 1368px; bottom: 227px;}
 
 
 
