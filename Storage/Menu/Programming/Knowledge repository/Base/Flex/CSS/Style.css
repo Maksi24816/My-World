@@ -45,8 +45,15 @@ li:hover{box-shadow: inset 0 0 16px black;}
 li:active{box-shadow: inset 0 0 21px black;}
 .Head ul:hover{left: 125px;}
 
+@media (max-width:640px) {
+	.Head{width: 130px; height: 130px;left: -65px; top: -194px;}
+	.Head p{font-size: 24px;left: 30px;}
+	ul{width: 425px;left: -300px;}
+	.Head ul:hover{left: 30px;}
+}
+
 body{width: 100%; height: 100%;position: absolute; top: 0; left: -1px; display: flex; align-items: center; justify-content: center; flex-direction: column;background-color: rgba(0, 0, 0, 0.5);}
-.Info_Body{width: 100%; height: 55%;position: fixed; top: 0; display: inherit; }
+.Info_Body{width: 100%; height: 55%;position: fixed; top: 0; display: flex; }
 
 .Info{position: relative;
 	width: 25%; height: 100%; 
@@ -57,20 +64,20 @@ body{width: 100%; height: 100%;position: absolute; top: 0; left: -1px; display: 
 }
 .Info_Title{position: relative;
 	margin: 15px auto;
-	width: 50%; height: 50px;
+	width: 90%; height: 50px;
 	background-color: aliceblue;
 	border: 3px black solid; border-radius: 10px;
 	box-shadow: 0 0 8px black;
 }
 
-.Info_Title p{font-size: 21px; text-align: center; margin: 10px;user-select:none}
+.Info_Title p{font-size: 21px; text-align: center; margin: 10px;user-select:none;}
 
-.Info_Block{width: 90%; height: 100%; margin: 15px;
+.Info_Block{width: 90%; height: 100%; 
 	background-color: aliceblue; border: 2px black solid; border-radius: 15px;
 	box-shadow: 0 0 12px black;
 	display: flex; justify-content: center; align-items:flex-start;
 	overflow: auto;
-	padding: 40px; padding-bottom: 0px;
+	padding: 40px; padding-bottom: 0px; margin: 5%;
 }
 
 .Info_Block-Start{
@@ -87,6 +94,16 @@ body{width: 100%; height: 100%;position: absolute; top: 0; left: -1px; display: 
 
 .Info_Block::-webkit-scrollbar {
 	width: 0;
+}
+
+
+@media (max-width:640px) {
+	.Info_Body{flex-direction: row; flex-wrap: wrap;}
+	#Body-1{order: 1; width: 50%; height: 66%;}
+	#Body-2{order: 3; width: 100%;height: 66%;}
+	#Body-3{order: 2; width: 50%; height: 66%;}
+	.Info_Block{padding: 20px; margin: 5px 5%;;}
+	.Info_Block p{font-size: 18px;line-height: 15px;}
 }
 
 .Box_Box{
@@ -133,6 +150,7 @@ footer{width: 100%; height: 45%;
 	overflow: auto;
 }
 
+
 .Important{width: 30%; height: 100%; 
 	background-color:rgb(255, 255, 255) ; 
 	border: 3px rgb(255, 255, 255) solid; border-top:0;
@@ -144,6 +162,7 @@ footer{width: 100%; height: 45%;
 .Important::-webkit-scrollbar {
 	width: 0;
 }
+
 
 .Important_Party{background-color: rgba(0, 0, 0, 0.25);border: 2px black solid; border-radius: 15px; margin: 10px; width: 400px;overflow: hidden;}
 .Important_Name{margin: 10px; border: 2px black solid; border-radius: 10px; text-align: center; background-color: aliceblue;overflow: auto;}
@@ -159,6 +178,12 @@ footer{width: 100%; height: 45%;
 
 .Menu::-webkit-scrollbar {
 	width: 0;
+}
+
+@media (max-width:640px) {
+	footer{bottom:-36.5%; height: 64%;}
+	.Important{border: 3px rgb(255, 255, 255) solid;}
+	.Menu{border: 3px rgb(255, 255, 255) solid;border-left: 0px;}
 }
 
 .Party{background-color: rgba(0, 0, 0, 0.25);border: 2px black solid; border-radius: 15px; margin: 10px; width: 400px; height: 225px;overflow: hidden;}
