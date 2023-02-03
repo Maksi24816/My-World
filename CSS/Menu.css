@@ -35,8 +35,16 @@ img{vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
+.Menu{width: 100%;position: fixed;top: 0;margin: 0 auto; display: flex;justify-content: center; z-index: 4;}
 
-.Menu_LVL2{position: absolute; width: 60.5%; height: 60.5%;z-index: 2; border-radius: 50%;transition: all .9s ease 0s;}
+.Menu_Center{display: flex;justify-content: center; align-items: center;} 
+
+.Menu_LVL1{background: url('../IMG/ElementsMenu/LVL1/С1.png'); background-size: 100% 100%; width: 66%; min-width: 160px; height: 66%; min-height: 160px; position: absolute;z-index: 4; border-radius: 50%; transition: all .9s ease 0s;}
+
+@media (max-width:780px) {.Menu_LVL1{min-width: 140px; min-height: 140px;}}
+@media (max-width:520px) {.Menu_LVL1{min-width: 100px; min-height: 100px;}}
+
+.Menu_LVL2{position: absolute; width: 79.5%; height: 79.5%;z-index: 2; border-radius: 50%;transition: all .9s ease 0s;}
 
 .Menu_LVL2_Baza{position: absolute; width: 100%; height: 100%;z-index: 2; border-radius: 50%;transition: all .9s ease 0s;}
 
@@ -52,6 +60,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .Menu_LVL2_4{transition: all 1.2s ease 0s;}.Menu_LVL2_4.Act2K21{transform: rotate(112.5deg);}.Menu_LVL2_4.Act2K22{transform: rotate(325.5deg);}.Menu_LVL2_4.Act2K23{transform: rotate(360deg);}.Menu_LVL2_4.Act2K24{transform: rotate(33.5deg);}.Menu_LVL2_4.Act2K25{transform: rotate(68.5deg);}
 .Menu_LVL2_5{transition: all 1.2s ease 0s;}.Menu_LVL2_5.Act2K21{transform: rotate(112.2deg);}.Menu_LVL2_5.Act2K22{transform: rotate(146deg);}.Menu_LVL2_5.Act2K23{transform: rotate(360deg);}.Menu_LVL2_5.Act2K24{transform: rotate(33.5deg);}.Menu_LVL2_5.Act2K25{transform: rotate(68.5deg);}
 
+.Menu_Knopka{position: absolute; width: 550px; height: 550px; top: -275px; z-index: 5;}
+.Menu_Knopka.Act{height: 480px;}
+
 .KnopkaMenu{width: 320px; height: 320px; border-radius: 50%;position: absolute; top: 115px; left: 115px;cursor:pointer;}
 .KnopkaLVL2_1{width: 50px;height: 140px; position: absolute; left: 15px; top: 270px; transform: rotate(-18deg);cursor:pointer;}.K21K1{width: 50px;height: 140px; position: absolute; left: 230px; top: 450px; transform: rotate(90deg);}
 .KnopkaLVL2_2{width: 50px;height: 140px; position: absolute; left: 100px; top: 390px; transform: rotate(-50deg);cursor:pointer;}.K22K2{width: 50px;height: 140px; position: absolute; left: 230px; top: 450px; transform: rotate(90deg);}
@@ -59,41 +70,28 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .KnopkaLVL2_4{width: 50px;height: 140px; position: absolute; left: 405px; top: 390px; transform: rotate(50deg);cursor:pointer;}.K24K4{width: 50px;height: 140px; position: absolute; left: 270px; top: 450px; transform: rotate(90deg);}
 .KnopkaLVL2_5{width: 50px;height: 140px; position: absolute; left: 485px; top: 270px; transform: rotate(18deg);cursor:pointer;}.K25K5{width: 50px;height: 140px; position: absolute; left: 270px; top: 450px; transform: rotate(90deg);}
 
+@media (max-width:780px) {
+	.Menu_Knopka{position: absolute; width: 350px; height: 350px; top: -175px; z-index: 5;}
+	.KnopkaMenu{display: none;}
+	.KnopkaLVL2_1{width: 40px;height: 100px; position: absolute; left: -5px; top: 170px; transform: rotate(-18deg);cursor:pointer;}.K21K1{width: 40px;height: 100px; position: absolute; left: 140px; top: 275px; transform: rotate(90deg);}
+	.KnopkaLVL2_2{width: 40px;height: 100px; position: absolute; left: 48px; top: 255px; transform: rotate(-50deg);cursor:pointer;}.K22K2{width: 40px;height: 100px; position: absolute; left: 140px; top: 275px; transform: rotate(90deg);}
+	.KnopkaLVL2_3{width: 40px;height: 125px; position: absolute; left: 155px; top: 275px; transform: rotate(90deg);cursor:pointer;}
+	.KnopkaLVL2_4{width: 40px;height: 100px; position: absolute; left: 260px; top: 255px; transform: rotate(50deg);cursor:pointer;}.K24K4{width: 40px;height: 100px; position: absolute; left: 170px; top: 275px; transform: rotate(90deg);}
+	.KnopkaLVL2_5{width: 40px;height: 100px; position: absolute; left: 315px; top: 170px; transform: rotate(18deg);cursor:pointer;}.K25K5{width: 40px;height: 100px; position: absolute; left: 170px; top: 275px; transform: rotate(90deg);}
+}
+@media (max-width:520px) {
+	.Menu_Knopka{position: absolute; width: 250px; height: 250px; top: -325px; z-index: 5;}
+	.KnopkaMenu{display: none;}
+	.KnopkaLVL2_1{width: 25px;height: 70px; position: absolute; left: 15px; top: 315px; transform: rotate(-18deg);cursor:pointer;}.K21K1{width: 25px;height: 70px; position: absolute; left: 102px; top: 388px; transform: rotate(90deg);}
+	.KnopkaLVL2_2{width: 25px;height: 60px; position: absolute; left: 48px; top: 372px; transform: rotate(-50deg);cursor:pointer;}.K22K2{width: 25px;height: 70px; position: absolute; left: 102px; top: 388px; transform: rotate(90deg);}
+	.KnopkaLVL2_3{width: 25px;height: 75px; position: absolute; left: 112px; top: 388px; transform: rotate(90deg);cursor:pointer;}
+	.KnopkaLVL2_4{width: 25px;height: 60px; position: absolute; left: 178px; top: 372px; transform: rotate(50deg);cursor:pointer;}.K24K4{width: 25px;height: 70px; position: absolute; left: 122px; top: 388px; transform: rotate(90deg);}
+	.KnopkaLVL2_5{width: 25px;height: 70px; position: absolute; left: 212px; top: 315px; transform: rotate(18deg);cursor:pointer;}.K25K5{width: 25px;height: 70px; position: absolute; left: 122px; top: 388px; transform: rotate(90deg);}
+}
+
 .KnopkaLVL2_0{width: 0; height: 0;}
 
-.Menu_LVL15{position: absolute; width: 89.2%; height: 89.2%;z-index: 3; border-radius: 50%; transition: all 1.2s ease 0s;}
-.Menu_LVL15_1{background: url('../IMG/ElementsMenu/LVL15/Kr1.png');background-size: 100% 100%;transform: rotate(180deg);}
-.Menu_LVL15_2{background: url('../IMG/ElementsMenu/LVL15/Kr2.png');background-size: 100% 100%;transform: rotate(180deg);}
-.Menu_LVL15_3{background: url('../IMG/ElementsMenu/LVL15/Kr3.png');background-size: 100% 100%;transform: rotate(180deg);}
-.Menu_LVL15_4{background: url('../IMG/ElementsMenu/LVL15/Kr4.png');background-size: 100% 100%;transform: rotate(180deg);}
-.Menu_LVL15_5{background: url('../IMG/ElementsMenu/LVL15/Kr5.png');background-size: 100% 100%;transform: rotate(180deg);}
-
-
-.Menu_LVL15_Act{transform: rotate(0deg);}
-
-
-.Menu{width: 100%;position: fixed;top: 0;margin: 0 auto; display: flex;justify-content: center; z-index: 4;}
-
-.Menu_Center{display: flex;justify-content: center; align-items: center;} 
-.Menu_Knopka{position: absolute; width: 550px; height: 550px; top: -275px; z-index: 5;}
-.Menu_Knopka.Act{height: 480px;}
-
-
-.Menu_Background{background-color: rgb(255, 255, 255); border-radius: 50%;border: 3px black double; width: 1300px; height: 1000px; position: absolute; top: 0px;transition: all .9s ease 0s;}
-.Menu_Background.Act{width: 1200px; height: 365px;background-color: rgb(255, 255, 255, 0.33);}
-.Menu_Background.Act.ActPlus{width: 1025px; height: 410px;}
-
-.Menu_LVL0{position: absolute; width: 1100px; height: 1100px; top: -550px;z-index: 1; border-radius: 50%;transition: all .9s ease 0s;}
-.Menu_LVL0.Act{width: 480px; height: 480px;top: -240px;}
-
-.Menu_LVL0_1{ background: url('../IMG/ElementsMenu/LVL3/Dop/С3\ 1.png');background-size: 600px 600px; top: 0px;transition: all .9s ease 0s; background-position: left; background-repeat: no-repeat; top: -5px; left: -15px;}
-.Menu_LVL0_2{ background: url('../IMG/ElementsMenu/LVL3/Dop/С3\ 7.png');background-size: 600px 600px; top: 0px;transition: all .9s ease 0s; background-position: right; background-repeat: no-repeat; top: -5px; right: -25px;}
-.Menu_LVL0_1.Act{top: -68px; left: -230px;}
-.Menu_LVL0_2.Act{top: -68px; right: -245px;}
-
-
-
-.Menu_LVL3{position: absolute; width: 85%; height: 85%; transition: all 1.5s ease 0s;}
+.Menu_LVL3{position: absolute; width: 96%; height: 96%; transition: all 1.5s ease 0s;}
 
 .Menu_LVL3_Baza{position: absolute; width: 100%; height: 100%;z-index: 1; border-radius: 50%;transition: all 1.5s ease 0s;}
 
@@ -135,55 +133,146 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 .Menu_LVL3_Act{top: 0px;left: 0px;}
 
-.Menu_LVL1{background: url('../IMG/ElementsMenu/LVL1/С1.png'); background-size: 100% 100%; width: 66%; min-width: 194px; height: 66%; min-height: 194px; position: absolute;z-index: 4; border-radius: 50%; transition: all .9s ease 0s;}
+.Menu_LVL0{position: absolute; width: 770px; height: 770px;z-index: 1; top: -385px; border-radius: 50%;transition: all .9s ease 0s;}
+.Menu_LVL0.Act{width: 380px; height: 380px; top: -190px;}
+
+@media (max-width:780px) {.Menu_LVL0{width: 520px; height: 520px; top: -260px;}}
+@media (max-width:520px) {.Menu_LVL0{width: 320px; height: 320px; top: -160px;}}
+
+.Menu_LVL0_1{display: none; background: url('../IMG/ElementsMenu/LVL3/Dop/С3\ 1.png');background-size: 600px 600px; top: 0px;transition: all .9s ease 0s; background-position: left; background-repeat: no-repeat; top: -5px; left: -15px;}
+.Menu_LVL0_2{display: none; background: url('../IMG/ElementsMenu/LVL3/Dop/С3\ 7.png');background-size: 600px 600px; top: 0px;transition: all .9s ease 0s; background-position: right; background-repeat: no-repeat; top: -5px; right: -25px;}
+.Menu_LVL0_1.Act{top: -68px; left: -230px;}
+.Menu_LVL0_2.Act{top: -68px; right: -245px;}
+
+.Menu_LVL15{position: absolute; width: 89.2%; height: 89.2%;z-index: 3; border-radius: 50%; transition: all 1.2s ease 0s;}
+.Menu_LVL15_1{background: url('../IMG/ElementsMenu/LVL15/Kr1.png');background-size: 100% 100%;transform: rotate(180deg);}
+.Menu_LVL15_2{background: url('../IMG/ElementsMenu/LVL15/Kr2.png');background-size: 100% 100%;transform: rotate(180deg);}
+.Menu_LVL15_3{background: url('../IMG/ElementsMenu/LVL15/Kr3.png');background-size: 100% 100%;transform: rotate(180deg);}
+.Menu_LVL15_4{background: url('../IMG/ElementsMenu/LVL15/Kr4.png');background-size: 100% 100%;transform: rotate(180deg);}
+.Menu_LVL15_5{background: url('../IMG/ElementsMenu/LVL15/Kr5.png');background-size: 100% 100%;transform: rotate(180deg);}
+
+.Menu_LVL15_Act{transform: rotate(0deg);}
+
+.Menu_Background{background-color: rgb(255, 255, 255); border-radius: 50%;border: 3px black double; width: 770px; height: 770px; position: absolute; top: 0px;transition: all .9s ease 0s;}
+.Menu_Background.Act{width: 380px; height: 380px;background-color: rgb(255, 255, 255, 0.33);}
+.Menu_Background.Act.ActPlus{width: 380px; height: 380px;}
+@media (max-width:780px) {.Menu_Background{width: 520px; height: 520px;}}
+@media (max-width:520px) {.Menu_Background{width: 320px; height: 320px;}}
+
+
+
+
 
 .MenuDop{width: 100%; height: 100%; position: fixed; z-index: 2;}
-.MenuDop_Box{ background-color: aliceblue;border-radius:50%;border: 2px black solid;}
+.MenuDop_Box{background-color: aliceblue;border-radius:50%;border: 2px black solid;}
 
-.MenuDop_BL{width: 250px;height: 250px;position:absolute;bottom:-100px;left:-100px;}
-.MenuDop_BL_Element0{width: 300px;height: 300px;position:absolute; z-index: 2; top: -25px; left: -25px; cursor: pointer; background-color: white; transition: all .25s ease 0s;}
-.MenuDop_BL_Element1{width: 350px;height: 125px;position:absolute; left: 100px; top: 100px;transition: all 1s ease 0s;}
-.MenuDop_BL_Element1.Act{left: -100px;}
-.MenuDop_BL_Element2{width: 125px;height: 350px;position:absolute; left: 30px; top: -210px;transition: all 1s ease 0s;}
-.MenuDop_BL_Element2.Act{top: 0;}
-.MenuDop_BR{width: 250px;height: 250px;position:absolute;bottom:-100px;right:-100px;}
-.MenuDop_BR_Element0{width: 300px;height: 300px;position:absolute; z-index: 2; top: -25px; left: -25px; cursor: pointer;}
-.MenuDop_BR_Element1{width: 350px;height: 125px;position:absolute; right: 100px; top: 100px;transition: all 1s ease 0s;}
-.MenuDop_BR_Element1.Act{right: -100px;}
-.MenuDop_BR_Element2{width: 125px;height: 350px;position:absolute; right: 30px; top: -210px;transition: all 1s ease 0s;}
-.MenuDop_BR_Element2.Act{top: 0;}
+.MenuDop_BL{width: 750px;height: 750px;position:absolute;bottom:-325px;left:-325px; display: flex; align-items: center; justify-content: center;border-radius: 50%; transition: all .3s ease 0s;}
+@media (max-width:960px) {.MenuDop_BL{bottom:-235px;}}
+@media (max-width:780px) {.MenuDop_BL{width: 520px; height: 520px;bottom:-135px;left:-220px;}}
+@media (max-width:520px) {.MenuDop_BL{width: 320px; height: 320px;bottom:-35px;left:-125px;}}
+.MenuDop_BL_Element0{width: 150px;height: 150px;position:absolute; z-index: 2;cursor: pointer; background-color: white; transition: all .25s ease 0s;}
+@media (max-width:1280px) {.MenuDop_BL_Element0{width: 125px;height: 125px;}}
+@media (max-width:780px) {.MenuDop_BL_Element0{width: 105px;height: 105px;}}
+@media (max-width:520px) {.MenuDop_BL_Element0{width: 80px;height: 80px;}}
+.MenuDop_BL_Element1{position: absolute;width: 91%;height: 90px; transform: rotate(90deg); transition: all .3s ease 0s;}
+.MenuDop_BL_Element2{position: absolute;width: 91%;height: 90px; transition: all .3s ease 0s;}
+@media (max-width:780px) {.MenuDop_BL_Element1,.MenuDop_BL_Element2{width: 85%; height: 70px;}}
+@media (max-width:520px) {.MenuDop_BL_Element1,.MenuDop_BL_Element2{width: 78%;height: 45px;}}
+.MenuDop_BL_Element0.Act{animation:Fy-yy-y1 15s linear infinite;}
+.MenuDop_BL_Element2.Act{animation:Fy-yy-y2 3s linear infinite;}
+.MenuDop_BL_Element1.Act{animation:Fy-yy-y1 3s linear infinite;}
+
+.MenuDop_BR{width: 750px;height: 750px;position:absolute;bottom:-325px;right:-325px; display: flex; align-items: center; justify-content: center;border-radius: 50%; transition: all .3s ease 0s;}
+@media (max-width:960px) {.MenuDop_BR{bottom:-235px;}}
+@media (max-width:780px) {.MenuDop_BR{width: 520px; height: 520px;bottom:-135px;right:-220px;}}
+@media (max-width:520px) {.MenuDop_BR{width: 320px; height: 320px;bottom:-35px;right:-125px;}}
+.MenuDop_BR_Element0{width: 150px;height: 150px;position:absolute; z-index: 2;cursor: pointer; background-color: white; transition: all .25s ease 0s;}
+@media (max-width:1280px) {.MenuDop_BR_Element0{width: 125px;height: 125px;}}
+@media (max-width:780px) {.MenuDop_BR_Element0{width: 105px;height: 105px;}}
+@media (max-width:520px) {.MenuDop_BR_Element0{width: 80px;height: 80px;}}
+.MenuDop_BR_Element1{position: absolute;width: 91%;height: 90px; transform: rotate(90deg); transition: all .3s ease 0s;}
+.MenuDop_BR_Element2{position: absolute;width: 91%;height: 90px; transition: all .3s ease 0s;}
+@media (max-width:780px) {.MenuDop_BR_Element1,.MenuDop_BR_Element2{width: 85%; height: 70px;}}
+@media (max-width:520px) {.MenuDop_BR_Element1,.MenuDop_BR_Element2{width: 78%;height: 45px;}}
+.MenuDop_BR_Element0.Act{animation:Fy-yy-y1- 15s linear infinite;}
+.MenuDop_BR_Element1.Act{animation:Fy-yy-y2- 3s linear infinite;}
+.MenuDop_BR_Element2.Act{animation:Fy-yy-y1- 3s linear infinite;}
+
+.MenuDop__Element-1{width: 50%; height: 100%; border: 2px black solid; border-radius: 50%;position: absolute; left: 0;}
+.MenuDop__Element-2{width: 50%; height: 100%; border: 2px black solid; border-radius: 50%;position: absolute; right: 0;}
+
+@keyframes Fy-yy-y1 {
+	0%{
+		transform: rotate(0);
+	}
+
+	100%{
+		transform: rotate(360deg);
+	}
+}
+@keyframes Fy-yy-y2 {
+	0%{
+		transform: rotate(-90deg);
+	}
+
+	100%{
+		transform: rotate(270deg);
+	}
+}
+@keyframes Fy-yy-y1- {
+	0%{
+		transform: rotate(0);
+	}
+
+	100%{
+		transform: rotate(-360deg);
+	}
+}
+@keyframes Fy-yy-y2- {
+	0%{
+		transform: rotate(90deg);
+	}
+
+	100%{
+		transform: rotate(-270deg);
+	}
+}
+
 
 .MenuDop_IMG{position: relative; z-index: 3;width: 100%; height: 100%;}
-.MenuDop_IMG_SMS{background: url(../IMG/DopElement/Lust.png); background-size: 135px 135px; background-position: 50% 10%; background-repeat: no-repeat; transform: rotate(45deg);}
-.MenuDop_IMG_Seting{background: url(../IMG/DopElement/Sest.png); background-size: 135px 135px; background-position: 25% 25%; background-repeat: no-repeat;}
+.MenuDop_IMG_SMS{background: url(../IMG/DopElement/Lust.png); background-size: 125px 125px; background-position: 50% 50%; background-repeat: no-repeat; transform: rotate(45deg);}
+.MenuDop_IMG_Seting{background: url(../IMG/DopElement/Sest.png); background-size: 125px 125px; background-position: 50% 50%; background-repeat: no-repeat;}
+
+@media (max-width:1280px) {.MenuDop_IMG_SMS,.MenuDop_IMG_Seting{background-size: 100px 100px;}}
+@media (max-width:780px) {.MenuDop_IMG_SMS,.MenuDop_IMG_Seting{background-size: 80px 80px;}}
+@media (max-width:520px) {.MenuDop_IMG_SMS,.MenuDop_IMG_Seting{background-size: 60px 60px;}}
 
 .MenuDop_Bodys{width: 100%; height: 100%;}
-.MenuDop_SMS_Body{width: 50%; height: 100%; background-color: rgba(200, 200, 200, 0.92); border: 3px black solid; border-radius: 50px 150px 150px 50px; position: fixed; left: -50%; top: 0; z-index: 5; transition: all 1.2s ease 0s;}
+.MenuDop_SMS_Body{width: 50%; height: 100%; background-color: rgba(200, 200, 200, 0.92); border: 3px black solid; border-radius: 0px 50px 50px 0px; position: fixed; left: -50%; top: 0; z-index: 5; transition: all 1.2s ease 0s; display: flex; flex-direction: column; align-items: center; justify-content:center; overflow: hidden;}
 .MenuDop_SMS_Body.Act{left: 0;}
-.MenuDop_Seting_Body{width: 50%; height: 100%; background-color: rgba(200, 200, 200, 0.92); border: 3px black solid; border-radius: 150px 50px 50px 150px; position: fixed; right: -50%; top: 0; z-index: 5; transition: all 1.2s ease 0s;}
+.MenuDop_Seting_Body{width: 50%; height: 100%; background-color: rgba(200, 200, 200, 0.92); border: 3px black solid; border-radius: 50px 0px 0px 50px; position: fixed; right: -50%; top: 0; z-index: 5; transition: all 1.2s ease 0s; display: flex; flex-direction: column; align-items: center; justify-content:center; overflow: hidden;}
 .MenuDop_Seting_Body.Act{right: 0;}
 
-.MenuDop-Flex-Plus{display: flex; flex-direction: column; align-items: center; justify-content: center;overflow: hidden;}
-.MenuDop-Flex{display: flex; align-items: center; justify-content: center;overflow: hidden;}
+.MenuDop_Grani{width: 100%; height: 100%; position: absolute; top: 0; display: flex; align-items: center; justify-content: space-between; flex-direction: column;}
 
-.MenuDop_Leave{position: absolute;width: 300px; height: 300px; background-color: rgb(255, 255, 255); border: 2px black solid; border-radius: 50%;cursor: pointer;transition: all .25s ease 0s;}
+.MenuDop_Leave{position: absolute; z-index: 2; width: 300px; height: 300px; background-color: rgb(255, 255, 255); border: 2px black solid; border-radius: 50%;cursor: pointer;transition: all .25s ease 0s;}
 .MenuDop_Leave:hover{background-color: rgba(0, 0, 0, 0.66);}
 .MenuDop_Leave:active{background-color: rgba(0, 0, 0, 0.8);}
 
 .MenuDop_Leave-Right{left: -150px;}
 .MenuDop_Leave-Left{right: -150px;}
 
-.MenuDop_Block{ background-color: rgba(240, 248, 255, 0.8); border: 2px black solid; border-radius: 15px; margin: 20px 30px 20px 0; position: relative;}
-.MenuDop_Kontakt{ margin: 15px 8px;}
-.MenuDop_Copy{width: 100px; height: 35px;background-color: aliceblue; border: 2px black solid; border-radius: 5px; margin-bottom: 10px;text-align: center; font-size: 16px; cursor: pointer;transition: all .25s ease 0s;}
+.MenuDop_Block{width: 85%; background-color: rgba(240, 248, 255, 0.8); border: 2px black solid; border-radius: 15px; margin: 20px 30px 20px 0; position: relative; display: flex; align-items: center; justify-content: center;}
+.MenuDop_Kontakt{ width: 50%; height: 100%; margin: 5px 10px; display: flex; align-items: center; justify-content: center; flex-direction: column;}
+.MenuDop_Copy{width: 100px; background-color: aliceblue; border: 2px black solid; border-radius: 5px; margin-bottom: 10px;text-align: center; font-size: 16px; cursor: pointer;transition: all .25s ease 0s;}
 .MenuDop_Copy:hover{background-color:rgba(0, 0, 0, 0.5);box-shadow: 2px 2px 8px black;}
 .MenuDop_Copy:active{background-color:rgba(0, 0, 0, 0.75); color: aliceblue;}
 
-.MenuDop_Copy p{margin: 7px 0;user-select:none}
-.MenuDop_Info{width: 370px; height: 42px;background-color: aliceblue; border: 2px black solid; border-radius: 5px; text-align: center; font-size: 19px;}
-.MenuDop_Info p{margin: 8px;}
-.MenuDop_Box_SocSet{width: 100%; flex-direction: unset;margin: 10px 0;}
-.MenuDop_SocSet{width: 80px; height: 80px; border-radius: 5px;margin: 0 8px; cursor: pointer;transition: all .25s ease 0s;}
+.MenuDop_Copy p{margin: 8px;user-select:none}
+.MenuDop_Info{width: 90%; min-width: 80px; background-color: aliceblue; border: 2px black solid; border-radius: 5px; text-align: center; font-size: 19px;}
+.MenuDop_Info p{margin: 12px;}
+.MenuDop_Box_SocSet{width: 100%; max-height: 185px; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; margin: 10px 0;  overflow: auto;}
+.MenuDop_SocSet{min-width: 80px; min-height: 80px; border-radius: 5px;margin: 0 8px; cursor: pointer;transition: all .25s ease 0s;}
 .MenuDop_SocSet:hover{box-shadow: 0 0 10px black;}
 
 
@@ -203,6 +292,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .MenuDop_Text-LVL2{margin: 10px 0 0 15px;}
 .MenuDop_Text-LVL3{margin: 10px 0 0 15px;}
 
+.MenuDop_Block_Kontakt{width: 85%; background-color: rgba(240, 248, 255, 0.8); border: 2px black solid; border-radius: 15px; margin: 20px 30px 20px 0; position: relative; display: flex; align-items: center; justify-content: center;}
+@media (max-width:960px) {.MenuDop_Block_Kontakt{flex-direction: column;}}
 .MenuDop_Knopka{border-radius: 15px; border: 2px black solid; position: absolute; background-color: aliceblue; transition: all .25s ease 0s;}
 
 .MenuDop_Knopka-Top{left: 45px; top: 268px; width: 65px; height: 200px;}
