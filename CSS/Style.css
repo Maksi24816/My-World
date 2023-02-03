@@ -149,10 +149,6 @@ body::-webkit-scrollbar {
 .Body_Type2_BlockB1_Center{transition: all .8s ease 0s;}
 .Body_Type2_BlockB1_Right{right: -400%; transition: all .8s ease 0s;}
 
-@media (max-width:680px) {.Body_Type2_BlockB1_Left{left: -20%;}}
-@media (max-width:680px) {.Body_Type2_BlockB1_Right{right: -20%;}}
-
-
 .Body_Type2_BoxFotoB-Mini_ID1{background-image: url(../IMG/Foto\ Work/1.jpg);}
 
 .Body_Type2_BoxFotoB-ID1{background-image: url(../IMG/Foto\ Work/2.jpg);}

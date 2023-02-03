@@ -8,27 +8,21 @@ const BlockCenter = document.querySelector('.Body_Type2_BlockB1_Center');
 const BlockRight = document.querySelector('.Body_Type2_BlockB1_Right');
 
 Pynkt1.onclick = function () {
-	BlockLeft.style.left = "-40%";
-	BlockCenter.style.top = "500px";
-	BlockCenter.style.opacity = "0";
-	BlockCenter.style.visibility = "hidden";
-	BlockRight.style.right = "-400%";
+	BlockLeft.classList.add('Act');
+	BlockCenter.classList.add('Act');
+	BlockRight.classList.remove('Act');
 }
 
 Pynkt2.onclick = function () {
-	BlockLeft.style.left = "-400%";
-	BlockCenter.style.top = "126px";
-	BlockCenter.style.opacity = "1";
-	BlockCenter.style.visibility = "visible";
-	BlockRight.style.right = "-400%";
+	BlockLeft.classList.remove('Act');
+	BlockCenter.classList.remove('Act');
+	BlockRight.classList.remove('Act');
 }
 
 Pynkt3.onclick = function () {
-	BlockLeft.style.left = "-400%";
-	BlockCenter.style.top = "500px";
-	BlockCenter.style.opacity = "0";
-	BlockCenter.style.visibility = "hidden";
-	BlockRight.style.right = "-40%";
+	BlockLeft.classList.remove('Act');
+	BlockCenter.classList.add('Act');
+	BlockRight.classList.add('Act');
 }
 
 const Knopka = document.querySelectorAll('.Type3_Element_Knopka');
