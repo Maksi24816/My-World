@@ -149,11 +149,8 @@ body::-webkit-scrollbar {
 .Body_Type2_BlockB1_Center{transition: all .8s ease 0s;}
 .Body_Type2_BlockB1_Right{right: -400%; transition: all .8s ease 0s;}
 
-.Body_Type2_BlockB1_Left.Act{left: -40%;}
-@media (max-width:680px) {.Body_Type2_BlockB1_Left.Act{left: -20%;}}
-.Body_Type2_BlockB1_Center.Act{top: 500px; opacity: 0;visibility: hidden;}
-.Body_Type2_BlockB1_Right.Act{right: -40%;}
-@media (max-width:680px) {.Body_Type2_BlockB1_Right.Act{right: -20%;}}
+@media (max-width:680px) {.Body_Type2_BlockB1_Left{left: -20%;}}
+@media (max-width:680px) {.Body_Type2_BlockB1_Right{right: -20%;}}
 
 
 .Body_Type2_BoxFotoB-Mini_ID1{background-image: url(../IMG/Foto\ Work/1.jpg);}
