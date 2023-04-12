@@ -7,7 +7,7 @@ function Elevator(Num){
 	Block_Elevator.style.zIndex = "3";
 	let WindowsScrollTop = window.pageYOffset;
 
-	let WindowsHeight = window.innerHeight;
+	let WindowsHeight = 937;
 	let storage1 = WindowsScrollTop;
 	let numFor = 0;
 
@@ -67,7 +67,7 @@ function Elevator(Num){
 };
 function ElevatorList(NumG){
 	let WindowsScrollTop = window.pageYOffset;
-	let WindowsHeight = window.innerHeight;
+	let WindowsHeight = 937;
 	let storage1 = WindowsScrollTop;
 	let numFor = 0;
 
@@ -92,7 +92,6 @@ function ElevatorList(NumG){
 		Block_Elevator.style.zIndex = "3";
 	
 		let WindowsScrollTop = window.pageYOffset;
-		let WindowsHeight = window.innerHeight;
 	
 		let ScrollTop = (WindowsHeight * 1)+(NumG * (WindowsHeight * 1.25));
 		let Difference = (ScrollTop - WindowsScrollTop - (NumG * 0.25)) / 30;

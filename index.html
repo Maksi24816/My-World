@@ -145,15 +145,15 @@
       <section class="Section Two">
          <div class="Two_Window-Abs" style="z-index: 3;">
             <div class="Two_Box_InfoH">
-               <h2 style="font-size: 38px;">ФронтЕнд</h2>
+               <h2 id="TwoH2" style="font-size: 38px;"></h2>
             </div>
             <div class="Two_Box_InfoP">
-               <p style="width: 900px; line-height: 1.5; bottom: 75px; font-size: 30px;">Що вас цікавить ?</p>
+               <p id="Two_InfoP" style="width: 900px; line-height: 1.5; bottom: 75px; font-size: 30px;"></p>
             </div>
             <div class="Two_Choice">
-               <div style="transform: rotate(-5deg); right: 30px; top: 20px;" class="Choice" onclick="Two_Fun(1)">Міні сайти</div>
-               <div class="Choice" onclick="Two_Fun(2)">Елементи сайту</div>
-               <div style="transform: rotate(5deg); left: 30px; top: 20px;" class="Choice" onclick="Two_Fun(3)">Сайти</div>
+               <div style="transform: rotate(-5deg); right: 30px; top: 20px;" class="Choice" id="Choice1" onclick="Two_Fun(1)"></div>
+               <div class="Choice" id="Choice2" onclick="Two_Fun(2)"></div>
+               <div style="transform: rotate(5deg); left: 30px; top: 20px;" class="Choice" id="Choice3" onclick="Two_Fun(3)"></div>
             </div>
          </div>
          <div id="TwoWindow_1" class="Two_Window">
@@ -164,9 +164,9 @@
                <div style="z-index: 3;" class="Two_Cut-C_Bottom"></div>
             </div>
             <div style="z-index: 2;" class="Two_Box-B">
-               <div id="Site1_1" style="top: 650px; right: 650px;" class="Two_Site_Element"><div class="Two_Site_Title"><div class="Two_Site_BoxTitle"><p>Немає ;)</p></div></div><div class="Two_Site_FotoBox"></div><div class="Two_Site_Text"><div class="Two_Elemets_Info"></div></div><div class="Two_Elemets_ToExtend" onclick="ToExtend(this,'B');"><div style="transition: ease .8s all 0s; border-top: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div></div>
-               <div id="Site1_2" style="top: -1000px; margin-bottom: 100px;" style="margin-bottom: 100px;" class="Two_Site_Element Act" style="height: 471px; margin-top: 284px;"><div class="Two_Site_Title"><div class="Two_Site_BoxTitle"><p>Немає ;)</p></div></div><div class="Two_Site_FotoBox"></div><div class="Two_Site_Text"><div class="Two_Elemets_Info"></div></div><div class="Two_Elemets_ToExtend" onclick="ToExtend(this,'B');"><div style="transition: ease .8s all 0s; border-bottom: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div></div>
-               <div id="Site1_3" style="top: 650px; left: 650px;" class="Two_Site_Element"><div class="Two_Site_Title"><div class="Two_Site_BoxTitle"><p>Немає ;)</p></div></div><div class="Two_Site_FotoBox"></div><div class="Two_Site_Text"><div class="Two_Elemets_Info"></div></div><div class="Two_Elemets_ToExtend" onclick="ToExtend(this,'B');"><div style="transition: ease .8s all 0s; border-top: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div></div>
+               <div id="Site1_1" style="top: 650px; right: 650px;" class="Two_Site_Element"><div class="Two_Site_Title"><div class="Two_Site_BoxTitle"><p id="PSite1_1"></p></div></div><div class="Two_Site_FotoBox"></div><div class="Two_Site_Text"><div class="Two_Elemets_Info"></div></div><div class="Two_Elemets_ToExtend" onclick="ToExtend(this,'B');"><div style="transition: ease .8s all 0s; border-top: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div></div>
+               <div id="Site1_2" style="top: -1000px; margin-bottom: 100px;" style="margin-bottom: 100px;" class="Two_Site_Element Act" style="height: 471px; margin-top: 284px;"><div class="Two_Site_Title"><div class="Two_Site_BoxTitle"><p id="PSite1_2"></p></div></div><div class="Two_Site_FotoBox"></div><div class="Two_Site_Text"><div class="Two_Elemets_Info"></div></div><div class="Two_Elemets_ToExtend" onclick="ToExtend(this,'B');"><div style="transition: ease .8s all 0s; border-bottom: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div></div>
+               <div id="Site1_3" style="top: 650px; left: 650px;" class="Two_Site_Element"><div class="Two_Site_Title"><div class="Two_Site_BoxTitle"><p id="PSite1_3"></p></div></div><div class="Two_Site_FotoBox"></div><div class="Two_Site_Text"><div class="Two_Elemets_Info"></div></div><div class="Two_Elemets_ToExtend" onclick="ToExtend(this,'B');"><div style="transition: ease .8s all 0s; border-top: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div></div>
             </div>
          </div>
          <div id="TwoWindow_2" class="Two_Window">
@@ -177,11 +177,11 @@
                <div style="z-index: 3;" class="Two_Cut-C_Bottom"></div>
             </div>
             <div style="z-index: 3;" class="Two_Box-C">
-               <div id="Element1" style="margin-bottom: 0; top: 0; right: 0;" class="Two_Elemets_Element"><div class="Two_Elemets_Title"><div class="Two_Elemets_BoxTitle"><p>Старовинний годинник</p></div></div><a class="Two_Elemets_FotoBox" id ="Elemets1" href="Storage/Programming/Web/Front/Works/Details/Сlock/index.html"></a><div class="Two_Elemets_Text"><div class="Two_Elemets_Info"></div></div><div class="Two_Elemets_ToExtend" onclick="ToExtend(this,'C');"><div style="transition: ease .8s all 0s; border-top: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div></div>
-               <div id="Element2" style="margin-bottom: 75px; top: 0;" class="Two_Elemets_Element"><div class="Two_Elemets_Title"><div class="Two_Elemets_BoxTitle"><p>Відчуття присутності</p></div></div><a class="Two_Elemets_FotoBox" id ="Elemets2" href="Storage/Programming/Web/Front/Works/Details/SmallHouse/SmallHouse.html"></a><div class="Two_Elemets_Text"><div class="Two_Elemets_Info"></div></div><div class="Two_Elemets_ToExtend" onclick="ToExtend(this,'C');"><div style="transition: ease .8s all 0s; border-top: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div></div>
-               <div id="Element3" style="margin-bottom: 125px; top: 0;" class="Two_Elemets_Element"><div class="Two_Elemets_Title"><div class="Two_Elemets_BoxTitle"><p>Немає ;)</p></div></div><div class="Two_Elemets_FotoBox"></div><div class="Two_Elemets_Text"><div class="Two_Elemets_Info"></div></div><div class="Two_Elemets_ToExtend" onclick="ToExtend(this,'C');"><div style="transition: ease .8s all 0s; border-top: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div></div>
-               <div id="Element4" style="margin-bottom: 75px; top: 0;" class="Two_Elemets_Element"><div class="Two_Elemets_Title"><div class="Two_Elemets_BoxTitle"><p>Немає ;)</p></div></div><div class="Two_Elemets_FotoBox"></div><div class="Two_Elemets_Text"><div class="Two_Elemets_Info"></div></div><div class="Two_Elemets_ToExtend" onclick="ToExtend(this,'C');"><div style="transition: ease .8s all 0s; border-top: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div></div>
-               <div id="Element5" style="margin-bottom: 0; top: 0; left: 0;" class="Two_Elemets_Element"><div class="Two_Elemets_Title"><div class="Two_Elemets_BoxTitle"><p>Немає ;)</p></div></div><div class="Two_Elemets_FotoBox"></div><div class="Two_Elemets_Text"><div class="Two_Elemets_Info"></div></div><div class="Two_Elemets_ToExtend" onclick="ToExtend(this,'C');"><div style="transition: ease .8s all 0s; border-top: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div></div>
+               <div id="Element1" style="margin-bottom: 0; top: 0; right: 0;" class="Two_Elemets_Element"><div class="Two_Elemets_Title"><div class="Two_Elemets_BoxTitle"><p id="PElement_1"></p></div></div><a class="Two_Elemets_FotoBox" id ="Elemets1" href="Storage/Programming/Web/Front/Works/Details/Сlock/index.html"></a><div class="Two_Elemets_Text"><div class="Two_Elemets_Info"></div></div><div class="Two_Elemets_ToExtend" onclick="ToExtend(this,'C');"><div style="transition: ease .8s all 0s; border-top: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div></div>
+               <div id="Element2" style="margin-bottom: 75px; top: 0;" class="Two_Elemets_Element"><div class="Two_Elemets_Title"><div class="Two_Elemets_BoxTitle"><p id="PElement_2"></p></div></div><a class="Two_Elemets_FotoBox" id ="Elemets2" href="Storage/Programming/Web/Front/Works/Details/SmallHouse/SmallHouse.html"></a><div class="Two_Elemets_Text"><div class="Two_Elemets_Info"></div></div><div class="Two_Elemets_ToExtend" onclick="ToExtend(this,'C');"><div style="transition: ease .8s all 0s; border-top: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div></div>
+               <div id="Element3" style="margin-bottom: 125px; top: 0;" class="Two_Elemets_Element"><div class="Two_Elemets_Title"><div class="Two_Elemets_BoxTitle"><p id="PElement_3"></p></div></div><div class="Two_Elemets_FotoBox"></div><div class="Two_Elemets_Text"><div class="Two_Elemets_Info"></div></div><div class="Two_Elemets_ToExtend" onclick="ToExtend(this,'C');"><div style="transition: ease .8s all 0s; border-top: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div></div>
+               <div id="Element4" style="margin-bottom: 75px; top: 0;" class="Two_Elemets_Element"><div class="Two_Elemets_Title"><div class="Two_Elemets_BoxTitle"><p id="PElement_4"></p></div></div><div class="Two_Elemets_FotoBox"></div><div class="Two_Elemets_Text"><div class="Two_Elemets_Info"></div></div><div class="Two_Elemets_ToExtend" onclick="ToExtend(this,'C');"><div style="transition: ease .8s all 0s; border-top: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div></div>
+               <div id="Element5" style="margin-bottom: 0; top: 0; left: 0;" class="Two_Elemets_Element"><div class="Two_Elemets_Title"><div class="Two_Elemets_BoxTitle"><p id="PElement_5"></p></div></div><div class="Two_Elemets_FotoBox"></div><div class="Two_Elemets_Text"><div class="Two_Elemets_Info"></div></div><div class="Two_Elemets_ToExtend" onclick="ToExtend(this,'C');"><div style="transition: ease .8s all 0s; border-top: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div></div>
             </div> 
          </div>
          <div id="TwoWindow_3" class="Two_Window">
@@ -192,22 +192,18 @@
                <div style="z-index: 3;" class="Two_Cut-C_Bottom"></div>
             </div>
             <div style="z-index: 2;" class="Two_Box-B">
-               <div id="Site2_1" style="top: 650px; right: 650px;" class="Two_Site_Element"><div class="Two_Site_Title"><div class="Two_Site_BoxTitle"><p>Недокопія ВК</p></div></div><a class="Two_Site_FotoBox" id ="ElemetsSite2_1" href="Storage/Programming/Web/Front/Works/Projects/SocialNetwork/VK/VK.html"></a><div class="Two_Site_Text"><div class="Two_Elemets_Info"></div></div><div class="Two_Elemets_ToExtend" onclick="ToExtend(this,'B');"><div style="transition: ease .8s all 0s; border-top: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div></div>
-               <div id="Site2_2" style="top: -1000px; margin-bottom: 100px;" style="margin-bottom: 100px;" class="Two_Site_Element Act" style="height: 471px; margin-top: 284px;"><div class="Two_Site_Title"><div class="Two_Site_BoxTitle"><p>Немає ;)</p></div></div><div class="Two_Site_FotoBox"></div><div class="Two_Site_Text"><div class="Two_Elemets_Info"></div></div><div class="Two_Elemets_ToExtend" onclick="ToExtend(this,'B');"><div style="transition: ease .8s all 0s; border-bottom: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div></div>
-               <div id="Site2_3" style="top: 650px; left: 650px;" class="Two_Site_Element"><div class="Two_Site_Title"><div class="Two_Site_BoxTitle"><p>Немає ;)</p></div></div><div class="Two_Site_FotoBox"></div><div class="Two_Site_Text"><div class="Two_Elemets_Info"></div></div><div class="Two_Elemets_ToExtend" onclick="ToExtend(this,'B');"><div style="transition: ease .8s all 0s; border-top: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div></div>
+               <div id="Site2_1" style="top: 650px; right: 650px;" class="Two_Site_Element"><div class="Two_Site_Title"><div class="Two_Site_BoxTitle"><p id="PSite2_1"></p></div></div><a class="Two_Site_FotoBox" id ="ElemetsSite2_1" href="Storage/Programming/Web/Front/Works/Projects/SocialNetwork/VK/VK.html"></a><div class="Two_Site_Text"><div class="Two_Elemets_Info"></div></div><div class="Two_Elemets_ToExtend" onclick="ToExtend(this,'B');"><div style="transition: ease .8s all 0s; border-top: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div></div>
+               <div id="Site2_2" style="top: -1000px; margin-bottom: 100px;" style="margin-bottom: 100px;" class="Two_Site_Element Act" style="height: 471px; margin-top: 284px;"><div class="Two_Site_Title"><div class="Two_Site_BoxTitle"><p id="PSite2_2"></p></div></div><div class="Two_Site_FotoBox"></div><div class="Two_Site_Text"><div class="Two_Elemets_Info"></div></div><div class="Two_Elemets_ToExtend" onclick="ToExtend(this,'B');"><div style="transition: ease .8s all 0s; border-bottom: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div></div>
+               <div id="Site2_3" style="top: 650px; left: 650px;" class="Two_Site_Element"><div class="Two_Site_Title"><div class="Two_Site_BoxTitle"><p id="PSite2_3"></p></div></div><div class="Two_Site_FotoBox"></div><div class="Two_Site_Text"><div class="Two_Elemets_Info"></div></div><div class="Two_Elemets_ToExtend" onclick="ToExtend(this,'B');"><div style="transition: ease .8s all 0s; border-top: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div></div>
             </div>
          </div>
       </section><div  class="Space Two-Three"></div>
       <section class="Section Three">
-         <div class="Three_Box_InfoP">
-            <h2 style="margin: 25px 0 0 0; font-size: 38px;">ФронтЕнд ( Сховище )</h2>
-            <p style="width: 900px; line-height: 1.5; margin: 8px 0 0 0; bottom: 75px; font-size: 26px;">Тут збережені мої знання та вміння по ФронтЕнду</p>
-         </div>
          <div class="Three_Box">
-            <div class="Three_Title"><p>Сховище</p></div>
+            <div class="Three_Title"><p id="ThreeTitle"></p></div>
             <div class="Three_Bottoms">
-               <div class="Three_Bottom-Left"><p>Усі навички</p></div>
-               <div class="Three_Bottom-Right"><p>Усі приклади</p></div>
+               <div class="Three_Bottom-Left"><p id="ThreeBottomLeft" ></p></div>
+               <div class="Three_Bottom-Right"><p  id="ThreeBottomRight"></p></div>
             </div>
             <div class="Three_Elements">
                <div class="Three_Element"><div class="Three_Base"><p></p></div><div class="Three_Example"><p></p></div></div>
@@ -230,7 +226,7 @@
       </section><div  class="Space Three-Four"></div>
       <section class="Section Four">
          <div class="Four_Box_InfoP">
-            <h2 style="margin: 25px 0 0 0; font-size: 38px;">Ігри</h2>
+            <h2 id="FourH" style="margin: 25px 0 0 0; font-size: 38px;"></h2>
          </div>
          <div class="Four_Box">
             <div class="Four_Element"><div class="Four_Title"></div><div class="Four_Body"></div><div class="Four_Info"></div>

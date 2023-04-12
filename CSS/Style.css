@@ -22,10 +22,10 @@ body::-webkit-scrollbar {width: 0;}
 .Languages_Choice-Language{width: 60px; height: 40px; position: relative; border-radius: 10px; box-shadow: 0 0 3px black; overflow: hidden; cursor: pointer;}
 .Languages_Choice-Language:hover{box-shadow: 0 0 9px black; transition: ease 0.2s all 0s;}
 
-.Body{width: 100%; height: 100%; background-color: white; z-index: 2; position: relative; top: 100%; margin: 0 auto;}
+.Body{width: 100%; height: 100%; background-color: white; z-index: 2; position: relative; top: 937px; margin: 0 auto;}
 .Body_Decor_Time{width: 100%; height: 300px; background-color: white; border-top: 1px black solid; border-radius: 50%; position: absolute; top:-150px}
-.Section{display: flex; align-items: center; justify-content: center; border: 1px black solid; border-radius: 25px;margin: 0 auto; width: 100%; height: 100%; background-color: white;z-index: 3; position: relative;user-select: none; overflow: hidden;}
-.Space{width: 100%; min-height: 25%; z-index: 3; margin: 0 auto;}
+.Section{display: flex; align-items: center; justify-content: center; border: 1px black solid; border-radius: 25px;margin: 0 auto; width: 100%; height: 937px; background-color: white;z-index: 3; position: relative;user-select: none; overflow: hidden;}
+.Space{width: 100%; height: 234.25px; z-index: 3; margin: 0 auto;}
 
 .One{user-select: none; position: relative; padding: 30px 10%; border-top: none; border-radius: 0 0 25px 25px;}
 h1{min-width: 100%; text-align: center; font-size: 36px; max-width: 30%;}
@@ -70,7 +70,7 @@ p{font-size: 22px; margin-top: 20px;}
 #ElemetsSite2_1{background-image: url(../IMG/Works/VK.jpg); background-size: 90% auto; background-repeat: no-repeat; background-position: center;}
 
 .Three{flex-direction: column; justify-content: start; text-align: center;}
-.Three_Box{width: 1300px; height: 530px; border: 2px black solid; border-radius: 150px 150px 25px 25px; background-color: aliceblue; position: relative;}
+.Three_Box{width: 1300px; height: 530px; border: 2px black solid; margin-top: 150px; border-radius: 150px 150px 25px 25px; background-color: aliceblue; position: relative;}
 .Three_Box_InfoP{ border: 2px black solid; width:700px; height: 140px; border-radius: 83px; background-color: aliceblue; padding: 0 15px; text-align: center;margin-top: 75px; margin-bottom: 20px; display: flex; align-items: center; flex-direction: column;}
 .Three_Title{width: 350px; height: 75px; border: 2px black solid; border-radius: 15px; margin: 30px auto;}.Three_Title p{font-size: 34px; align-items: center; margin: 15px;}
 .Three_Bottoms{width: 1300px; position: absolute; top: 60px;}
