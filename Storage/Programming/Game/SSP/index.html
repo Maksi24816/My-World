@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+   
+   <head>  
+
+    <title>SSP</title>
+
+   <meta html equiv="Content-type" content="text/html;charset=UTF-8" />
+   <meta name="viewport" content="width=device-width">
+
+   <link rel="stylesheet" href="CSS/Style.css">
+
+   </head>
+   <body>
+      <div class="Hub">
+         <div class="Box_Text">
+            <h1>Камінь Ножиці Папір</h1>
+            <h2>Мої щирі вітання !)</h2>
+            <h2>Напевно кожен знає про таку просту та й веселу гру - "Камінь Ножиці Папір"</h2>
+            <h2>Я скажу навіть більше, а саме те що ви грали в неї, чи граєте і зараз !)</h2>
+            <h2>Але у нас(...) за логіку відповідає ШІ (Штучний Інтелект), який не дасть вам засумувати ;)</h2>
+            <h2>Правила досить прості, вам потрібно переграти бота На протязі 75 раундів, і вийти переможцем.</h2>
+            <h2></h2>
+            <h2>У вас на вибір 3 рівні:</h2>
+            <h2>1 - случайність</h2>
+            <h2>2 - перший рівень (він допоможе вам, навчитися вас змінювати хід думок)</h2>
+            <h2>3 - для самий відважних (Будеш першим ?)</h2>
+         </div>
+         <div class="LvL_Menu">
+            <div class="LvL" id="LvL1" onclick="Color_Lvl (1);">Рівень 0</div>
+            <div class="LvL" id="LvL2" onclick="Color_Lvl (2);">Рівень 1</div>
+            <div class="LvL Green_Act" id="LvL3" onclick="Color_Lvl (3);">Рівень 2</div>
+         </div>
+         <div class="Start" onclick="Start_Function()">Почати грати !</div>
+      </div>
+      <div class="Box-Final"><div class="Win_Draw_Loss-Final">
+         <p id="Text_Final"></p>
+         <div class="Start_Hub" onclick="Menu_Reset ()">Міню</div>
+      </div></div>
+      <div class="Box">
+         <div class="S_Raund"> Раунд 0</div>
+         <div class="Win_Draw_Loss-Rahunok">
+            <div class="Rahunok" id="Win">0</div>
+            <div class="Rahunok" id="Draw">0</div>
+            <div class="Rahunok" id="Loss">0</div>
+         </div>
+         <div class="Window">
+            <div class="Vubor" id="You"></div>
+            <div class="Win_Draw_Loss"></div>
+            <div class="Vubor" id="Bot"></div>
+         </div>
+         <div class="Menu">
+            <div class="Punkt" onclick="STONE ()">Камінь</div>
+            <div class="Punkt" onclick="SCISSORS ()">Ножиці</div>
+            <div class="Punkt" onclick="PAPER ()">Папір</div>
+         </div>
+      </div>
+      <div class="JS">
+         <script charset="utf-8" src="JS/Script.js" ></script>    
+      </div>
+   </body>
+
+</html>

@@ -1,0 +1,50 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+body{width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;  background-color: rgb(75, 75, 75);user-select: none;}
+
+.Start{width: 20%; min-width: 276px; height: 90px; border-radius: 15px; border: 2px black solid; background-color: aliceblue; position: absolute;}
+.Start p{font-size: 36px; text-align: center; margin-top: 23px; cursor: pointer;}
+
+.Start_Act{width: 20%; min-width: 100px; height: 90px; border-radius: 15px; border: 2px black solid; background-color: aliceblue; position: absolute; bottom: 35px; left: 35px; display: none;}
+.Start_Act p{font-size: 36px; text-align: center; margin-top: 23px; cursor: pointer;}
+
+.Random_Act{width: 20%; min-width: 100px; height: 90px; border-radius: 15px; border: 2px black solid; background-color: aliceblue; position: absolute; bottom: 35px; right: 35px; display: none;}
+.Random_Act p{font-size: 36px; text-align: center; margin-top: 23px; cursor: pointer;}
+@media(max-width: 800px) {.Random_Act p{font-size: 26px; text-align: center; margin-top: 30px; cursor: pointer;}}
+
+.Box_Game{margin: 0 auto; border: 1px rgb(0, 0, 0) solid; display: flex;}
+.Element_Pole{width: 12px; height: 12px; border: 1px rgb(210, 210, 210) solid; background-color: aliceblue;}
