@@ -1,0 +1,110 @@
+
+body::-webkit-scrollbar {width: 0;}
+.Menu{width: 100%; height: 100%; z-index: 2; position: fixed;}
+.Elevator{border: 2px black solid; border-radius: 25px; background-color: aliceblue; padding: 25px 0; user-select: none; position: fixed; display: flex; justify-content: center; align-items: center; flex-direction: column; bottom: 25px; left: 18px; z-index: 4;}
+.Elevator_List{width: 150px; height: 135px; display: flex; justify-content: center; align-items: center; font-size: 21px; flex-wrap: wrap; margin-bottom: 15px; z-index: 2;}
+.Elevator_Storey{cursor: pointer; width: 35px; height: 35px; background-color: aliceblue; border: 2px black solid; border-radius: 33%; margin: 5px; display: flex; justify-content: center; align-items: center;}
+.Elevator_Buttons{cursor: pointer; width: 100%; height: 100%;display: flex; justify-content: center; align-items: center; position: relative;}
+.Elevator_Buttons-Top{margin-left: 3px; width: 0; height: 0; border-bottom: 50px black solid; border-left: 30px rgba(0, 0, 0, 0) solid;border-right: 30px rgba(0, 0, 0, 0) solid; position: relative; z-index: 2;}
+.Elevator_Buttons-Bottom{margin-right: 3px;width: 0; height: 0; border-top: 50px black solid; border-left: 30px rgba(0, 0, 0, 0) solid;border-right: 30px rgba(0, 0, 0, 0) solid; position: relative; z-index: 2;}
+.Elevator_Block{width: 100%; height: 100%; position:absolute; z-index: 1;}
+.Elevator_Box{width: 100%; background-color: rgba(0, 0, 0, 0.5);  margin-bottom: 15px; padding: 5px 15px; text-align: center; cursor: pointer; user-select: none;}
+.Elevator p{font-size: 21px; color: white;}
+
+.SMS{position:fixed; top:15px; left: 42px; width: 100px; height: 100px; z-index: 3; transition: ease 0.8s all 0s; display: flex; align-items: center; justify-content: center;}
+.Lust-Box{width: 125px; height: 90px; padding-left: 15px; background-color: aliceblue; box-shadow: -3px 3px 9px black; border-radius: 25px; position: absolute; z-index: 2; left: -10px;cursor: pointer;}
+.Lust{width: 90px; height: 90px; position: relative;}
+.SMS_SN-V1:hover{box-shadow: 0 0 4px black, inset 0 0 4px black; border-radius: 50%; padding: 3px; transition: ease 0.75s all 0s;}
+.SMS_SN-V2:hover{box-shadow: 0 0 4px black, inset 0 0 4px black;; border-radius: 10px; padding: 3px; transition: ease 0.75s all 0s;}
+
+.Languages_Choice{position:fixed; top: 0px; right: 42px; width: 100px; height: 100px; z-index: 3; transition: ease 0.8s all 0s; display: flex; align-items: center; justify-content: center;}
+.Languages-Box{ width: 125px; height: 60px; background-color: aliceblue; box-shadow: 3px 3px 9px black; border-radius: 15px; position: absolute; z-index: 2; right: -10px; display: flex; align-items: flex-start; justify-content: center; font-size: 21px;cursor: pointer;}
+.Languages_Choice-Language{width: 60px; height: 40px; position: relative; border-radius: 10px; box-shadow: 0 0 3px black; overflow: hidden; cursor: pointer;}
+.Languages_Choice-Language:hover{box-shadow: 0 0 9px black; transition: ease 0.2s all 0s;}
+
+.Body{width: 100%; height: 100%; background-color: white; z-index: 2; position: relative; top: 100%; margin: 0 auto;}
+.Body_Decor_Time{width: 100%; height: 300px; background-color: white; border-top: 1px black solid; border-radius: 50%; position: absolute; top:-150px}
+.Section{display: flex; align-items: center; justify-content: center; border: 1px black solid; border-radius: 25px;margin: 0 auto; width: 100%; height: 100%; background-color: white;z-index: 3; position: relative;user-select: none; overflow: hidden;}
+.Space{width: 100%; min-height: 25%; z-index: 3; margin: 0 auto;}
+
+.One{user-select: none; position: relative; padding: 30px 10%; border-top: none; border-radius: 0 0 25px 25px;}
+h1{min-width: 100%; text-align: center; font-size: 36px; max-width: 30%;}
+h2{font-size: 28px; margin-top: 35px;}
+h3{font-size: 26px;font-weight: 600;}
+p{font-size: 22px; margin-top: 20px;}
+.SectionOneInfo_WhyBox{width: 100%; margin: 25px 0 0 0; display: flex; align-items: center; justify-content: center;}
+.SectionOneInfo_WhyPole{width: 300px; height: 100%; padding: 25px 15px; display: flex; align-items: center; justify-content: center; text-align: center; flex-direction: column; border: 1px black dotted; border-radius: 15px; margin: 0px 20px 0 20px;}
+.SectionOneInfo_ThereIsBox{width: 100%;flex-wrap: wrap; display: flex; align-items: center; justify-content: center;}
+.SectionOneInfo_ThereIsPole{min-width: 300px; margin: 15px 35px 0 35px; text-align: center;}
+.SectionOneInfo_ThereIsPoleHover:hover{text-shadow: 1px 1px 2px black;}
+
+.Two{align-items: flex-start;}
+.Two_Window-Abs{width: 80%; display: flex; align-items: center; justify-content: center; flex-direction: column; margin-top: 50px; z-index: 1;}
+.Two_Box_InfoH{border: 2px black solid; width: 480px; height: 90px; border-radius: 83px; background-color: aliceblue; padding: 0 15px; text-align: center;margin-top: 20px; display: flex; align-items: center; justify-content: center;}.Two_Box_InfoH h2{margin-top: 0;}
+.Two_Box_InfoP{border: 2px black solid; width: 400px; height: 75px; border-radius: 83px; background-color: aliceblue; padding: 0 15px; text-align: center;margin-top: 30px; display: flex; align-items: center; justify-content: center;}.Two_Box_InfoP p{margin-top: 0;}
+.Two_Choice{display: flex; align-items: center; justify-content: center; width: 950px; margin-top: 35px; margin-left: 0%;}
+.Choice{text-align: center; cursor: pointer; position: relative; padding: 21px 15px; font-size: 28px; margin: 0 1px; background-color: aliceblue; border: 2px black solid; border-radius: 40px; width: 33%; height: 75px;}
+.Two_Window{z-index: 1; width: 100%; height: 225px; top: 393px; position: absolute; display: flex; align-items: flex-start; justify-content: center; flex-wrap: wrap; transition: ease 1.2s all 0s;}
+#TwoWindow_2{left: 0%;transition: ease 1.2s all .1s;}
+.Two_Box-C{width: 1300px; height:200px; border-top: none; display: flex; align-items: center; justify-content: space-evenly; position: absolute; top: 100px}
+.Two_Cut-C_Top{width: 1300px; height: 150px; border-radius: 50%; border: 2px black solid; position: absolute; top: -75px; background-color: aliceblue;}
+.Two_Cut-C_Bottom{width: 1300px; height: 150px; border-radius: 50%; border: 2px black solid;  border-bottom: none; position: absolute; bottom: -75px; background-color: aliceblue;}
+.Two_Elemets_Element{transition: ease 1.2s all .5s; width: 150px; height:320px; position: relative; margin-top: 155px; display: flex; align-items: center; justify-content: center; flex-direction: column;}
+.Two_Elemets_Title{background-color: aliceblue; padding: 0 8px; display: flex; align-items: flex-end; justify-content: center; width: 100%; height: 60px;overflow: hidden; border: 2px black solid; border-bottom: none; border-radius: 25px 25px 0 0;}.Two_Elemets_Title p{text-align: center; margin-top: 0; font-size: 19px;}
+.Two_Elemets_BoxTitle{border: 1px black solid; border-bottom: none; display: flex; align-items: center; justify-content: center; padding-top: 2px; border-radius: 15px 15px 0 0 ; height: 50px; width: 130px;}
+.Two_Elemets_FotoBox{transition: ease .3s all 0s; width: 140%; background-color: aliceblue; z-index: 3; height: 121px; border: 1px black solid; background-color: aliceblue; border-radius: 10px;}
+.Two_Elemets_Text{padding: 0 9px 9px 9px; z-index: 2; background-color: aliceblue; position: relative; width: 110%; display: flex; flex: 1 0 auto; border: 2px black solid; background-color: aliceblue; border-radius: 0 0 25px 25px;border-top: none; display: flex; align-items: center; justify-content: flex-start; flex-direction: column;}
+.Two_Elemets_Info{padding: 6px; align-items: center; border: 1px black solid; border-top: none; width: 100%; height: 100%; border-radius: 0 0 18px 18px;}
+.Two_Box-B{width: 1300px; height: 236px; border-radius: 35px 35px 35px 35px; display: flex; align-items: center; justify-content: space-evenly; position: absolute; top: 80px}
+.Two_Site_Element{ position: relative; transition: ease 1.2s all 0.5s; width: 250px; height: 391px; margin-top: 204px; background-color: aliceblue; border-bottom: none; border-radius: 25px; display: flex; align-items: center; justify-content: center; flex-direction: column;}
+.Two_Site_Title{padding: 0 12px; display: flex; border: 2px black solid; align-items: flex-end; justify-content: center; text-align: center;  width: 100%; height: 60px;overflow: hidden; border-bottom: none; border-radius: 25px 25px 0 0;}.Two_Site_Title p{text-align: center; margin-top: 0;}
+.Two_Site_BoxTitle{border: 1px black solid; border-bottom: none; display: flex; align-items: center; justify-content: center; padding-top: 2px; border-radius: 15px 15px 0 0 ; height: 50px; width: 230px;}
+.Two_Site_FotoBox{transition: ease .3s all 0s;z-index: 3;  width: 130%; height: 150px; border: 1px black solid; background-color: aliceblue; border-radius: 10px;}
+.Two_Site_Text{padding: 0 12px 12px 12px; z-index: 2;  position: relative; width: 105%; display: flex; flex: 1 0 auto; border: 1px black solid; background-color: aliceblue; border-radius: 0 0 25px 25px;border-top: none;display: flex; align-items: center; justify-content: center;}
+.Two_Site_Info{padding: 8px; align-items: center; border: 1px black solid; border-top: none; width: 100%; height: 100%; border-radius: 0 0 24px 24px;}
+.Two_Elemets_ToExtend{transition: ease 0.3s all 0s;width: 60px; height: 40px; border: 1px black solid; border-top: none; border-radius: 0 0 25px 25px; position: relative; bottom: 0px; display: flex; align-items: center; justify-content: center;}
+#TwoWindow_1{left: -100%; z-index: 2;}
+#TwoWindow_3{right: -100%; z-index: 2;}
+#Elemets1{background-image: url(../IMG/Works/Tik-Tak.jpg); background-size: 90% auto; background-repeat: no-repeat; background-position: center;}
+#Elemets2{background-image: url(../IMG/Works/Home.jpg); background-size: 90% auto; background-repeat: no-repeat; background-position: center;}
+#ElemetsSite2_1{background-image: url(../IMG/Works/VK.jpg); background-size: 90% auto; background-repeat: no-repeat; background-position: center;}
+
+.Three{flex-direction: column; justify-content: start; text-align: center;}
+.Three_Box{width: 1300px; height: 530px; border: 2px black solid; border-radius: 150px 150px 25px 25px; background-color: aliceblue; position: relative;}
+.Three_Box_InfoP{ border: 2px black solid; width:700px; height: 140px; border-radius: 83px; background-color: aliceblue; padding: 0 15px; text-align: center;margin-top: 75px; margin-bottom: 20px; display: flex; align-items: center; flex-direction: column;}
+.Three_Title{width: 350px; height: 75px; border: 2px black solid; border-radius: 15px; margin: 30px auto;}.Three_Title p{font-size: 34px; align-items: center; margin: 15px;}
+.Three_Bottoms{width: 1300px; position: absolute; top: 60px;}
+.Three_Bottom-Left{position: absolute; left: 125px; width: 280px; height: 70px; border: 2px black solid; border-radius: 15px;}.Three_Bottom-Left p{font-size: 30px; align-items: center; margin: 16px;}
+.Three_Bottom-Right{position: absolute; right: 125px; width: 280px; height: 75px; border: 2px black solid; border-radius: 15px;}.Three_Bottom-Right p{font-size: 30px; align-items: center; margin: 18px;}
+.Three_Elements{width: 1300px; height: 370px; display: flex; align-items: center; justify-content: center; flex-direction: row; flex-wrap: wrap;}
+.Three_Element{width: 210px; margin: 10px 15px; height: 135px; border: 2px black solid; border-radius: 10px; position: relative;}
+.Three_Base{width: 210px; height: 135px;}.Three_Base p{text-align: center; font-size: 30px; margin-top: 20px;}
+.Three_Example{width: 160px; height: 40px; position: absolute; right: 25px; bottom: -20px; border: 2px black solid; background-color: aliceblue; border-radius: 10px;}
+.Three_TransitionBox{position: absolute; bottom: -0px; width: 1300px;}
+.Three_Transition{width: 150px; height: 110px; border:  2px black solid; position: absolute;}
+.Three_Transition-Left{left: 180px; border-radius: 0 0 10px 40px;}
+.Three_Num{width: 150px; height: 90px; border: 2px black solid; border-radius: 0 0 60px 60px; position: absolute; left: 575px;}.Three_Num p{font-size: 48px; margin-top: 17px;}
+.Three_Transition-Rigth{right: 180px; border-radius: 0 0 40px 10px;}
+
+.Five{flex-direction: row;}
+.Five_BoxFoto,.Five_BoxText{transition: ease 1s all 0s; position: relative; width: 1300px; min-height: 950px;border-radius: 100px; display: flex; align-items: center; justify-content: center;}
+.Five_BoxFoto{left: 450px;}.Five_BoxText{right: 450px;}
+.Four_Box_InfoP{ border: 2px black solid; width:700px; height: 100px; position: absolute; top: 45px; border-radius: 83px; background-color: aliceblue; padding: 0 15px; text-align: center;margin-top: 75px; margin-bottom: 20px; display: flex; align-items: center; flex-direction: column;}
+.Four_Box{width: 1300px; height: 240px; border: 2px black solid; position: relative; top: 65px; border-radius: 100px; background-color: aliceblue; position: relative; display: flex; align-items: center; justify-content: space-evenly;}
+.Four_Element{ width: 235px; height: 500px; display: flex; flex-direction: column; align-items: center; position: relative; top: 18px; border-radius: 25px; background-color: aliceblue;}
+.Four_Title{width: 195px; height: 70px; border: 2px black solid; border-radius: 25px 25px  0 0; border-bottom: none; margin: 0px auto;}.Four_Title p{font-size: 34px; align-items: center; margin: 15px;}
+.Four_Body{width: 235px; height: 320px; border: 2px black solid; border-radius: 15px; margin: 0px auto;}
+.Four_Info{width: 195px; border-radius: 0 0 25px 25px; border: 2px black solid; border-top: none; flex:1 0 auto;}
+.Four_Elemets_ToExtend{width: 60px; height: 40px; border: 1px black solid; border-top: none; border-radius: 0 0 25px 25px; position: absolute; bottom: -40px; display: flex; align-items: center; justify-content: center;}
+.Five_Elevator{transform: rotate(90deg); position: absolute; border: 2px black solid; border-radius: 33%; width: 175px; height: 250px; background-color: aliceblue; z-index: 2; display: flex; align-items: center; justify-content: center; flex-direction: column;}
+.Five_FotoStorage{width: 1200px; height: 900px; padding: 60px; display: flex; flex-direction: column; align-items: center; justify-content: space-around; flex-wrap: wrap;}
+.Five_FotoElement{width: 75%; height: auto; position: relative; border-radius: 25px; overflow: hidden; transition: ease 1s all 0s; position: absolute; z-index: 2;}
+.Five_Elevator-Top{cursor: pointer; margin-bottom: 15px; width: 0; height: 0; border-bottom: 60px black solid; border-left: 40px rgba(0, 0, 0, 0) solid;border-right: 40px rgba(0, 0, 0, 0) solid; position: relative; z-index: 2;}
+.Five_Elevator-Bottom{cursor: pointer; margin-top: 15px;width: 0; height: 0; border-top: 60px black solid; border-left: 40px rgba(0, 0, 0, 0) solid;border-right: 40px rgba(0, 0, 0, 0) solid; position: relative; z-index: 2;}
+.Five_Button{width: 16px; height: 16px; border-radius: 8px; border: 4px black solid; background-color: rgb(255, 255, 255); margin: 0 3px; transition: ease 0.1s all 0s;}
+.Five_Text{width: 1200px; height: 900px; padding: 60px; display: flex; align-items: center; justify-content: center; flex-direction: column;}
+.Five_Info{width: 100%; flex: 1 0 auto; border: 2px black solid; border-radius: 25px 25px 25px 25px; position: relative; z-index: 1;}
+.Five_H2B{width: 680px; height: 70px; border: 2px black solid; border-radius: 30px 30px 0 0; border-bottom: none;}
+#Five_H2{font-size: 32px; text-align: center; margin-top: 16px;}
+.Five_PB{width: 680px; height: 60px; border: 2px black solid; border-radius: 0 0 20px 20px ; border-top: none;}
+#Five_P{font-size: 26px; text-align: center; margin-top: 16px;}
