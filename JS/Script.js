@@ -23,22 +23,26 @@ function Elevator(Num){
 		};
 		let Inaccuracy = ScrollTop = (WindowsHeight * 1)+((numFor-1)*(WindowsHeight * 1.25));
 		let difference = Inaccuracy - WindowsScrollTop;
-		console.log(difference);
+
 		if (difference >= 0){numFor--;}
 		let Cellars = (WindowsHeight * 1)+(numFor*(WindowsHeight * 1.25));
 		let CellarsCeiling = Cellars - WindowsHeight * 0.25;
 		if(WindowsScrollTop > CellarsCeiling && WindowsScrollTop < Cellars){ScrollTop = (WindowsHeight * 1)+((numFor-1)*(WindowsHeight * 1.25));} else {ScrollTop = (WindowsHeight * 1)+((numFor-1)*(WindowsHeight * 1.25));}
-		let Difference = (ScrollTop - WindowsScrollTop - (numFor * 0.25)) / 30;
+		let Difference = (ScrollTop - WindowsScrollTop - (numFor * 0.25)) / 60;
 		let Num = 0;
 		let Interval = setInterval(() => {
-			window.scrollBy(0,Difference);
+			if (Num % 2 == 0){
+				window.scrollBy(0,Difference+1);
+			} else {
+				window.scrollBy(0,Difference);
+			}
 			Num++;
-			if (Num == 30){
+			if (Num == 60){
 				window.scrollTo(0,ScrollTop);
 				Block_Elevator.style.zIndex = "1";
 				clearInterval(Interval);
 			};
-		}, 33);
+		}, 15);
 	} else if (Num == 2){
 		for (let y = 0; y < 100;y++){
 			if (y <= 0) {
@@ -50,17 +54,21 @@ function Elevator(Num){
 			}
 		};
 		ScrollTop = (WindowsHeight * 1)+(numFor*(WindowsHeight * 1.25));
-		let Difference = (ScrollTop - WindowsScrollTop - (numFor * 0.25)) / 30;
+		let Difference = (ScrollTop - WindowsScrollTop - (numFor * 0.25)) / 60;
 		let Num = 0;
 		let Interval = setInterval(() => {
-			window.scrollBy(0,Difference);
+			if (Num % 2 == 0){
+				window.scrollBy(0,Difference+1);
+			} else {
+				window.scrollBy(0,Difference);
+			}
 			Num++;
-			if (Num == 30){
+			if (Num == 60){
 				window.scrollTo(0,ScrollTop);
 				Block_Elevator.style.zIndex = "1";
 				clearInterval(Interval);
 			};
-		}, 33);
+		}, 15);
 	} else {
 		return;
 	};
@@ -83,7 +91,6 @@ function ElevatorList(NumG){
 	
 	let Inaccuracy = ScrollTop = (WindowsHeight * 1)+((numFor-1)*(WindowsHeight * 1.25));
 	let difference = Inaccuracy - WindowsScrollTop;
-	console.log(numFor);
 
 	if (difference == 0 && (NumG+1) == numFor) {
 		return;
@@ -94,19 +101,23 @@ function ElevatorList(NumG){
 		let WindowsScrollTop = window.pageYOffset;
 	
 		let ScrollTop = (WindowsHeight * 1)+(NumG * (WindowsHeight * 1.25));
-		let Difference = (ScrollTop - WindowsScrollTop - (NumG * 0.25)) / 30;
+		let Difference = (ScrollTop - WindowsScrollTop - (NumG * 0.05)) / 60;
 	
 		let Num = 0;
 	
 		let Interval = setInterval(() => {
-			window.scrollBy(0,Difference);
+			if (Num % 2 == 0){
+				window.scrollBy(0,Difference+1);
+			} else {
+				window.scrollBy(0,Difference);
+			}
 			Num++;
-			if (Num == 30){
+			if (Num == 60){
 				window.scrollTo(0,ScrollTop);
 				Block_Elevator.style.zIndex = "1";
 				clearInterval(Interval);
 			};
-		}, 33);
+		}, 15);
 	}
 };
 function SMSLanguages_Choice (Elem,Act,Func){
@@ -286,4 +297,67 @@ function Boxs (BoxAct) {
 		Box1.style.left = "-600px";
 		Box2.style.right = "600px";
 	}
+}
+
+let Elevator_Num = 0;
+function Elevator_Hide () {
+	const Elevator = document.querySelector(".Elevator");
+
+	if (Elevator_Num == 0){
+		Elevator.style.top = "0px";
+		Elevator_Num = 1;
+	} else if (Elevator_Num == 1){
+		Elevator.style.top = "325px";
+		Elevator_Num = 0;
+	}
+};
+
+function Knopka_Act () {
+	const Three_Box = document.querySelector(".Three_Box")
+	const IMG_Three = document.querySelector(".IMG_Three")
+	const Three_Box_Opacity = document.querySelector(".Three_Box-Opacity");
+	Three_Box.style.left = 0;
+	IMG_Three.style.marginLeft = "648px";
+
+	setTimeout(function (){
+		IMG_Three.style.display = "none";
+		Three_Box_Opacity.style.display = "none";
+	}, 1500)
+}
+
+const Anim = document.getElementsByClassName("Anim");
+if (Anim.length > 0){
+	window.addEventListener('scroll', function AnimOnScroll(parent) {
+		for(let index = 0; index < Anim.length; index++){
+			const AnimItem = Anim[index];
+			const AnimItemsHeight = AnimItem.offsetHeight;
+			const AnimItemsOffSet = offset(AnimItem).top;
+			const AnimStart = 4;
+
+			let animItemPoint = window.innerHeight - AnimItemsHeight / AnimStart;
+			
+			if (AnimItemsHeight > window.innerHeight){
+				animItemPoint = window.innerHeight - window.innerHeight / AnimStart;
+			};
+
+			if ((pageYOffset > AnimItemsOffSet - animItemPoint) && pageYOffset < (AnimItemsOffSet + AnimItemsHeight)){
+				AnimItem.classList.add("Active");
+				if (AnimItem.classList.contains('Three')){
+					const IMG_Three = document.querySelector(".IMG_Three")
+					const Three_Box_Opacity = document.querySelector(".Three_Box-Opacity");
+
+					setTimeout(function (){
+						IMG_Three.style.display = "none";
+						Three_Box_Opacity.style.display = "none";
+					}, 1500)
+				}
+			}
+		}
+		function offset (el){
+			const rect = el.getBoundingClientRect(),
+			scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+			scrollTop = window.pageXOffset || document.documentElement.scrollTop;
+			return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+		}
+	})
 }
