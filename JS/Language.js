@@ -4,7 +4,6 @@ if (Language_Let == null){LanguageSelection(Language_Let)} else {Language(Langua
 
 function LanguageSelection (){
 	document.querySelector(".LanguageSelection").style.display = "flex";
-	document.body.style.overflow = "hidden";
 }
 
 function Language (Language) {

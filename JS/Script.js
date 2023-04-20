@@ -1,3 +1,4 @@
+
 const F1 = document.getElementById("F1");const F2 = document.getElementById("F2");const F3 = document.getElementById("F3");const F4 = document.getElementById("F4");
 const F5 = document.getElementById("F5");const F6 = document.getElementById("F6");const F7 = document.getElementById("F7");const F8 = document.getElementById("F8");
 const F9 = document.getElementById("F9");const F10 = document.getElementById("F10");const F11 = document.getElementById("F11");const F12 = document.getElementById("F12");
