@@ -71,7 +71,7 @@ p{font-size: 24px; margin-top: 15px;}
 .Two_Box-C{width: 1300px; height:200px; border-top: none; display: flex; align-items: center; justify-content: space-evenly; position: absolute; top: 100px}
 .Two_Cut-C_Top{width: 1300px; height: 150px; border-radius: 50%; border: 2px black solid; position: absolute; top: -75px; background-color: aliceblue;}
 .Two_Cut-C_Bottom{width: 1300px; height: 150px; border-radius: 50%; border: 2px black solid;  border-bottom: none; position: absolute; bottom: -75px; background-color: aliceblue;}
-.Two_Elemets_Element{transition: ease 2s all 0.3s; width: 150px; height:320px; position: relative; margin-top: 155px; display: flex; align-items: center; justify-content: center; flex-direction: column;}
+.Two_Elemets_Element{transition: ease 1.5s all 0.3s; width: 150px; height:320px; position: relative; margin-top: 155px; display: flex; align-items: center; justify-content: center; flex-direction: column;}
 #Element1{margin-bottom: 0; top: 650px; right: 650px;}
 .Active #Element1{top: 0; right: 0;}
 #Element2{margin-bottom: 75px; top: 1000px;}

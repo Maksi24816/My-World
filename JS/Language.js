@@ -1,8 +1,15 @@
 let Language_Let = localStorage.getItem("Language_DTR");
 
-if (Language_Let != null){Language(Language_Let)};
+if (Language_Let == null){LanguageSelection(Language_Let)} else {Language(Language_Let)};
+
+function LanguageSelection (){
+	document.querySelector(".LanguageSelection").style.display = "flex";
+	document.body.style.overflow = "hidden";
+}
 
 function Language (Language) {
+	document.body.style.overflow = "auto";
+
 	localStorage.setItem("Language_DTR", Language);
 
 	document.querySelector(".LanguageSelection").style.display = "none";
