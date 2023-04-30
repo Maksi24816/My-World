@@ -5,12 +5,18 @@
 <head>  
    <title>My world</title>
 
-   <link rel="stylesheet" href="CSS/LanguageSelection.css">
-   <link rel="stylesheet" href="CSS/Background.css">
-   <link rel="stylesheet" href="CSS/Style.css">
-
    <meta charset = "utf-8">
    <meta name="viewport" content="width=device-width">
+
+   <link rel="stylesheet" href="L_CSS/LanguageSelection.css">
+   <link rel="stylesheet" href="L_CSS/Background.css">
+   <link rel="stylesheet" href="L_CSS/Style.css">
+
+   <script src="L_JS/Language.js" defer></script>    
+   <script src="L_JS/Script.js" defer></script>    
+
+   <script src="Room_Gven/L_JS/Script.js" defer></script>    
+   <script src="Room_Gven/L_JS/DB.js" defer></script>    
 </head>
 <body>
    <div class="LanguageSelection">
@@ -67,15 +73,15 @@
       </div>
    </div>
    <div class="SMS" onmouseenter="SMSLanguages_Choice(this,1,1)" onmouseleave="SMSLanguages_Choice(this,0,1)">
-      <div class="Lust-Box" class=""><img class="Lust" src="IMG/Lust.png" alt=":("></div>
-      <a target="_blank" style="position: absolute; right: 61%; width: 50px; height: 50px;" href="https://t.me/Maksi_Ya_2004"><img style="width: 50px; height: 50px;" class="SMS_SN-V1" src="IMG/Tele.png" alt=":("></a>
-      <a target="_blank" style="position: absolute; right: 47.5%; width: 50px; height: 50px;" href="https://www.instagram.com/yakovchenko.m.o/?next=%2F"><img class="SMS_SN-V2" style="width: 50px; height: 50px;" src="IMG/Ins.png" alt=":("></a>
-      <a target="_blank" style="position: absolute; right: 34%; width: 50px; height: 50px;" href="https://vk.com/id587938707"><img class="SMS_SN-V2" style="width: 50px; height: 50px;" src="IMG/Vk.png" alt=":("></a>
-      <a target="_blank" style="position: absolute; right: 20.5%; width: 50px; height: 50px;" href="https://www.facebook.com/"><img class="SMS_SN-V1" style="width: 50px; height: 50px;" src="IMG/Fes.png" alt=":("></a>
-      <a target="_blank" style="position: absolute; right: 7%; width: 50px; height: 50px;" href=""><img class="SMS_SN-V2" style="width: 50px; height: 50px;" src="IMG/Va.png" alt=":("></a>
+      <div class="Lust-Box" class=""><img class="Lust" src="F_See/Lust.png" alt=":("></div>
+      <a target="_blank" style="position: absolute; right: 61%; width: 50px; height: 50px;" href="https://t.me/Maksi_Ya_2004"><img style="width: 50px; height: 50px;" class="SMS_SN-V1" src="F_See/Tele.png" alt=":("></a>
+      <a target="_blank" style="position: absolute; right: 47.5%; width: 50px; height: 50px;" href="https://www.instagram.com/yakovchenko.m.o/?next=%2F"><img class="SMS_SN-V2" style="width: 50px; height: 50px;" src="F_See/Ins.png" alt=":("></a>
+      <a target="_blank" style="position: absolute; right: 34%; width: 50px; height: 50px;" href="https://vk.com/id587938707"><img class="SMS_SN-V2" style="width: 50px; height: 50px;" src="F_See/Vk.png" alt=":("></a>
+      <a target="_blank" style="position: absolute; right: 20.5%; width: 50px; height: 50px;" href="https://www.facebook.com/"><img class="SMS_SN-V1" style="width: 50px; height: 50px;" src="F_See/Fes.png" alt=":("></a>
+      <a target="_blank" style="position: absolute; right: 7%; width: 50px; height: 50px;" href=""><img class="SMS_SN-V2" style="width: 50px; height: 50px;" src="F_See/Va.png" alt=":("></a>
    </div>
    <div class="Languages_Choice" onmouseenter="SMSLanguages_Choice(this,1,2)" onmouseleave="SMSLanguages_Choice(this,0,2)">
-      <div class="Languages-Box" class=""><p>Languages</p></div><div onclick="Language('Uk');" style="position: absolute; left: 48%;" class="Languages_Choice-Language"><div style="background-color: blue; width: 100%; height: 50%;"></div><div style="background-color: yellow; width: 100%; height: 50%;"></div></div><div onclick="Language('Ru');" style="position: absolute; left: 28%;" class="Languages_Choice-Language"><div style="background-color: white; width: 100%; height: 33.4%;"></div><div style="background-color: blue; width: 100%; height: 33.4%;"></div><div style="background-color: red; width: 100%; height: 33.3%;"></div></div><div onclick="Language('En');" style="position: absolute; left: 8%;" class="Languages_Choice-Language"><div style="position: absolute; background-color: white; width: 100%; height: 100%;"></div><div style="position: absolute; background-color: red; width: 14%; height: 100%; left: 43%;"></div><div style="position: absolute; background-color: red; width: 100%; height: 20%; top: 40%;"></div></div>
+      <div class="Languages-Box" class=""><p id="LanguagesText"></p></div><div onclick="Language('Uk');" style="position: absolute; left: 46%;" class="Languages_Choice-Language"><div style="background-color: blue; width: 100%; height: 50%;"></div><div style="background-color: yellow; width: 100%; height: 50%;"></div></div><div onclick="Language('Ru');" style="position: absolute; left: 27%;" class="Languages_Choice-Language"><div style="background-color: white; width: 100%; height: 33.4%;"></div><div style="background-color: blue; width: 100%; height: 33.4%;"></div><div style="background-color: red; width: 100%; height: 33.3%;"></div></div><div onclick="Language('En');" style="position: absolute; left: 8%;" class="Languages_Choice-Language"><div style="position: absolute; background-color: white; width: 100%; height: 100%;"></div><div style="position: absolute; background-color: red; width: 14%; height: 100%; left: 43%;"></div><div style="position: absolute; background-color: red; width: 100%; height: 20%; top: 40%;"></div></div>
    </div>
    <div class="Body">
       <div class="Elevator_Box">
@@ -84,206 +90,250 @@
             <div class="Elevator_Buttons"><div class="Elevator_Buttons-Top" onclick="Elevator(1)"></div><div class="Elevator_Buttons-Bottom" onclick="Elevator(2)"></div></div>
             <div class="Elevator_Block"></div>
          </div>
-         <div class="Elevator_Hide"onclick="Elevator_Hide();"><p id="Text_Elevator">Ліфт</p></div>
+         <div class="Elevator_Buttons-Hez"><div class="Elevator_Buttons-Top" onclick="Elevator(1)"></div><div class="Elevator_Buttons-Bottom" onclick="Elevator(2)"></div></div>
+         <div class="Elevator_Hide"onclick="Elevator_Hide();"><p id="Text_Elevator"></p></div>
+      </div>
+      <div class="Room_Gven" onclick="ToggleWinGven ();"><p id="Room_Gven"></p></div>
+      <div class="Window_Gven">
+         <div class="Gven_Pole"></div>
+         <div class="Say_Gven"> 
+            <input id="Mouth" type="text">
+            <div style="border-top: 16px rgba(255, 255, 255, 0 ) solid; border-left: 24px black solid; border-bottom: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div>
+         </div>
       </div>
       <div class="Body_Decor">
          <div class="Body_Decor_Time"></div>
       </div>
+
+
+
       <section style="flex-direction: column;" class="Section One">
-         <h1 class="Anim" id="h1"></h1>
-         <h2 class="Anim One_h2" id="h2_2"></h2>
+         <div style="position: relative;" id="Box_One">
+            <h1 class="Anim" id="h1"></h1>
+            <h2 class="Anim One_h2" id="h2_2"></h2>
 
-         <div class="What Anim">
-            <h2 id="h2_1"></h2>
-            <p id="p"></p>
-         </div>
+            <div class="Cart Cart-Right Anim">
+               <div class="CartFront"><h2 id="h2_1"></h2></div>
+               <div class="CartBack"><p id="p"></p></div>
+            </div>
 
-         <div class="IS">
-            <div class="IS_POLE IS_POLE-Left Anim">
-               <h2 style="font-weight: 600;" id="h2_3"></h2>
-               <div class="SectionOneInfo_ThereIsBox">
-                  <div onclick="ElevatorList(1)" class="SectionOneInfo_ThereIsPole SectionOneInfo_ThereIsPoleHover">
-                     <p id="ThereIsPole_p_1-1"></p>
-                  </div>
-                  <div onclick="ElevatorList(2)" class="SectionOneInfo_ThereIsPole SectionOneInfo_ThereIsPoleHover">
-                     <p id="ThereIsPole_p_2-1"></p>
-                  </div>
-                  <div onclick="ElevatorList(3)" class="SectionOneInfo_ThereIsPole SectionOneInfo_ThereIsPoleHover">
-                     <p id="ThereIsPole_p_3-1"></p>
-                  </div>
-                  <div onclick="ElevatorList(4)" class="SectionOneInfo_ThereIsPole SectionOneInfo_ThereIsPoleHover">
-                     <p id="ThereIsPole_p_4-1"></p>
-                  </div>
-                  <div onclick="ElevatorList(5)" class="SectionOneInfo_ThereIsPole SectionOneInfo_ThereIsPoleHover">
-                     <p id="ThereIsPole_p_5-1"></p>
+            <div class="IS">
+               <div class="IS_POLE IS_POLE-Left Anim">
+                  <h2 style="font-weight: 600;" id="h2_3"></h2>
+                  <div class="SectionOneInfo_ThereIsBox">
+                     <div onclick="ElevatorList(1)" class="SectionOneInfo_ThereIsPole SectionOneInfo_ThereIsPoleHover">
+                        <p id="ThereIsPole_p_1-1"></p>
+                     </div>
+                     <div onclick="ElevatorList(2)" class="SectionOneInfo_ThereIsPole SectionOneInfo_ThereIsPoleHover">
+                        <p id="ThereIsPole_p_2-1"></p>
+                     </div>
+                     <div onclick="ElevatorList(3)" class="SectionOneInfo_ThereIsPole SectionOneInfo_ThereIsPoleHover">
+                        <p id="ThereIsPole_p_3-1"></p>
+                     </div>
+                     <div onclick="ElevatorList(4)" class="SectionOneInfo_ThereIsPole SectionOneInfo_ThereIsPoleHover">
+                        <p id="ThereIsPole_p_4-1"></p>
+                     </div>
+                     <div onclick="ElevatorList(5)" class="SectionOneInfo_ThereIsPole SectionOneInfo_ThereIsPoleHover">
+                        <p id="ThereIsPole_p_5-1"></p>
+                     </div>
                   </div>
                </div>
-            </div>
-            <div class="WHY">
-               <div class="SectionOneInfo_WhyBox Anim">
-                  <div class="SectionOneInfo_WhyPole">
-                     <h3 id="WhyPole_h3_1"></h3>
-                     <p id="WhyPole_p_1"></p>
-                  </div>
-                  <div class="SectionOneInfo_WhyPole">
-                     <h3 id="WhyPole_h3_2"></h3>
-                     <p id="WhyPole_p_2"></p>
-                  </div>
-                  <div class="SectionOneInfo_WhyPole">
-                     <h3 id="WhyPole_h3_3"></h3>
-                     <p id="WhyPole_p_3"></p>
+               <div class="WHY">
+                  <div class="SectionOneInfo_WhyBox Anim">
+                     <div class="SectionOneInfo_WhyPole">
+                        <h3 id="WhyPole_h3_1"></h3>
+                        <p id="WhyPole_p_1"></p>
+                     </div>
+                     <div class="SectionOneInfo_WhyPole">
+                        <h3 id="WhyPole_h3_2"></h3>
+                        <p id="WhyPole_p_2"></p>
+                     </div>
+                     <div class="SectionOneInfo_WhyPole">
+                        <h3 id="WhyPole_h3_3"></h3>
+                        <p id="WhyPole_p_3"></p>
+                     </div>
                   </div>
                </div>
-            </div>
-            <div class="IS_POLE IS_POLE-Right Anim">
-               <h2 style="font-weight: 600;" id="h2_4"></h2>
-               <div class="SectionOneInfo_ThereIsBox">
-                  <div class="SectionOneInfo_ThereIsPole">
-                     <p id="ThereIsPole_p_1-2"></p>
-                  </div>
-                  <div class="SectionOneInfo_ThereIsPole">
-                     <p id="ThereIsPole_p_2-2"></p>
-                  </div>
-                  <div class="SectionOneInfo_ThereIsPole">
-                     <p id="ThereIsPole_p_3-2"></p>
-                  </div>
-                  <div class="SectionOneInfo_ThereIsPole">
-                     <p id="ThereIsPole_p_4-2"></p>
-                  </div>
-                  <div class="SectionOneInfo_ThereIsPole">
-                     <p id="ThereIsPole_p_5-2"></p>
+               <div class="IS_POLE IS_POLE-Right Anim">
+                  <h2 style="font-weight: 600;" id="h2_4"></h2>
+                  <div class="SectionOneInfo_ThereIsBox">
+                     <div class="SectionOneInfo_ThereIsPole">
+                        <p id="ThereIsPole_p_1-2"></p>
+                     </div>
+                     <div class="SectionOneInfo_ThereIsPole">
+                        <p id="ThereIsPole_p_2-2"></p>
+                     </div>
+                     <div class="SectionOneInfo_ThereIsPole">
+                        <p id="ThereIsPole_p_3-2"></p>
+                     </div>
+                     <div class="SectionOneInfo_ThereIsPole">
+                        <p id="ThereIsPole_p_4-2"></p>
+                     </div>
+                     <div class="SectionOneInfo_ThereIsPole">
+                        <p id="ThereIsPole_p_5-2"></p>
+                     </div>
                   </div>
                </div>
             </div>
          </div>
       </section><div class="Space One-Two"></div>
       <section class="Section Two">
-         <div class="Two_Window-Abs" style="z-index: 3;">
-            <div class="Two_Box_InfoH Anim">
-               <h2 id="TwoH2" style="font-size: 38px;"></h2>
+         <div style="position: absolute; top: -0;" id="Box_Two">
+            <div class="Cart Cart-Left Anim">
+               <div class="CartFront"><h2 id="Two_h2_1"></h2></div>
+               <div class="CartBack"><p id="Two_p"></p></div>
             </div>
-            <div class="Two_Box_InfoP Anim">
-               <p id="Two_InfoP" style="width: 900px; line-height: 1.5; bottom: 75px; font-size: 30px;"></p>
-            </div>
-            <div class="Two_Choice Anim">
-               <div style="transform: rotate(-5deg); right: 30px; bottom: -20px;" class="Choice" id="Choice1" onclick="Two_Fun(1)"></div>
-               <div class="Choice" id="Choice2" onclick="Two_Fun(2)"></div>
-               <div style="transform: rotate(5deg); right: -30px; bottom: -20px;" class="Choice" id="Choice3" onclick="Two_Fun(3)"></div>
-            </div>
-         </div>
-         <div id="TwoWindow_1" class="Two_Window">
-            <div class="Two_Window_Box">
-               <div style="z-index: 1;" class="Two_Cut-C_Top"></div>
-               <div style="z-index: 2; width: 1300px; background-color: aliceblue; height:200px; border: 2px black solid; border-top: none; position: relative;">
+
+            <div class="Two_Window-Abs" style="z-index: 3;">
+               <div class="Two_Box_InfoH Anim">
+                  <h2 id="TwoH2" style="font-size: 38px;"></h2>
                </div>
-               <div style="z-index: 3;" class="Two_Cut-C_Bottom"></div>
-            </div>
-            <div style="z-index: 4;" class="Two_Box-B">
-               <div id="Site1_1" style="top: 650px; right: 650px;" class="Two_Site_Element"><div class="Two_Site_Title"><div class="Two_Site_BoxTitle"><p id="PSite1_1"></p></div></div><div class="Two_Site_FotoBox"></div><div class="Two_Site_Text"><div class="Two_Elemets_Info"></div></div><div class="Two_Elemets_ToExtend" onclick="ToExtend(this,'B');"><div style="transition: ease .8s all 0s; border-top: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div></div>
-               <div id="Site1_2" style="top: -1000px; margin-bottom: 100px;" style="margin-bottom: 100px;" class="Two_Site_Element Act" style="height: 471px; margin-top: 284px;"><div class="Two_Site_Title"><div class="Two_Site_BoxTitle"><p id="PSite1_2"></p></div></div><div class="Two_Site_FotoBox"></div><div class="Two_Site_Text"><div class="Two_Elemets_Info"></div></div><div class="Two_Elemets_ToExtend" onclick="ToExtend(this,'B');"><div style="transition: ease .8s all 0s; border-bottom: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div></div>
-               <div id="Site1_3" style="top: 650px; left: 650px;" class="Two_Site_Element"><div class="Two_Site_Title"><div class="Two_Site_BoxTitle"><p id="PSite1_3"></p></div></div><div class="Two_Site_FotoBox"></div><div class="Two_Site_Text"><div class="Two_Elemets_Info"></div></div><div class="Two_Elemets_ToExtend" onclick="ToExtend(this,'B');"><div style="transition: ease .8s all 0s; border-top: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div></div>
-            </div>
-         </div>
-         <div id="TwoWindow_2" class="Two_Window Anim">
-            <div class="Two_Window_Box Two_Window_Box-Top Anim">
-               <div style="z-index: 1;" class="Two_Cut-C_Top"></div>
-               <div style="z-index: 2; width: 1300px; background-color: aliceblue; height:200px; border: 2px black solid; border-top: none; position: relative;">
+               <div class="Two_Box_InfoP Anim">
+                  <p id="Two_InfoP" style="width: 900px; line-height: 1.5; bottom: 75px; font-size: 30px;"></p>
                </div>
-               <div style="z-index: 3;" class="Two_Cut-C_Bottom"></div>
-            </div>
-            <div style="z-index: 3;" class="Two_Box-C Anim">
-               <div id="Element1" class="Two_Elemets_Element"><div class="Two_Elemets_Title"><div class="Two_Elemets_BoxTitle"><p id="PElement_1"></p></div></div><a class="Two_Elemets_FotoBox" id ="Elemets1" href="Storage/Programming/Web/Front/Works/Details/Сlock/index.html"></a><div class="Two_Elemets_Text"><div class="Two_Elemets_Info"></div></div><div class="Two_Elemets_ToExtend" onclick="ToExtend(this,'C');"><div style="transition: ease .8s all 0s; border-top: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div></div>
-               <div id="Element2" class="Two_Elemets_Element"><div class="Two_Elemets_Title"><div class="Two_Elemets_BoxTitle"><p id="PElement_2"></p></div></div><a class="Two_Elemets_FotoBox" id ="Elemets2" href="Storage/Programming/Web/Front/Works/Details/SmallHouse/SmallHouse.html"></a><div class="Two_Elemets_Text"><div class="Two_Elemets_Info"></div></div><div class="Two_Elemets_ToExtend" onclick="ToExtend(this,'C');"><div style="transition: ease .8s all 0s; border-top: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div></div>
-               <div id="Element3" class="Two_Elemets_Element"><div class="Two_Elemets_Title"><div class="Two_Elemets_BoxTitle"><p id="PElement_3"></p></div></div><div class="Two_Elemets_FotoBox"></div><div class="Two_Elemets_Text"><div class="Two_Elemets_Info"></div></div><div class="Two_Elemets_ToExtend" onclick="ToExtend(this,'C');"><div style="transition: ease .8s all 0s; border-top: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div></div>
-               <div id="Element4" class="Two_Elemets_Element"><div class="Two_Elemets_Title"><div class="Two_Elemets_BoxTitle"><p id="PElement_4"></p></div></div><div class="Two_Elemets_FotoBox"></div><div class="Two_Elemets_Text"><div class="Two_Elemets_Info"></div></div><div class="Two_Elemets_ToExtend" onclick="ToExtend(this,'C');"><div style="transition: ease .8s all 0s; border-top: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div></div>
-               <div id="Element5" class="Two_Elemets_Element"><div class="Two_Elemets_Title"><div class="Two_Elemets_BoxTitle"><p id="PElement_5"></p></div></div><div class="Two_Elemets_FotoBox"></div><div class="Two_Elemets_Text"><div class="Two_Elemets_Info"></div></div><div class="Two_Elemets_ToExtend" onclick="ToExtend(this,'C');"><div style="transition: ease .8s all 0s; border-top: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div></div>
-            </div> 
-         </div>
-         <div id="TwoWindow_3" class="Two_Window">
-            <div class="Two_Window_Box">
-               <div style="z-index: 1;" class="Two_Cut-C_Top"></div>
-               <div style="z-index: 2; width: 1300px; background-color: aliceblue; height:200px; border: 2px black solid; border-top: none; position: relative;">
+               <div class="Two_Choice Anim">
+                  <div style="transform: rotate(-5deg); right: 30px; bottom: -20px;" class="Choice" id="Choice1" onclick="Two_Fun(1)"></div>
+                  <div class="Choice" id="Choice2" onclick="Two_Fun(2)"></div>
+                  <div style="transform: rotate(5deg); right: -30px; bottom: -20px;" class="Choice" id="Choice3" onclick="Two_Fun(3)"></div>
                </div>
-               <div style="z-index: 3;" class="Two_Cut-C_Bottom"></div>
             </div>
-            <div style="z-index: 4;" class="Two_Box-B">
-               <div id="Site2_1" style="top: 650px; right: 650px;" class="Two_Site_Element"><div class="Two_Site_Title"><div class="Two_Site_BoxTitle"><p id="PSite2_1"></p></div></div><a class="Two_Site_FotoBox" id ="ElemetsSite2_1" href="Storage/Programming/Web/Front/Works/Projects/SocialNetwork/VK/VK.html"></a><div class="Two_Site_Text"><div class="Two_Elemets_Info"></div></div><div class="Two_Elemets_ToExtend" onclick="ToExtend(this,'B');"><div style="transition: ease .8s all 0s; border-top: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div></div>
-               <div id="Site2_2" style="top: -1000px; margin-bottom: 100px;" style="margin-bottom: 100px;" class="Two_Site_Element Act" style="height: 471px; margin-top: 284px;"><div class="Two_Site_Title"><div class="Two_Site_BoxTitle"><p id="PSite2_2"></p></div></div><div class="Two_Site_FotoBox"></div><div class="Two_Site_Text"><div class="Two_Elemets_Info"></div></div><div class="Two_Elemets_ToExtend" onclick="ToExtend(this,'B');"><div style="transition: ease .8s all 0s; border-bottom: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div></div>
-               <div id="Site2_3" style="top: 650px; left: 650px;" class="Two_Site_Element"><div class="Two_Site_Title"><div class="Two_Site_BoxTitle"><p id="PSite2_3"></p></div></div><div class="Two_Site_FotoBox"></div><div class="Two_Site_Text"><div class="Two_Elemets_Info"></div></div><div class="Two_Elemets_ToExtend" onclick="ToExtend(this,'B');"><div style="transition: ease .8s all 0s; border-top: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div></div>
+            <div id="TwoWindow_1" class="Two_Window">
+               <div class="Two_Window_Box">
+                  <div style="z-index: 1;" class="Two_Cut-C_Top"></div>
+                  <div style="z-index: 2; width: 1300px; background-color: aliceblue; height:200px; border: 2px black solid; border-top: none; position: relative;">
+                  </div>
+                  <div style="z-index: 3;" class="Two_Cut-C_Bottom"></div>
+               </div>
+               <div style="z-index: 4;" class="Two_Box-B">
+                  <div id="Site1_1" class="Two_Site_Element"><div class="Two_Site_Title"><div class="Two_Site_BoxTitle"><p id="PSite1_1"></p></div></div><div class="Two_Site_FotoBox"></div><div class="Two_Site_Text"><div class="Two_Elemets_Info"></div></div><div class="Two_Elemets_ToExtend" onclick="ToExtend(this,'B');"><div style="transition: ease .8s all 0s; border-top: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div></div>
+                  <div id="Site1_2" class="Two_Site_Element"><div class="Two_Site_Title"><div class="Two_Site_BoxTitle"><p id="PSite1_2"></p></div></div><div class="Two_Site_FotoBox"></div><div class="Two_Site_Text"><div class="Two_Elemets_Info"></div></div><div class="Two_Elemets_ToExtend" onclick="ToExtend(this,'B');"><div style="transition: ease .8s all 0s; border-top: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div></div>
+                  <div id="Site1_3" class="Two_Site_Element"><div class="Two_Site_Title"><div class="Two_Site_BoxTitle"><p id="PSite1_3"></p></div></div><div class="Two_Site_FotoBox"></div><div class="Two_Site_Text"><div class="Two_Elemets_Info"></div></div><div class="Two_Elemets_ToExtend" onclick="ToExtend(this,'B');"><div style="transition: ease .8s all 0s; border-top: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div></div>
+               </div>
+            </div>
+            <div id="TwoWindow_2" class="Two_Window Anim">
+               <div class="Two_Window_Box Two_Window_Box-Top Anim">
+                  <div style="z-index: 1;" class="Two_Cut-C_Top"></div>
+                  <div style="z-index: 2; width: 1300px; background-color: aliceblue; height:200px; border: 2px black solid; border-top: none; position: relative;">
+                  </div>
+                  <div style="z-index: 3;" class="Two_Cut-C_Bottom"></div>
+               </div>
+               <div style="z-index: 3;" class="Two_Box-C Anim">
+                  <div id="Element1" class="Two_Elemets_Element"><div class="Two_Elemets_Title"><div class="Two_Elemets_BoxTitle"><p id="PElement_1"></p></div></div><a class="Two_Elemets_FotoBox" id ="Elemets1" href="Storage/Programming/Web/Front/Works/Details/Сlock/index.html"></a><div class="Two_Elemets_Text"><div class="Two_Elemets_Info"></div></div><div class="Two_Elemets_ToExtend" onclick="ToExtend(this,'C');"><div style="transition: ease .8s all 0s; border-top: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div></div>
+                  <div id="Element2" class="Two_Elemets_Element"><div class="Two_Elemets_Title"><div class="Two_Elemets_BoxTitle"><p id="PElement_2"></p></div></div><a class="Two_Elemets_FotoBox" id ="Elemets2" href="Storage/Programming/Web/Front/Works/Details/SmallHouse/SmallHouse.html"></a><div class="Two_Elemets_Text"><div class="Two_Elemets_Info"></div></div><div class="Two_Elemets_ToExtend" onclick="ToExtend(this,'C');"><div style="transition: ease .8s all 0s; border-top: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div></div>
+                  <div id="Element3" class="Two_Elemets_Element"><div class="Two_Elemets_Title"><div class="Two_Elemets_BoxTitle"><p id="PElement_3"></p></div></div><div class="Two_Elemets_FotoBox"></div><div class="Two_Elemets_Text"><div class="Two_Elemets_Info"></div></div><div class="Two_Elemets_ToExtend" onclick="ToExtend(this,'C');"><div style="transition: ease .8s all 0s; border-top: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div></div>
+                  <div id="Element4" class="Two_Elemets_Element"><div class="Two_Elemets_Title"><div class="Two_Elemets_BoxTitle"><p id="PElement_4"></p></div></div><div class="Two_Elemets_FotoBox"></div><div class="Two_Elemets_Text"><div class="Two_Elemets_Info"></div></div><div class="Two_Elemets_ToExtend" onclick="ToExtend(this,'C');"><div style="transition: ease .8s all 0s; border-top: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div></div>
+                  <div id="Element5" class="Two_Elemets_Element"><div class="Two_Elemets_Title"><div class="Two_Elemets_BoxTitle"><p id="PElement_5"></p></div></div><div class="Two_Elemets_FotoBox"></div><div class="Two_Elemets_Text"><div class="Two_Elemets_Info"></div></div><div class="Two_Elemets_ToExtend" onclick="ToExtend(this,'C');"><div style="transition: ease .8s all 0s; border-top: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div></div>
+               </div> 
+            </div>
+            <div id="TwoWindow_3" class="Two_Window">
+               <div class="Two_Window_Box">
+                  <div style="z-index: 1;" class="Two_Cut-C_Top"></div>
+                  <div style="z-index: 2; width: 1300px; background-color: aliceblue; height:200px; border: 2px black solid; border-top: none; position: relative;">
+                  </div>
+                  <div style="z-index: 3;" class="Two_Cut-C_Bottom"></div>
+               </div>
+               <div style="z-index: 4;" class="Two_Box-B">
+                  <div id="Site2_1" class="Two_Site_Element"><div class="Two_Site_Title"><div class="Two_Site_BoxTitle"><p id="PSite2_1"></p></div></div><a class="Two_Site_FotoBox" id ="ElemetsSite2_1" href="Storage/Programming/Web/Front/Works/Projects/SocialNetwork/VK/VK.html"></a><div class="Two_Site_Text"><div class="Two_Elemets_Info"></div></div><div class="Two_Elemets_ToExtend" onclick="ToExtend(this,'B');"><div style="transition: ease .8s all 0s; border-top: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div></div>
+                  <div id="Site2_2" class="Two_Site_Element"><div class="Two_Site_Title"><div class="Two_Site_BoxTitle"><p id="PSite2_2"></p></div></div><div class="Two_Site_FotoBox"></div><div class="Two_Site_Text"><div class="Two_Elemets_Info"></div></div><div class="Two_Elemets_ToExtend" onclick="ToExtend(this,'B');"><div style="transition: ease .8s all 0s; border-top: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div></div>
+                  <div id="Site2_3" class="Two_Site_Element"><div class="Two_Site_Title"><div class="Two_Site_BoxTitle"><p id="PSite2_3"></p></div></div><div class="Two_Site_FotoBox"></div><div class="Two_Site_Text"><div class="Two_Elemets_Info"></div></div><div class="Two_Elemets_ToExtend" onclick="ToExtend(this,'B');"><div style="transition: ease .8s all 0s; border-top: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div></div>
+               </div>
             </div>
          </div>
       </section><div  class="Space Two-Three"></div>
-      <section class="Section Three Anim">
-         <div class="Three_Box">
-            <div class="Three_Title"><p id="ThreeTitle"></p></div>
-            <div class="Three_Bottoms">
-               <div class="Three_Bottom-Left"><p id="ThreeBottomLeft" ></p></div>
-               <div class="Three_Bottom-Right"><p  id="ThreeBottomRight"></p></div>
+      <section class="Section Three">
+         <div style="position: absolute; top: -0;" id="Box_Three">
+            <div class="Three_Box Anim">
+               <div class="Three_Title Anim"><p id="ThreeTitle"></p></div>
+               <div class="Three_Bottoms Anim">
+                  <div class="Three_Bottom-Left"><p id="ThreeBottomLeft" ></p></div>
+                  <div class="Three_Bottom-Right"><p  id="ThreeBottomRight"></p></div>
+               </div>
+               <div class="Three_Elements Anim">
+                  <div id="ThreeElement1" class="Three_Element"><a href="Storage/Programming/Web/Front/Knowledge repository/Base/Flex/Flex.html" class="Three_Base"><p>Flex</p></a><a href="Storage/Programming/Web/Front/Knowledge repository/Example/Flex-Work/Flex-Work.html" class="Three_Example"><p id="PWork"></p></a></div>
+                  <div id="ThreeElement2" class="Three_Element"><div class="Three_Base"><p></p></div><div class="Three_Example"><p></p></div></div>
+                  <div id="ThreeElement3" class="Three_Element"><div class="Three_Base"><p></p></div><div class="Three_Example"><p></p></div></div>
+                  <div id="ThreeElement4" class="Three_Element"><div class="Three_Base"><p></p></div><div class="Three_Example"><p></p></div></div>
+                  <div id="ThreeElement5" class="Three_Element"><div class="Three_Base"><p></p></div><div class="Three_Example"><p></p></div></div>
+                  <div id="ThreeElement6" class="Three_Element"><div class="Three_Base"><p></p></div><div class="Three_Example"><p></p></div></div>
+                  <div id="ThreeElement7" class="Three_Element"><div class="Three_Base"><p></p></div><div class="Three_Example"><p></p></div></div>
+                  <div id="ThreeElement8" class="Three_Element"><div class="Three_Base"><p></p></div><div class="Three_Example"><p></p></div></div>
+                  <div id="ThreeElement9" class="Three_Element"><div class="Three_Base"><p></p></div><div class="Three_Example"><p></p></div></div>
+                  <div id="ThreeElement10" class="Three_Element"><div class="Three_Base"><p></p></div><div class="Three_Example"><p></p></div></div>
+               </div>
+               <div class="Three_TransitionBox Anim">
+                  <div class="Three_Transition Three_Transition-Left">
+                     <div style="border-top: 40px rgba(255, 255, 255, 0 ) solid; border-right: 60px black solid; border-bottom: 40px rgba(255, 255, 255, 0) solid; width: 0; height: 0; position: absolute; z-index: 1; right: 65px;"></div>
+                     <div style="border-top: 60px rgba(255, 255, 255, 0 ) solid; border-right: 60px rgb(255, 255, 255) solid; border-bottom: 60px rgba(255, 255, 255, 0) solid; width: 0; height: 0; position: absolute; z-index: 2; right: 45px;"></div>
+                     <div style="border-top: 40px rgba(255, 255, 255, 0 ) solid; border-right: 60px black solid; border-bottom: 40px rgba(255, 255, 255, 0) solid; width: 0; height: 0; position: absolute; z-index: 3; right: 35px;"></div>
+                     <div style="border-top: 60px rgba(255, 255, 255, 0 ) solid; border-right: 60px rgb(255, 255, 255) solid; border-bottom: 60px rgba(255, 255, 255, 0) solid; width: 0; height: 0; position: absolute; z-index: 4; right: 20px;"></div>
+                  </div>
+                  <div class="Three_Num"><p>0</p></div>
+                  <div class="Three_Transition Three_Transition-Rigth">
+                     <div style="border-top: 40px rgba(255, 255, 255, 0 ) solid; border-left: 60px black solid; border-bottom: 40px rgba(255, 255, 255, 0) solid; width: 0; height: 0; position: absolute; z-index: 1; left: 65px;"></div>
+                     <div style="border-top: 60px rgba(255, 255, 255, 0 ) solid; border-left: 60px rgb(255, 255, 255) solid; border-bottom: 60px rgba(255, 255, 255, 0) solid; width: 0; height: 0; position: absolute; z-index: 2; left: 45px;"></div>
+                     <div style="border-top: 40px rgba(255, 255, 255, 0 ) solid; border-left: 60px black solid; border-bottom: 40px rgba(255, 255, 255, 0) solid; width: 0; height: 0; position: absolute; z-index: 3; left: 35px;"></div>
+                     <div style="border-top: 60px rgba(255, 255, 255, 0 ) solid; border-left: 60px rgb(255, 255, 255) solid; border-bottom: 60px rgba(255, 255, 255, 0) solid; width: 0; height: 0; position: absolute; z-index: 4; left: 20px;"></div></div>
+               </div>
             </div>
-            <div class="Three_Elements">
-               <div class="Three_Element"><div class="Three_Base"><p></p></div><div class="Three_Example"><p></p></div></div>
-               <div class="Three_Element"><div class="Three_Base"><p></p></div><div class="Three_Example"><p></p></div></div>
-               <div class="Three_Element"><div class="Three_Base"><p></p></div><div class="Three_Example"><p></p></div></div>
-               <div class="Three_Element"><div class="Three_Base"><p></p></div><div class="Three_Example"><p></p></div></div>
-               <div class="Three_Element"><div class="Three_Base"><p></p></div><div class="Three_Example"><p></p></div></div>
-               <div class="Three_Element"><div class="Three_Base"><p></p></div><div class="Three_Example"><p></p></div></div>
-               <div class="Three_Element"><div class="Three_Base"><p></p></div><div class="Three_Example"><p></p></div></div>
-               <div class="Three_Element"><div class="Three_Base"><p></p></div><div class="Three_Example"><p></p></div></div>
-               <div class="Three_Element"><div class="Three_Base"><p></p></div><div class="Three_Example"><p></p></div></div>
-               <div class="Three_Element"><div class="Three_Base"><p></p></div><div class="Three_Example"><p></p></div></div>
-            </div>
-            <div class="Three_TransitionBox">
-               <div class="Three_Transition Three_Transition-Left"></div>
-               <div class="Three_Num"><p>0</p></div>
-               <div class="Three_Transition Three_Transition-Rigth"></div>
-            </div>
-            <div class="Three_Box-Opacity"></div>
          </div>
-         <img class="IMG_Three" src="IMG/Pol.jpg">
       </section><div  class="Space Three-Four"></div>
 
       <section class="Section Five">
-         <div class="Five_BoxText Anim" onmouseenter="Boxs(1);">
-            <div class="Five_Text">
-               <div class="Five_H2B"><h2 id="Five_H2"></h2></div>
-               <div class="Five_Info"></div>
-               <div class="Five_PB"><p id="Five_P"></p></div>
+         <div style="display: inherit;" id="Box_Five">
+            <div class="Five_BoxText Anim" onmouseenter="Boxs(1);">
+               <div class="Five_Text">
+                  <div class="Five_H2B"><h2 id="Five_H2" style="font-weight: 600"></h2></div>
+                  <div class="Five_Info">
+                     <p id="InfoG"style="font-weight: 600"></p>
+                     <p id="Info1"></p>
+                     <p id="Info2"></p>
+                     <p id="Info3"></p>
+                     <p id="Info4"></p>
+                     <p id="Info5"></p>
+                     <p id="Info6"></p>
+                     <p id="Info7"></p>
+                     <p id="Info8"></p>
+                     <p id="Info9"></p>
+                     <p id="Info10"></p>
+                  </div>
+                  <div class="Five_PB"><p id="Five_P" style="font-weight: 600"></p></div>
+               </div>
             </div>
-         </div>
-         <div class="Five_BoxFoto Anim" onmouseenter="Boxs(2);">
-            <div class="Five_FotoStorage">
-               <div style="width:50%; height: 50%; display: flex; align-items: center; justify-content: center; position: relative; border: 2px black solid; border-radius: 100px 100px 0 100px;"><img class="Five_FotoElement" id="F1" src="IMG/I/F1.jpg" alt="Foto-None :("><img id="F5" style="width: 0%;" class="Five_FotoElement" src="IMG/I/F5.jpg" alt="Foto-None :("><img id="F9" style="width: 0%;" class="Five_FotoElement" src="IMG/I/F9.jpg" alt="Foto-None :("></div>
-               <div style="width:50%; height: 50%; display: flex; align-items: center; justify-content: center; position: relative; border: 2px black solid; border-radius: 100px 0 100px 100px;"><img class="Five_FotoElement" id="F2"src="IMG/I/F2.jpg" alt="Foto-None :("><img id="F6" style="width: 0%;" class="Five_FotoElement" src="IMG/I/F6.jpg" alt="Foto-None :("><img id="F10" style="width: 0%;" class="Five_FotoElement" src="IMG/I/F10.jpg" alt="Foto-None :("></div>
-               <div style="width:50%; height: 50%; display: flex; align-items: center; justify-content: center; position: relative; border: 2px black solid; border-radius: 100px 100px 100px 0;"><img class="Five_FotoElement" id="F3" src="IMG/I/F3.jpg" alt="Foto-None :("><img id="F7" style="width: 0%;" class="Five_FotoElement" src="IMG/I/F7.jpg" alt="Foto-None :("><img id="F11" style="width: 0%;" class="Five_FotoElement" src="IMG/I/F11.jpg" alt="Foto-None :("></div>
-               <div style="width:50%; height: 50%; display: flex; align-items: center; justify-content: center; position: relative; border: 2px black solid; border-radius: 0 100px 100px 100px;"><img class="Five_FotoElement" id="F4" src="IMG/I/F4.jpg" alt="Foto-None :("><img id="F8" style="width: 0%;" class="Five_FotoElement" src="IMG/I/F8.jpg" alt="Foto-None :("><img id="F12" style="width: 0%;" class="Five_FotoElement" src="IMG/I/F12.jpg" alt="Foto-None :("></div>
-            </div>  
-            <div class="Five_Elevator"><div class="Five_Elevator-Top" onclick="FiveElevator(2)"></div><div style="width: 100px; height: 6px; display: flex; align-items: center; justify-content: center;"> <div class="Five_Button" id="Five_Button-3"></div><div style="width: 8px; height: 8px;" class="Five_Button" id="Five_Button-1"></div> <div class="Five_Button" id="Five_Button-2"></div></div><div class="Five_Elevator-Bottom" onclick="FiveElevator(1)"></div></div>
+            <div class="Five_BoxFoto Anim" onmouseenter="Boxs(2);">
+               <div class="Five_FotoStorage">
+                  <div style="width:50%; height: 50%; display: flex; align-items: center; justify-content: center; position: relative; border: 2px black solid; border-radius: 100px 100px 0 100px;"><img class="Five_FotoElement" id="F1" src="F_See/I/F1.jpg" alt="Foto-None :("><img id="F5" style="width: 0%;" class="Five_FotoElement" src="F_See/I/F5.jpg" alt="Foto-None :("><img id="F9" style="width: 0%;" class="Five_FotoElement" src="F_See/I/F9.jpg" alt="Foto-None :("></div>
+                  <div style="width:50%; height: 50%; display: flex; align-items: center; justify-content: center; position: relative; border: 2px black solid; border-radius: 100px 0 100px 100px;"><img class="Five_FotoElement" id="F2"src="F_See/I/F2.jpg" alt="Foto-None :("><img id="F6" style="width: 0%;" class="Five_FotoElement" src="F_See/I/F6.jpg" alt="Foto-None :("><img id="F10" style="width: 0%;" class="Five_FotoElement" src="F_See/I/F10.jpg" alt="Foto-None :("></div>
+                  <div style="width:50%; height: 50%; display: flex; align-items: center; justify-content: center; position: relative; border: 2px black solid; border-radius: 100px 100px 100px 0;"><img class="Five_FotoElement" id="F3" src="F_See/I/F3.jpg" alt="Foto-None :("><img id="F7" style="width: 0%;" class="Five_FotoElement" src="F_See/I/F7.jpg" alt="Foto-None :("><img id="F11" style="width: 0%;" class="Five_FotoElement" src="F_See/I/F11.jpg" alt="Foto-None :("></div>
+                  <div style="width:50%; height: 50%; display: flex; align-items: center; justify-content: center; position: relative; border: 2px black solid; border-radius: 0 100px 100px 100px;"><img class="Five_FotoElement" id="F4" src="F_See/I/F4.jpg" alt="Foto-None :("><img id="F8" style="width: 0%;" class="Five_FotoElement" src="F_See/I/F8.jpg" alt="Foto-None :("><img id="F12" style="width: 0%;" class="Five_FotoElement" src="F_See/I/F12.jpg" alt="Foto-None :("></div>
+               </div>  
+               <div class="Five_Elevator"><div class="Five_Elevator-Top" onclick="FiveElevator(2)"></div><div style="width: 100px; height: 6px; display: flex; align-items: center; justify-content: center;"> <div class="Five_Button" id="Five_Button-3"></div><div style="width: 9px; height: 9px;" class="Five_Button" id="Five_Button-1"></div> <div class="Five_Button" id="Five_Button-2"></div></div><div class="Five_Elevator-Bottom" onclick="FiveElevator(1)"></div></div>
+            </div>
          </div>
       </section><div class="Space Five-Six"></div>
 
       <section class="Section Four">
-         <div class="Four_Box_InfoP">
-            <h2 id="FourH" style="margin: 25px 0 0 0; font-size: 38px;"></h2>
-         </div>
-         <div class="Four_Box">
-            <div class="Four_Element"><div class="Four_Title"></div><div class="Four_Body"></div><div class="Four_Info"></div>
-            <!-- <div class="Four_Elemets_ToExtend" onclick="ToExtend(this,'B');"><div style="transition: ease .8s all 0s; border-top: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div> -->
+         <div style="display: flex; height: 100%; align-items: center; justify-content: center;" id="Box_Four">
+            <div class="Four_Box_InfoP">
+               <h2 id="FourH" style="margin: 25px 0 0 0; font-size: 38px;"></h2>
             </div>
-            <div class="Four_Element"><div class="Four_Title"></div><div class="Four_Body"></div><div class="Four_Info"></div>
-            <!-- <div class="Four_Elemets_ToExtend" onclick="ToExtend(this,'B');"><div style="transition: ease .8s all 0s; border-top: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div> -->
-            </div>
-            <div class="Four_Element"><div class="Four_Title"></div><div class="Four_Body"></div><div class="Four_Info"></div>
-            <!-- <div class="Four_Elemets_ToExtend" onclick="ToExtend(this,'B');"><div style="transition: ease .8s all 0s; border-top: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div> -->
-            </div>
-            <div class="Four_Element"><div class="Four_Title"></div><div class="Four_Body"></div><div class="Four_Info"></div>
-            <!-- <div class="Four_Elemets_ToExtend" onclick="ToExtend(this,'B');"><div style="transition: ease .8s all 0s; border-top: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div> -->
+            <div class="Four_Box">
+               <div class="Four_Element"><div class="Four_Title"></div><div class="Four_Body"></div><div class="Four_Info"></div>
+               <!-- <div class="Four_Elemets_ToExtend" onclick="ToExtend(this,'B');"><div style="transition: ease .8s all 0s; border-top: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div> -->
+               </div>
+               <div class="Four_Element"><div class="Four_Title"></div><div class="Four_Body"></div><div class="Four_Info"></div>
+               <!-- <div class="Four_Elemets_ToExtend" onclick="ToExtend(this,'B');"><div style="transition: ease .8s all 0s; border-top: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div> -->
+               </div>
+               <div class="Four_Element"><div class="Four_Title"></div><div class="Four_Body"></div><div class="Four_Info"></div>
+               <!-- <div class="Four_Elemets_ToExtend" onclick="ToExtend(this,'B');"><div style="transition: ease .8s all 0s; border-top: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div> -->
+               </div>
+               <div class="Four_Element"><div class="Four_Title"></div><div class="Four_Body"></div><div class="Four_Info"></div>
+               <!-- <div class="Four_Elemets_ToExtend" onclick="ToExtend(this,'B');"><div style="transition: ease .8s all 0s; border-top: 16px black solid; border-left: 16px rgba(255, 255, 255, 0 ) solid; border-right: 16px rgba(255, 255, 255, 0) solid; width: 0; height: 0;"></div></div> -->
+               </div>
             </div>
          </div>
       </section><div  class="Space Four-Five"></div>
 
       <section class="Section Six">
    </div>
-   <script src="JS/Language.js"></script>
-   <script src="JS/Script.js"></script>
 </body>
 </html>
